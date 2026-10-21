@@ -1,0 +1,1956 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Port Said Hub | دليلك في بورسعيد</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#0b2a5b">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Port Said Hub">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<!-- في موقعك الخاص يمكنك استخدام: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" defer></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Cairo', 'Tahoma', 'sans-serif'] },
+      colors: {
+        ocean: { 50:'#eef6ff', 100:'#d9ebff', 500:'#1e90ff', 700:'#1559b7', 900:'#0b2a5b' },
+        teal2: { 100:'#d5f7f3', 400:'#22d3c5', 500:'#0fb8ad', 600:'#0a9a92' },
+        sand: { 50:'#fffaf0', 100:'#fff1d6', 200:'#ffe3a8', 400:'#ffb938' },
+        coral: { 400:'#ff7a59', 500:'#f0452a' }
+      }
+    }
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; font-size: 16px; }
+  @media (min-width: 480px) { html { font-size: 18px; } }
+  @media (min-width: 1024px) { html { font-size: 20px; } }
+  body { font-family: 'Cairo', sans-serif; font-size: 1rem; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .hero-bg {
+    background:
+      radial-gradient(circle at 12% 18%, rgba(255,185,56,.22), transparent 42%),
+      radial-gradient(circle at 90% 8%, rgba(34,211,197,.10), transparent 45%),
+      linear-gradient(135deg, #082a6e 0%, #0f4fb8 58%, #0a6f8a 115%);
+  }
+  .waves-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='24' viewBox='0 0 80 24'%3E%3Cpath d='M0 12 Q10 2 20 12 T40 12 T60 12 T80 12' fill='none' stroke='white' stroke-opacity='.08' stroke-width='2'/%3E%3C/svg%3E");
+  }
+  .float-card { animation: bob 5s ease-in-out infinite; }
+  .hero-bg h1, .hero-bg h2 { text-shadow: 0 2px 14px rgba(5,25,70,.35); }
+  .hero-bg.waves-pattern {
+    background-color: #0f4fb8;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='24' viewBox='0 0 80 24'%3E%3Cpath d='M0 12 Q10 2 20 12 T40 12 T60 12 T80 12' fill='none' stroke='white' stroke-opacity='.08' stroke-width='2'/%3E%3C/svg%3E"),
+      radial-gradient(circle at 12% 18%, rgba(255,185,56,.22), transparent 42%),
+      radial-gradient(circle at 90% 8%, rgba(34,211,197,.10), transparent 45%),
+      linear-gradient(135deg, #082a6e 0%, #0f4fb8 58%, #0a6f8a 115%);
+    background-size: 80px 24px, auto, auto, auto;
+  }
+  .dark .hero-bg.waves-pattern {
+    background-color: #0a3a7e;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='24' viewBox='0 0 80 24'%3E%3Cpath d='M0 12 Q10 2 20 12 T40 12 T60 12 T80 12' fill='none' stroke='white' stroke-opacity='.08' stroke-width='2'/%3E%3C/svg%3E"),
+      radial-gradient(circle at 12% 18%, rgba(255,185,56,.18), transparent 42%),
+      radial-gradient(circle at 90% 8%, rgba(34,211,197,.2), transparent 45%),
+      linear-gradient(135deg, #061a3d 0%, #0a3a7e 52%, #0a8f87 118%);
+    background-size: 80px 24px, auto, auto, auto;
+  }
+  .dark .hero-bg.waves-pattern {
+    background-color: #000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='24' viewBox='0 0 80 24'%3E%3Cpath d='M0 12 Q10 2 20 12 T40 12 T60 12 T80 12' fill='none' stroke='white' stroke-opacity='.08' stroke-width='2'/%3E%3C/svg%3E");
+    background-size: 80px 24px;
+  }
+  .dark header > svg path { fill: #000; }
+  .dark body.bg-sand-50 { background-color: #000; }
+  .dark .bg-sand-50 { background-color: #0c0c0c; }
+  .dark .bg-white { background-color: #161616; }
+  .dark .bg-sand-100 { background-color: #1d1d1d; }
+  .dark .bg-sand-200 { background-color: #2a2a2a; }
+  .dark .bg-ocean-100 { background-color: #12263a; }
+  .dark .border-sand-200 { border-color: #2a2a2a; }
+  .dark #features { background-image: none; background-color: #000; }
+  .dark #partner { background-image: none; background-color: #0c0c0c; border: 1px solid rgba(34,211,197,.35); }
+  @keyframes bob { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-10px) } }
+  .fade-out { animation: fadeOut .6s ease forwards; pointer-events: none; }
+  @keyframes fadeOut { to { opacity: 0; transform: scale(1.04); } }
+  .pop-in { animation: popIn .7s cubic-bezier(.2,.8,.2,1) both; }
+  @keyframes popIn { from { opacity: 0; transform: translateY(28px) scale(.96); } to { opacity: 1; transform: none; } }
+  .swap-in { animation: swapIn .4s ease both; }
+  @keyframes swapIn { from { opacity: 0; transform: translateX(-18px); } to { opacity: 1; transform: none; } }
+  .shake { animation: shake .45s ease; }
+  @keyframes shake { 20%, 60% { transform: translateX(-9px); } 40%, 80% { transform: translateX(9px); } }
+  .entered header { animation: popIn .9s cubic-bezier(.2,.8,.2,1) both; }
+  .drop-in { animation: dropIn .25s ease both; }
+  .entered .theme-fab { display: none; }
+  .btn-outline { border: 2px solid #0b2a5b; color: #0b2a5b; }
+  .btn-outline:hover { background: #0b2a5b; color: #fff; }
+  .dark .btn-outline { border-color: #7fd0ff; color: #7fd0ff; }
+  .dark .btn-outline:hover { background: #7fd0ff; color: #000; }
+  .dark .bg-ocean-900 { background-color: #12335a; }
+  .brand-logo.welcome-logo { border-radius: 9999px !important; background-color: #f8f4ea; background-size: 84% !important; background-position: center !important; background-repeat: no-repeat !important; border: 4px solid rgba(255,255,255,.65); box-shadow: 0 0 0 10px rgba(255,255,255,.10), 0 0 48px 6px rgba(255,185,56,.35), 0 18px 40px rgba(3,20,60,.45) !important; }
+  .brand-logo.header-logo { border-radius: 9999px !important; background-color: #f8f4ea; background-size: 84% !important; background-position: center !important; background-repeat: no-repeat !important; border: 3px solid rgba(255,255,255,.65); box-shadow: 0 0 0 5px rgba(255,255,255,.10), 0 0 22px 2px rgba(255,185,56,.35), 0 8px 18px rgba(3,20,60,.4) !important; }
+  .brand-logo { display: block; background: url(assets/logo/icon-192.png) center / contain no-repeat; box-shadow: none !important; border-radius: 0 !important; }
+
+  /* ===== شاشة الترحيب: صور بورسعيد (من غير أي تعديل على الصور نفسها) ===== */
+  #welcome { background: #061a3d; flex-direction: column; align-items: center; overflow-y: auto; padding: 1rem 1rem clamp(1.25rem, 4.5vh, 3rem); }
+  #welcome:not(.hidden) { display: flex; }
+  #welcome.hidden { display: none; }
+  .wl-bg { position: fixed; inset: 0; display: grid; grid-template-columns: repeat(3, 1fr); z-index: 0; }
+  .wl-bg .ph { position: relative; overflow: hidden; }
+  .wl-bg .ph + .ph { box-shadow: inset 2px 0 0 rgba(255,255,255,.22); }
+  .wl-bg img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation: wlZoom 24s ease-in-out infinite alternate; }
+  .wl-bg .ph:nth-child(2) img { animation-delay: -8s; }
+  .wl-bg .ph:nth-child(3) img { animation-delay: -16s; }
+  @keyframes wlZoom { from { transform: scale(1); } to { transform: scale(1.08); } }
+  .wl-shade { position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background: linear-gradient(180deg, rgba(6,26,61,.38) 0%, rgba(6,26,61,0) 26%, rgba(6,26,61,.55) 46%, rgba(6,26,61,.9) 66%, #061a3d 100%); }
+  @media (max-width: 767px) {
+    .wl-bg { display: block; }
+    .wl-bg .ph { position: absolute; inset: 0; opacity: 0; animation: wlFade 18s infinite; }
+    .wl-bg .ph:nth-child(2) { animation-delay: 6s; }
+    .wl-bg .ph:nth-child(3) { animation-delay: 12s; }
+    .wl-bg .ph + .ph { box-shadow: none; }
+    .wl-shade { background: linear-gradient(180deg, rgba(6,26,61,.4) 0%, rgba(6,26,61,0) 22%, rgba(6,26,61,.62) 40%, rgba(6,26,61,.93) 58%, #061a3d 100%); }
+  }
+  @keyframes wlFade { 0% { opacity: 0; } 6% { opacity: 1; } 33% { opacity: 1; } 39% { opacity: 0; } 100% { opacity: 0; } }
+  .wl-card { position: relative; z-index: 1; width: 100%; max-width: 44rem; margin-top: auto; padding-top: 12vh; text-align: center; }
+  .wl-brand { margin-top: .7rem; font-size: 1rem; font-weight: 900; letter-spacing: .3em; text-transform: uppercase; color: #ffd98c; text-shadow: 0 2px 12px rgba(0,0,0,.5); }
+  .wl-rule { width: 3.5rem; height: 3px; border-radius: 3px; margin: .6rem auto 0; background: linear-gradient(90deg, transparent, #ffb938, transparent); }
+  .wl-title { margin-top: .6rem; font-weight: 900; line-height: 1.3; font-size: clamp(2rem, 6.5vw, 3rem); text-shadow: 0 2px 18px rgba(0,0,0,.55); }
+  .wl-title em { font-style: normal; background: linear-gradient(90deg, #ffe3a8, #ffb938); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .wl-sub { margin: .6rem auto 0; max-width: 34rem; font-size: 1rem; line-height: 1.8; color: rgba(255,255,255,.9); text-shadow: 0 1px 10px rgba(0,0,0,.5); }
+  .wl-chips { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; margin-top: 1rem; }
+  .wl-chip { display: inline-flex; align-items: center; gap: .45rem; padding: .38rem .8rem; border-radius: 999px; font-weight: 800; font-size: .8rem;
+    background: rgba(255,255,255,.13); border: 1px solid rgba(255,255,255,.26); color: #fff; }
+  .wl-chip i { color: #ffb938; }
+  .wl-cta { margin-top: 1.25rem; display: inline-flex; align-items: center; justify-content: center; gap: .75rem; min-width: 14rem; padding: .9rem 2rem; border: 0; border-radius: 1.1rem; cursor: pointer;
+    font: inherit; font-weight: 900; font-size: 1.1rem; color: #0b2a5b; background: linear-gradient(180deg, #ffd27a, #ffb938);
+    box-shadow: 0 14px 30px -8px rgba(255,185,56,.6), inset 0 1px 0 rgba(255,255,255,.6); transition: transform .2s, box-shadow .2s; }
+  .wl-cta:hover { transform: translateY(-3px); box-shadow: 0 20px 36px -8px rgba(255,185,56,.7), inset 0 1px 0 rgba(255,255,255,.6); }
+  .wl-foot { margin-top: .9rem; font-size: .78rem; color: rgba(255,255,255,.72); }
+  @media (prefers-reduced-motion: reduce) { .wl-bg img, .wl-bg .ph { animation: none; } .wl-bg .ph:first-child { opacity: 1; } }
+  /* ===== الهيدر: زخرفة الجوانب (شاشات عريضة) + أزرار الوسط ===== */
+  .hdr-deco svg { position: absolute; bottom: 0; color: #fff; opacity: .16; }
+  .hdr-act { display: inline-flex; align-items: center; gap: .45rem; padding: .5rem .95rem; border-radius: 999px; font-weight: 800; font-size: .8rem; white-space: nowrap;
+    background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.32); color: #fff; transition: background .2s, transform .2s; }
+  .hdr-act:hover { background: rgba(255,255,255,.26); transform: translateY(-1px); }
+  .hdr-act.gold { background: #ffb938; border-color: #ffb938; color: #0b2a5b; }
+  .hdr-act.gold:hover { background: #ffd27a; }
+  .hdr-act.hidden { display: none; }
+  .hdr-act.teal { background: rgba(34,211,197,.16); border-color: rgba(34,211,197,.55); box-shadow: 0 2px 10px rgba(15,184,173,.18); }
+  .hdr-act.teal:hover { background: rgba(34,211,197,.3); }
+  .hdr-act .ic-bub { display: inline-grid; place-items: center; width: 1.35rem; height: 1.35rem; border-radius: 999px; background: rgba(255,255,255,.22); font-size: .72rem; }
+  .hdr-act.teal .ic-bub { background: #0fb8ad; color: #fff; }
+  /* ===== شات بوت مساعد بورسعيد ===== */
+  .chat-fab { display: none; position: fixed; left: 1rem; bottom: 1rem; z-index: 55; width: 3.3rem; height: 3.3rem; border-radius: 999px; background: linear-gradient(135deg,#0fb8ad,#1e90ff); color: #fff; place-items: center; font-size: 1.3rem; box-shadow: 0 10px 24px rgba(10,60,90,.35); transition: transform .2s; }
+  .entered .chat-fab { display: grid; }
+  .chat-fab:hover { transform: scale(1.06); }
+  .chat-fab .dot { position: absolute; top: -2px; left: -2px; width: .65rem; height: .65rem; border-radius: 999px; background: #ff7a59; border: 2px solid #fff; }
+  .chat-panel { position: fixed; left: 1rem; bottom: 5.1rem; z-index: 55; width: min(21rem, calc(100vw - 2rem)); height: min(30rem, calc(100vh - 7rem)); display: flex; flex-direction: column; border-radius: 1.25rem; overflow: hidden; box-shadow: 0 20px 50px rgba(5,25,70,.35); background: #fff; }
+  .dark .chat-panel { background: #161616; }
+  .chat-body { flex: 1 1 auto; min-height: 0; overflow-y: auto; padding: .85rem; display: flex; flex-direction: column; gap: .55rem; }
+  .chat-quick-toggle { flex: 0 0 auto; display: flex; align-items: center; justify-content: center; gap: .4rem; font-size: .72rem; font-weight: 800; color: #0b2a5b; background: #fffaf0; border-top: 1px solid #ffe3a8; padding: .4rem; cursor: pointer; }
+  .chat-quick-toggle i { transition: transform .2s; font-size: .65rem; }
+  .chat-quick-toggle.closed i { transform: rotate(180deg); }
+  .dark .chat-quick-toggle { background: #1d1d1d; border-color: #2a2a2a; color: #fff; }
+  .chat-quick-row { flex: 0 0 auto; display: flex; gap: .45rem; overflow-x: auto; padding: .55rem .75rem; max-height: 2.9rem; -webkit-overflow-scrolling: touch; }
+  .chat-quick-row.hidden { display: none; }
+  .chat-msg { max-width: 85%; padding: .55rem .8rem; border-radius: 1rem; font-size: .85rem; line-height: 1.5; }
+  .chat-msg.bot { background: #eef6ff; border-bottom-left-radius: .3rem; align-self: flex-start; }
+  .dark .chat-msg.bot { background: #12263a; }
+  .chat-msg.me { background: #0fb8ad; color: #fff; border-bottom-right-radius: .3rem; align-self: flex-end; }
+  .chat-q { flex: 0 0 auto; white-space: nowrap; display: inline-flex; align-items: center; border: 1px solid #ffe3a8; background: #fffaf0; color: #0b2a5b; font-weight: 700; font-size: .78rem; padding: .35rem .7rem; border-radius: 999px; transition: background .15s; }
+  .chat-q:hover { background: #ffe3a8; }
+  .dark .chat-q { background: #1d1d1d; border-color: #2a2a2a; color: #fff; }
+  /* ===== وضع حساب التاجر: هوية مختلفة تمامًا عن حساب الزائر ===== */
+  .merchant-mode #pts-pill { display: none !important; }
+  .merchant-mode header.hero-bg, .merchant-mode .hero-bg.waves-pattern { background: linear-gradient(120deg,#3a2a6d,#5b2a86 45%,#b4542b) !important; }
+  .merch-badge { display: inline-flex; align-items: center; gap: .4rem; background: rgba(255,255,255,.18); border: 1px solid rgba(255,255,255,.35); border-radius: 999px; padding: .3rem .85rem; font-size: .72rem; font-weight: 800; }
+  @keyframes dropIn { from { opacity: 0; transform: translateY(-8px) scale(.97); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .drop-in { animation: none; } }
+  .theme-sun { display: none; }
+  .dark .theme-sun { display: inline-block; }
+  .dark .theme-moon { display: none; }
+  .dark { color-scheme: dark; }
+  .theme-anim, .theme-anim * { transition: background-color .45s ease, color .45s ease, border-color .45s ease !important; }
+  .dark body.bg-sand-50 { background-color: #0b0f14; }
+  .dark .bg-sand-50 { background-color: #131b22; }
+  .dark .bg-white { background-color: #1a242d; }
+  .dark .bg-sand-100 { background-color: #212d37; }
+  .dark .bg-sand-200 { background-color: #2b3945; }
+  .dark .bg-ocean-100 { background-color: #14364d; }
+  .dark .bg-teal2-100 { background-color: #0f3b38; }
+  .dark .border-sand-200 { border-color: #2b3945; }
+  .dark .text-ocean-900 { color: #eaf1f6; }
+  .dark .text-ocean-700 { color: #8fc0e0; }
+  .dark .text-ocean-700\/80 { color: rgba(143,192,224,.85); }
+  .dark .text-ocean-700\/70 { color: rgba(143,192,224,.7); }
+  .dark input { color: #eaf1f6; }
+  .dark input::placeholder { color: #6b8294; }
+  .dark header > svg path { fill: #07162b; }
+  .dark body.bg-sand-50 { background-color: #07162b; }
+  .dark .bg-sand-50 { background-color: #0d2442; }
+  .dark .bg-white { background-color: #12315a; }
+  .dark .bg-sand-100 { background-color: #1a3d6e; }
+  .dark .bg-sand-200 { background-color: #234b82; }
+  .dark .bg-ocean-100 { background-color: #17406b; }
+  .dark .bg-teal2-100 { background-color: #0c4a4a; }
+  .dark .border-sand-200 { border-color: #234b82; }
+  .dark .text-ocean-900 { color: #eaf4ff; }
+  .dark .text-ocean-700 { color: #7fd0ff; }
+  .dark .text-ocean-700\/80 { color: rgba(127,208,255,.88); }
+  .dark .text-ocean-700\/70 { color: rgba(127,208,255,.72); }
+  .dark input::placeholder { color: #7a97b8; }
+  .dark select { color: #eaf4ff; }
+  .dark input.peer:checked + span { background-color: #0c4a4a; color: #5eead4; }
+  .dark .hero-bg {
+    background:
+      radial-gradient(circle at 12% 18%, rgba(255,185,56,.18), transparent 42%),
+      radial-gradient(circle at 90% 8%, rgba(34,211,197,.2), transparent 45%),
+      linear-gradient(135deg, #061a3d 0%, #0a3a7e 52%, #0a8f87 118%);
+  }
+  @media (prefers-reduced-motion: reduce) { .float-card, .pop-in, .swap-in, .shake, .entered header { animation: none; } html { scroll-behavior: auto; } }
+  a:focus-visible, button:focus-visible { outline: 3px solid #ffb938; outline-offset: 3px; }
+  /* الهيدر لازم يبقى فوق المحتوى، وإلا الأنيميشن بيخلي المحتوى يغطي قايمة المستخدم ويمنع الضغط عليها */
+  header { position: relative; z-index: 40; }
+  body { overflow-x: hidden; }
+  img, svg, video { max-width: 100%; }
+  #user-menu { max-width: calc(100vw - 2.5rem); }
+  html { -webkit-text-size-adjust: 100%; }
+  summary::-webkit-details-marker { display: none; }
+  #view, #view > *, #view .grid > * { min-width: 0; }
+  #view p, #view h2, #view h3 { overflow-wrap: anywhere; }
+  #ud { padding-top: max(.75rem, env(safe-area-inset-top)); padding-bottom: max(.75rem, env(safe-area-inset-bottom)); }
+  #ud-box { max-height: calc(100dvh - 1.5rem); overflow-y: auto; overscroll-behavior: contain; }
+  #ud-prev { max-height: 38dvh; object-fit: contain; }
+  #qr-modal > div { max-height: calc(100vh - 2.5rem); max-height: calc(100dvh - 2.5rem); overflow-y: auto; }
+</style>
+</head>
+<body class="bg-sand-50 text-ocean-900 leading-relaxed antialiased">
+
+
+
+<!-- ========== WELCOME (very first screen) ========== -->
+<div id='welcome' class='fixed inset-0 z-[60] text-white grid place-items-center text-center p-4 sm:p-6'>
+<button data-fab='1' type='button' aria-label='تبديل الوضع الليلي والنهاري'  class='theme-fab absolute left-3 top-3 z-10 w-11 h-11 rounded-2xl bg-white/25 border-2 border-white/60 text-white backdrop-blur grid place-items-center hover:bg-white/35 transition shadow-lg'><span class='theme-moon'><i class='fa-solid fa-moon'></i></span><span class='theme-sun'><i class='fa-solid fa-sun'></i></span></button>
+<div class='wl-bg' aria-hidden='true'>
+  <div class='ph'><img src='assets/port-said/port-said-lighthouse.webp' alt='' decoding='async'></div>
+  <div class='ph'><img src='assets/port-said/port-said-port-night.webp' alt='' decoding='async'></div>
+  <div class='ph'><img src='assets/port-said/port-said-mosque.webp' alt='' decoding='async'></div>
+</div>
+<div class='wl-shade' aria-hidden='true'></div>
+<div class='wl-card pop-in'>
+  <span class='brand-logo welcome-logo w-20 h-20 sm:w-24 sm:h-24 mx-auto float-card' role='img' aria-label='Port Said Hub'></span>
+  <p dir='ltr' class='wl-brand'>Port Said Hub</p>
+  <div class='wl-rule'></div>
+  <h2 class='wl-title'>مرحبًا بك <em>يا صديقي</em></h2>
+  <p class='wl-sub'>كل بورسعيد في مكان واحد: مواصلات، مطاعم، فنادق، وأماكن تستاهل تزورها.</p>
+  <div class='wl-chips'><span class='wl-chip'><i class='fa-solid fa-bus'></i>مواصلات</span><span class='wl-chip'><i class='fa-solid fa-utensils'></i>مطاعم وكافيهات</span><span class='wl-chip'><i class='fa-solid fa-hotel'></i>فنادق وسكن</span><span class='wl-chip'><i class='fa-solid fa-star'></i>نقاط على المعالم</span></div>
+  <button id='welcome-btn' type='button' class='wl-cta'>هيا نبدأ <i class='fa-solid fa-arrow-left'></i></button>
+  <p class='wl-foot'>بورسعيد.. المدينة الباسلة · فريق Alpha Team</p>
+</div>
+</div>
+
+<!-- ========== AUTH (first screen) ========== -->
+<div id='auth' class='fixed inset-0 z-50 overflow-y-auto hero-bg waves-pattern'>
+<div class='relative min-h-full grid place-items-center px-3 pb-4 pt-16'>
+<button data-fab='1' type='button' aria-label='تبديل الوضع الليلي والنهاري'  class='theme-fab absolute left-3 top-3 z-10 w-11 h-11 rounded-2xl bg-white/25 border-2 border-white/60 text-white backdrop-blur grid place-items-center hover:bg-white/35 transition shadow-lg'><span class='theme-moon'><i class='fa-solid fa-moon'></i></span><span class='theme-sun'><i class='fa-solid fa-sun'></i></span></button>
+<div id='auth-card' class='w-full max-w-md md:max-w-4xl bg-sand-50 rounded-2xl shadow-2xl overflow-hidden md:grid md:grid-cols-5'>
+  <aside class='hidden md:flex md:col-span-2 hero-bg waves-pattern text-white p-8 flex-col justify-center gap-5'>
+    <span class='brand-logo w-20 h-20 rounded-3xl shadow-xl' role='img' aria-label='Port Said Hub'></span>
+    <div><p dir='ltr' class='text-2xl font-black'>Port Said Hub</p><p class='text-white/85 font-semibold'>دليلك في بورسعيد</p></div>
+    <ul class='space-y-3 text-white/90 font-semibold'>
+      <li><i class='fa-solid fa-bus ml-2 text-sand-400'></i>مواصلات من السكن للكلية</li>
+      <li><i class='fa-solid fa-utensils ml-2 text-sand-400'></i>مطاعم وكافيهات وحلويات</li>
+      <li><i class='fa-solid fa-hotel ml-2 text-sand-400'></i>فنادق وسكن وأماكن قريبة منك</li>
+      <li><i class='fa-solid fa-star ml-2 text-sand-400'></i>نقط على زيارة المعالم السياحية</li>
+    </ul>
+  </aside>
+  <div class='p-6 sm:p-8 md:col-span-3'>
+  <div class='flex items-center gap-3 font-extrabold text-xl mb-4'>
+    <button id='auth-back' type='button' aria-label='رجوع' class='w-10 h-10 shrink-0 rounded-2xl bg-sand-100 text-ocean-700 grid place-items-center hover:bg-sand-200 transition'><i class='fa-solid fa-arrow-right'></i></button>
+    <span class='brand-logo w-12 h-12 shrink-0 rounded-2xl shadow-md' role='img' aria-label='Port Said Hub'></span>
+    <span dir='ltr'>Port Said Hub</span>
+  </div>
+  <div class='grid grid-cols-2 gap-1 p-1 rounded-2xl bg-sand-200 mb-4'>
+    <button id='tab-login' type='button' class='py-2.5 rounded-xl font-bold transition bg-white shadow text-ocean-700'>تسجيل الدخول</button>
+    <button id='tab-signup' type='button' class='py-2.5 rounded-xl font-bold transition text-ocean-700/70'>إنشاء حساب</button>
+  </div>
+
+  <form id='f-login' class='space-y-4' novalidate>
+    <div><label for='l-id' class='block font-semibold mb-1.5 text-base'>رقم الهاتف / البريد الإلكتروني</label>
+      <input id='l-id' type='text' autocomplete='username' dir='ltr' placeholder='01xxxxxxxxx أو name@example.com' class='w-full rounded-2xl border border-sand-200 bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal2-500'></div>
+    <div><label for='l-pass' class='block font-semibold mb-1.5 text-base'>كلمة المرور</label>
+      <input id='l-pass' type='password' autocomplete='current-password' dir='ltr' class='w-full rounded-2xl border border-sand-200 bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal2-500'></div>
+    <p id='err-login' class='text-sm text-red-600 min-h-[1.25rem]' role='alert'></p>
+    <button type='submit' class='w-full bg-teal2-600 hover:bg-teal2-500 text-white font-extrabold py-3.5 rounded-2xl shadow-lg transition'>دخول</button>
+  </form>
+
+  <form id='f-signup' class='space-y-3 hidden' novalidate>
+    <fieldset class='mb-1'><legend class='sr-only'>نوع الحساب</legend>
+      <div class='grid grid-cols-2 gap-2'>
+        <label class='cursor-pointer'><input type='radio' name='s-acct' value='user' class='peer sr-only' checked><span class='flex flex-col items-center gap-1 rounded-2xl border-2 border-sand-200 bg-white py-3 text-sm font-bold transition peer-checked:border-teal2-500 peer-checked:bg-teal2-100 peer-checked:text-teal2-600 peer-focus-visible:ring-2 peer-focus-visible:ring-teal2-500'><i class='fa-solid fa-user text-lg'></i>زائر عادي</span></label>
+        <label class='cursor-pointer'><input type='radio' name='s-acct' value='merchant' class='peer sr-only'><span class='flex flex-col items-center gap-1 rounded-2xl border-2 border-sand-200 bg-white py-3 text-sm font-bold transition peer-checked:border-teal2-500 peer-checked:bg-teal2-100 peer-checked:text-teal2-600 peer-focus-visible:ring-2 peer-focus-visible:ring-teal2-500'><i class='fa-solid fa-store text-lg'></i>تاجر / صاحب بيزنس</span></label>
+      </div></fieldset>
+    <div class='flex items-center justify-between text-sm font-bold text-ocean-700'><span id='wz-t'></span><span id='wz-dots' class='flex gap-1.5' aria-hidden='true'></span></div>
+    <div data-wz='1' class='space-y-3'>
+    <div><label for='s-name' class='block font-semibold mb-1.5 text-base' id='s-name-lbl'>الاسم</label>
+      <input id='s-name' type='text' autocomplete='name' class='w-full rounded-2xl border border-sand-200 bg-white px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal2-500'></div>
+    <div id='s-biz-wrap1' class='hidden space-y-3'>
+      <div><label for='m-biz' class='block font-semibold mb-1.5 text-base'>اسم المتجر</label>
+        <input id='m-biz' type='text' placeholder='مثال: مطعم سمك البحر' class='w-full rounded-2xl border border-sand-200 bg-white px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal2-500'></div>
+      <div><label for='m-cat' class='block font-semibold mb-1.5 text-base'>نوع النشاط</label>
+        <select id='m-cat' class='w-full rounded-2xl border border-sand-200 bg-white px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal2-500'><option value='food'>مطاعم</option><option value='cafe'>كافيهات</option><option value='sweets'>حلويات</option><option value='shop'>تسوق</option><option value='sport'>رياضة</option><option value='fun'>معالم وترفيه</option><option value='other'>أخرى</option></select></div>
+      <div id='m-cat-other-wrap' class='hidden'><label for='m-cat-other' class='block font-semibold mb-1.5 text-base'>اكتب نوع نشاطك</label>
+        <input id='m-cat-other' type='text' placeholder='مثال: محل تصوير فوتوغرافي' class='w-full rounded-2xl border border-sand-200 bg-white px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal2-500'></div>
+    </div>
+    <fieldset id='s-gender-wrap'><legend class='block font-semibold mb-2 text-base'>الجنس</legend>
+      <div class='grid grid-cols-2 gap-2'>
+        <label class='cursor-pointer'><input type='radio' name='s-gender' value='male' class='peer sr-only'><span class='flex flex-col items-center gap-1 rounded-2xl border-2 border-sand-200 bg-white py-3 text-sm font-bold transition peer-checked:border-teal2-500 peer-checked:bg-teal2-100 peer-checked:text-teal2-600 peer-focus-visible:ring-2 peer-focus-visible:ring-teal2-500'><i class='fa-solid fa-mars text-lg'></i>ذكر</span></label>
+        <label class='cursor-pointer'><input type='radio' name='s-gender' value='female' class='peer sr-only'><span class='flex flex-col items-center gap-1 rounded-2xl border-2 border-sand-200 bg-white py-3 text-sm font-bold transition peer-checked:border-teal2-500 peer-checked:bg-teal2-100 peer-checked:text-teal2-600 peer-focus-visible:ring-2 peer-focus-visible:ring-teal2-500'><i class='fa-solid fa-venus text-lg'></i>أنثى</span></label>
+      </div></fieldset>
+    <fieldset id='s-type-wrap'><legend class='block font-semibold mb-2 text-base'>أنت؟</legend>
+      <div class='grid grid-cols-3 gap-2'>
+        <label class='cursor-pointer'><input type='radio' name='s-type' value='student' class='peer sr-only'><span class='flex flex-col items-center gap-1 rounded-2xl border-2 border-sand-200 bg-white py-3 text-sm font-bold transition peer-checked:border-teal2-500 peer-checked:bg-teal2-100 peer-checked:text-teal2-600 peer-focus-visible:ring-2 peer-focus-visible:ring-teal2-500'><i class='fa-solid fa-graduation-cap text-lg'></i>طالب</span></label>
+        <label class='cursor-pointer'><input type='radio' name='s-type' value='visitor' class='peer sr-only'><span class='flex flex-col items-center gap-1 rounded-2xl border-2 border-sand-200 bg-white py-3 text-sm font-bold transition peer-checked:border-teal2-500 peer-checked:bg-teal2-100 peer-checked:text-teal2-600 peer-focus-visible:ring-2 peer-focus-visible:ring-teal2-500'><i class='fa-solid fa-suitcase-rolling text-lg'></i>سائح أو مغترب</span></label>
+        <label class='cursor-pointer'><input type='radio' name='s-type' value='local' class='peer sr-only'><span class='flex flex-col items-center gap-1 rounded-2xl border-2 border-sand-200 bg-white py-3 text-sm font-bold transition peer-checked:border-teal2-500 peer-checked:bg-teal2-100 peer-checked:text-teal2-600 peer-focus-visible:ring-2 peer-focus-visible:ring-teal2-500'><i class='fa-solid fa-house text-lg'></i>من بورسعيد</span></label>
+      </div></fieldset>
+    <div id='s-idcard-wrap' class='hidden'><label for='s-id-card' class='block font-semibold mb-1.5 text-base'>صورة الكارنيه</label>
+      <input id='s-id-card' type='file' accept='image/*' class='w-full rounded-2xl border border-sand-200 bg-white px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal2-500'>
+      <p class='mt-1 text-xs text-ocean-700/60'>عشان نفعّلك خصومات الطلبة الخاصة بعد ما الإدارة تراجع الصورة. حسابك هيشتغل عادي في الوقت ده.</p></div>
+    </div>
+    <div data-wz='2' class='space-y-3 hidden'>
+    <div id='s-biz-wrap2' class='hidden space-y-3'>
+      <div><label for='m-area' class='block font-semibold mb-1.5 text-base'>المنطقة</label>
+        <input id='m-area' type='text' placeholder='مثال: حي الشرق' class='w-full rounded-2xl border border-sand-200 bg-white px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal2-500'></div>
+      <div class='grid grid-cols-2 gap-3'>
+        <div><label for='m-disc' class='block font-semibold mb-1.5 text-base'>نسبة الخصم للعميل %</label>
+          <input id='m-disc' type='number' min='0' max='100' class='w-full rounded-2xl border border-sand-200 bg-white px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal2-500'></div>
+        <div><label for='m-comm' class='block font-semibold mb-1.5 text-base'>عمولة فريق Alpha (ج/عميل)</label>
+          <input id='m-comm' type='number' min='0' class='w-full rounded-2xl border border-sand-200 bg-white px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal2-500'></div>
+      </div>
+      <div><label for='m-notes' class='block font-semibold mb-1.5 text-base'>أكواد خصم أو ملاحظات (اختياري)</label>
+        <input id='m-notes' type='text' class='w-full rounded-2xl border border-sand-200 bg-white px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal2-500'></div>
+      <div><label for='m-tax' class='block font-semibold mb-1.5 text-base'>الرقم الضريبي</label>
+        <input id='m-tax' type='text' class='w-full rounded-2xl border border-sand-200 bg-white px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal2-500'></div>
+      <div><label for='m-registry' class='block font-semibold mb-1.5 text-base'>صورة السجل التجاري</label>
+        <input id='m-registry' type='file' accept='image/*' class='w-full rounded-2xl border border-sand-200 bg-white px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal2-500'>
+        <p class='mt-1 text-xs text-ocean-700/60'>عشان نتأكد إن المتجر حقيقي قبل ما نوافق على الطلب.</p></div>
+    </div>
+    <div id='s-inst-wrap' class='hidden'><label for='s-inst' class='block font-semibold mb-1.5 text-base'>الكلية / المدرسة</label>
+      <select id='s-inst' class='w-full rounded-2xl border border-sand-200 bg-white px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal2-500'><option value=''>اختر الكلية أو المدرسة</option><optgroup label='جامعة بورسعيد'><option>كلية التجارة — جامعة بورسعيد</option><option>كلية الآداب — جامعة بورسعيد</option><option>كلية التربية — جامعة بورسعيد</option><option>كلية العلوم — جامعة بورسعيد</option><option>كلية الهندسة — جامعة بورسعيد</option><option>كلية التربية الرياضية — جامعة بورسعيد</option><option>كلية التربية النوعية — جامعة بورسعيد</option><option>كلية الحقوق — جامعة بورسعيد</option><option>كلية الطب البشري — جامعة بورسعيد</option><option>كلية التمريض — جامعة بورسعيد</option><option>كلية الصيدلة — جامعة بورسعيد</option><option>كلية العلاج الطبيعي — جامعة بورسعيد</option><option>كلية تكنولوجيا الإدارة ونظم المعلومات — جامعة بورسعيد</option></optgroup><optgroup label='جامعة شرق بورسعيد الأهلية'><option>كلية علوم الحاسب وتقنية المعلومات — جامعة شرق بورسعيد الأهلية</option><option>كلية الطب البشري — جامعة شرق بورسعيد الأهلية</option><option>كلية الهندسة — جامعة شرق بورسعيد الأهلية</option><option>كلية الصيدلة — جامعة شرق بورسعيد الأهلية</option><option>كلية العلوم الصحية التطبيقية — جامعة شرق بورسعيد الأهلية</option><option>كلية علوم الأعمال — جامعة شرق بورسعيد الأهلية</option><option>كلية طب الأسنان — جامعة شرق بورسعيد الأهلية</option><option>كلية الآداب — جامعة شرق بورسعيد الأهلية</option></optgroup><option>مدرسة (مش في كلية)</option><option>كلية أخرى</option></select></div>
+    <div id='s-gov-wrap'><label for='s-gov' class='block font-semibold mb-1.5 text-base'>المحافظة</label>
+      <select id='s-gov' class='w-full rounded-2xl border border-sand-200 bg-white px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal2-500'>
+        <option value=''>اختر المحافظة</option>
+        <option>القاهرة</option><option>الجيزة</option><option>الإسكندرية</option><option>القليوبية</option>
+        <option>بورسعيد</option><option>السويس</option><option>الدقهلية</option><option>الشرقية</option>
+        <option>الغربية</option><option>المنوفية</option><option>كفر الشيخ</option><option>البحيرة</option>
+        <option>دمياط</option><option>الإسماعيلية</option><option>الفيوم</option><option>بني سويف</option>
+        <option>المنيا</option><option>أسيوط</option><option>سوهاج</option><option>قنا</option>
+        <option>الأقصر</option><option>أسوان</option><option>البحر الأحمر</option><option>الوادي الجديد</option>
+        <option>مطروح</option><option>شمال سيناء</option><option>جنوب سيناء</option>
+      </select></div>
+    <div><label for='s-phone' class='block font-semibold mb-1.5 text-base'>رقم الهاتف</label>
+      <input id='s-phone' type='tel' inputmode='numeric' autocomplete='tel-national' maxlength='11' dir='ltr' placeholder='01xxxxxxxxx' class='w-full rounded-2xl border border-sand-200 bg-white px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal2-500'></div>
+    </div>
+    <div data-wz='3' class='space-y-3 hidden'>
+    <div><label for='s-email' class='block font-semibold mb-1.5 text-base'>البريد الإلكتروني <span class='text-red-600'>*</span></label>
+      <input id='s-email' type='email' autocomplete='email' dir='ltr' placeholder='name@example.com' required class='w-full rounded-2xl border border-sand-200 bg-white px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal2-500'></div>
+    <div><label for='s-pass' class='block font-semibold mb-1.5 text-base'>كلمة المرور (8 أحرف على الأقل)</label>
+      <input id='s-pass' type='password' autocomplete='new-password' dir='ltr' class='w-full rounded-2xl border border-sand-200 bg-white px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal2-500'></div>
+    <div><label for='s-pass2' class='block font-semibold mb-1.5 text-base'>تأكيد كلمة المرور</label>
+      <input id='s-pass2' type='password' autocomplete='new-password' dir='ltr' class='w-full rounded-2xl border border-sand-200 bg-white px-3.5 py-2.5 focus:outline-none focus:ring-2 focus:ring-teal2-500'></div>
+    </div>
+    <p id='err-signup' class='text-sm text-red-600 min-h-[1.25rem]' role='alert'></p>
+    <div class='flex gap-2'><button type='button' id='wz-back' class='hidden px-5 rounded-2xl bg-sand-200 text-ocean-700 font-bold hover:bg-sand-100 transition'>السابق</button><button type='submit' class='flex-1 bg-teal2-600 hover:bg-teal2-500 text-white font-extrabold py-3 rounded-2xl shadow-lg transition'>التالي</button></div>
+    <p class='mt-3 text-xs text-ocean-700/70 text-center'>بإنشاء حساب أنت موافق على <a href='legal.html#terms' target='_blank' rel='noopener' class='underline'>شروط الاستخدام</a> و<a href='legal.html#privacy' target='_blank' rel='noopener' class='underline'>سياسة الخصوصية</a>.</p>
+  </form>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ========== INTRO (بعد إنشاء الحساب) ========== -->
+<div id='intro' class='hidden fixed inset-0 z-[65] items-center justify-center bg-black/70 p-3' role='dialog' aria-modal='true' aria-labelledby='intro-t'>
+  <div class='w-full max-w-lg max-h-[92dvh] overflow-y-auto rounded-3xl bg-sand-50 text-ocean-900 shadow-2xl'>
+    <div class='hero-bg waves-pattern text-white p-6 text-center'><h2 id='intro-t' class='text-2xl sm:text-3xl font-black'>أهلًا بيك في بورسعيد</h2><p class='mt-1 text-white/85'>مدينة البحر والقناة</p></div>
+    <div class='p-6 space-y-4 leading-loose'>
+      <p>بورسعيد مدينة على البحر المتوسط ومدخل قناة السويس، فيها الحي الإفرنجي بشرفاته الخشب، والفنار، والممشى السياحي، وناس طيبين بيرحبوا بأي حد جديد.</p>
+      <p><b>Port Said Hub</b> اتعمل عشانك: تعرف تروح كليتك من السكن بالمواصلات، وتلاقي المطاعم والكافيهات والحلويات والفنادق والأماكن، وكل ده بالعربي وبسهولة، سواء طالب أو مغترب أو زائر.</p>
+      <p>إحنا فريق Alpha Team بنحب بورسعيد وعايزين كل واحد يحس إنه في بيته فيها. وتقدر تكسب نقط لما تزور المعالم السياحية.</p>
+      <button id='intro-go' type='button' class='w-full bg-teal2-600 hover:bg-teal2-500 text-white font-extrabold py-3.5 rounded-2xl shadow-lg transition'>يلا نبدأ</button>
+    </div>
+  </div>
+</div>
+
+<!-- ========== INSTALL BANNER ========== -->
+<div id='pwa' class='hidden fixed inset-x-3 bottom-3 z-[70] max-w-md mx-auto rounded-2xl bg-ocean-900 text-white shadow-2xl p-4' role='dialog' aria-label='تثبيت الموقع'>
+  <div class='flex items-start gap-3'>
+    <span class='brand-logo w-12 h-12 shrink-0 rounded-2xl' role='img' aria-label='Port Said Hub'></span>
+    <div class='min-w-0 flex-1'><p class='font-extrabold'>ضيف الموقع على شاشة موبايلك</p><p id='pwa-t' class='text-sm text-white/80'></p></div>
+    <button id='pwa-x' type='button' aria-label='إغلاق' class='w-8 h-8 shrink-0 rounded-xl bg-white/15 grid place-items-center'><i class='fa-solid fa-xmark'></i></button>
+  </div>
+  <button id='pwa-go' type='button' class='hidden mt-3 w-full rounded-2xl bg-sand-400 text-ocean-900 font-extrabold py-2.5'>تثبيت</button>
+</div>
+
+<!-- ========== HERO ========== -->
+<header class="hero-bg waves-pattern text-white">
+  <div class="hdr-deco pointer-events-none absolute inset-0 overflow-hidden hidden 2xl:block" aria-hidden="true"><svg viewBox="0 0 100 220" width="64" height="141" style="left:3rem" fill="currentColor"><path d="M0 70 L38 36 M100 70 L62 36" stroke="currentColor" stroke-width="3" opacity=".6"/><path d="M38 34 Q50 6 62 34Z"/><rect x="40" y="34" width="20" height="18" rx="2"/><rect x="33" y="52" width="34" height="6" rx="2"/><path d="M40 58h20l9 142H31z"/><rect x="20" y="200" width="60" height="16" rx="3"/></svg><svg viewBox="0 0 220 110" width="190" height="95" style="right:3rem" fill="currentColor"><rect x="95" y="4" width="22" height="20"/><rect x="68" y="24" width="76" height="14"/><rect x="46" y="38" width="124" height="16"/><rect x="24" y="54" width="170" height="18"/><path d="M6 72h208l-22 28H30z"/><path d="M0 106c18-8 28 8 46 0s28-8 46 0 28 8 46 0 28-8 46 0 28 8 36 0" fill="none" stroke="currentColor" stroke-width="3"/></svg></div>
+  <nav class="relative z-10 max-w-6xl mx-auto px-4 sm:px-5 py-3 sm:py-4 flex items-center justify-between gap-2 sm:gap-3">
+    <div id="home-link" role="button" tabindex="0" aria-label="الصفحة الرئيسية" class="flex items-center gap-3 min-w-0 font-extrabold cursor-pointer select-none hover:opacity-90 active:scale-95 transition">
+      <span class="brand-logo header-logo w-11 h-11 sm:w-12 sm:h-12 shrink-0" role="img" aria-label="Port Said Hub"></span>
+      <div class="leading-tight min-w-0"><p dir="ltr" class="text-sm min-[400px]:text-base sm:text-lg font-extrabold truncate text-right">Port Said Hub</p><p class="text-[11px] min-[400px]:text-xs sm:text-sm font-semibold text-white/80 truncate">بورسعيد.. المدينة الباسلة</p></div>
+    </div>
+    <div class="hidden md:flex flex-1 items-center justify-center gap-2 lg:gap-3 min-w-0 px-2">
+      <button id="hdr-fb" type="button" class="hdr-act teal"><span class="ic-bub"><i class="fa-solid fa-comment-dots"></i></span>شكاوى واقتراحات</button>
+    </div>
+    <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+      <span id="pts-pill" class="inline-flex items-center gap-1.5 sm:gap-2 bg-white/15 border border-white/30 rounded-full px-3 sm:px-3.5 py-2 font-bold text-sm"><i class="fa-solid fa-star text-sand-400"></i><span id="pts">0</span><span class="hidden sm:inline">نقطة</span></span>
+      <button id="theme-btn" type="button" aria-label="تبديل الوضع الليلي والنهاري" class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white/25 border-2 border-white/60 text-white grid place-items-center hover:bg-white/35 transition shadow-lg"><span class="theme-moon"><i class="fa-solid fa-moon"></i></span><span class="theme-sun"><i class="fa-solid fa-sun"></i></span></button>
+      <div class="relative">
+        <button id="bell-btn" type="button" aria-label="الإشعارات" aria-expanded="false" class="relative w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-white/25 border-2 border-white/60 text-white grid place-items-center hover:bg-white/35 transition shadow-lg"><i class="fa-solid fa-bell"></i><span id="bell-n" class="hidden absolute -top-1.5 -left-1.5 min-w-[1.25rem] h-5 px-1 rounded-full bg-coral-500 text-white text-[11px] font-black grid place-items-center border-2 border-white"></span></button>
+        <div id="bell-panel" class="hidden absolute left-0 top-12 sm:top-14 z-50 w-80 bg-sand-50 text-ocean-900 rounded-2xl shadow-2xl overflow-hidden" style="max-width:calc(100vw - 1.5rem)">
+          <div class="flex items-center justify-between px-4 py-3 border-b border-sand-200"><p class="font-extrabold">الإشعارات</p><button id="bell-all" type="button" class="text-xs font-bold text-teal2-600 hover:underline">تعليم الكل كمقروء</button></div>
+          <div id="bell-list" class="max-h-[60vh] overflow-y-auto"></div>
+        </div>
+      </div>
+      <div class="relative">
+        <button id="user-btn" type="button" aria-label="حسابي" aria-expanded="false" aria-haspopup="true" aria-controls="user-menu" class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-sand-400 text-ocean-900 grid place-items-center hover:bg-sand-200 transition shadow-lg"><i class="fa-solid fa-user"></i></button>
+        <div id="user-menu" class="hidden absolute left-0 top-12 sm:top-14 z-50 w-64 bg-sand-50 text-ocean-900 rounded-2xl shadow-2xl p-4">
+          <div class="flex items-center gap-3 pb-3 border-b border-sand-200">
+            <span id="u-av" class="w-11 h-11 shrink-0 rounded-2xl bg-ocean-100 text-ocean-700 grid place-items-center"><i class="fa-solid fa-user"></i></span>
+            <div class="min-w-0">
+              <p id="u-name" class="font-bold truncate"></p>
+              <p id="u-email" dir="ltr" class="text-sm text-ocean-700/70 truncate text-right"></p>
+              <span id="u-type" class="hidden mt-1 inline-block rounded-full bg-teal2-100 text-teal2-600 text-xs font-bold px-2.5 py-0.5"></span>
+              <span id="u-gov" class="hidden mt-1 ms-1 inline-block rounded-full bg-sand-100 text-ocean-700 text-xs font-bold px-2.5 py-0.5"></span>
+            </div>
+          </div>
+          <button id="m-install" type="button" class="mt-3 w-full rounded-xl bg-sand-100 hover:bg-sand-200 text-ocean-900 font-bold py-2 text-sm transition"><i class="fa-solid fa-mobile-screen-button ml-2 text-teal2-600"></i>ثبّت التطبيق</button>
+          <a id="admin-link" href="admin/" class="hidden mt-3 w-full items-center justify-center gap-2 rounded-2xl bg-ocean-900 text-white font-bold py-2.5 hover:bg-ocean-700 transition"><i class="fa-solid fa-gauge-high"></i> لوحة التحكم</a>
+          <button id="merchant-link" type="button" class="hidden mt-3 w-full items-center justify-center gap-2 rounded-2xl bg-teal2-600 text-white font-bold py-2.5 hover:bg-teal2-500 transition"><i class="fa-solid fa-store"></i> لوحة التاجر</button>
+          <button id="acct-btn" type="button" class="mt-3 w-full flex items-center justify-center gap-2 rounded-2xl bg-sand-100 text-ocean-700 font-bold py-2.5 hover:bg-teal2-100 transition"><i class="fa-solid fa-id-card"></i> معلومات الحساب</button>
+          <button id="logout-btn" type="button" class="mt-3 w-full flex items-center justify-center gap-2 rounded-2xl bg-ocean-100 text-ocean-700 font-bold py-2.5 hover:bg-teal2-100 transition"><i class="fa-solid fa-right-from-bracket"></i> تسجيل الخروج</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="h-6 sm:h-8"></div>
+</header>
+
+<!-- ========== APP (after login) ========== -->
+<main class="max-w-6xl mx-auto px-3 sm:px-5 py-4 sm:py-8 min-h-[60vh]"><div id="view"></div></main>
+
+<section class="max-w-5xl mx-auto px-5 pb-16">
+  <div id="partner" class="rounded-2xl bg-gradient-to-l from-ocean-900 via-ocean-700 to-teal2-600 text-white p-8 sm:p-10 shadow-2xl shadow-ocean-700/30 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-right">
+    <div class="max-w-2xl">
+      <span class="inline-flex items-center gap-1.5 bg-white/15 border border-white/30 rounded-full px-3 py-1 text-xs font-bold mb-2"><i class="fa-solid fa-sparkles text-sand-400"></i> تسجيل فوري — حسابك الخاص جاهز في دقيقة</span>
+      <p class="text-xl sm:text-2xl font-bold leading-loose">عندك مطعم أو كافيه في بورسعيد؟ انضم لشبكة شركائنا ووصل مكانك لآلاف الزوار.</p>
+    </div>
+    <button id="partner-go" type="button" class="shrink-0 inline-flex items-center gap-3 bg-sand-400 text-ocean-900 font-extrabold px-8 py-4 rounded-2xl shadow-xl hover:bg-sand-100 hover:-translate-y-1 transition"><i class="fa-solid fa-store"></i> سجل متجرك</button>
+  </div>
+</section>
+
+<input id="cam" type="file" accept="image/*" capture="environment" class="hidden">
+<input id="menu-file" type="file" accept="image/*" multiple class="hidden">
+<div id="lb" class="hidden fixed inset-0 z-[45] items-center justify-center bg-black/85 p-3 sm:p-6" role="dialog" aria-modal="true" aria-label="عرض الصورة">
+  <button id="lb-close" type="button" aria-label="إغلاق" class="absolute top-3 left-3 sm:top-5 sm:left-5 w-11 h-11 rounded-2xl bg-white/20 text-white grid place-items-center hover:bg-white/30 transition"><i class="fa-solid fa-xmark"></i></button>
+  <button id="lb-prev" type="button" aria-label="السابقة" class="absolute right-2 sm:right-5 top-1/2 -translate-y-1/2 w-11 h-11 rounded-2xl bg-white/20 text-white grid place-items-center hover:bg-white/30 transition"><i class="fa-solid fa-chevron-right"></i></button>
+  <button id="lb-next" type="button" aria-label="التالية" class="absolute left-2 sm:left-5 top-1/2 -translate-y-1/2 w-11 h-11 rounded-2xl bg-white/20 text-white grid place-items-center hover:bg-white/30 transition"><i class="fa-solid fa-chevron-left"></i></button>
+  <figure class="w-full max-w-3xl max-h-full flex flex-col items-center gap-2"><img id="lb-img" alt="" class="max-w-full max-h-[75vh] rounded-2xl object-contain"><figcaption id="lb-cap" class="text-white text-center font-extrabold text-lg px-12"></figcaption><div id="lb-desc" class="hidden w-full max-h-[28vh] overflow-y-auto whitespace-pre-line text-white/90 text-sm sm:text-base leading-loose text-right bg-white/10 rounded-2xl px-4 py-3"></div></figure>
+</div>
+<div id="toast" class="hidden fixed bottom-6 inset-x-0 mx-auto w-fit max-w-[90%] z-40 rounded-2xl bg-ocean-900 text-white px-5 py-3 font-bold shadow-xl text-center"></div>
+
+<!-- ========== شات بوت مساعد بورسعيد ========== -->
+<button id="bot-fab" type="button" aria-label="مساعد بورسعيد" aria-expanded="false" aria-controls="bot-panel" class="chat-fab"><span id="bot-dot" class="dot"></span><i class="fa-solid fa-comment-dots"></i></button>
+<div id="bot-panel" class="chat-panel hidden" role="dialog" aria-modal="false" aria-label="مساعد بورسعيد">
+  <div class="hero-bg waves-pattern text-white p-3.5 flex items-center justify-between gap-2">
+    <div class="flex items-center gap-2 min-w-0"><span class="w-9 h-9 shrink-0 rounded-full bg-white/20 grid place-items-center"><i class="fa-solid fa-robot"></i></span><div class="min-w-0"><p class="font-extrabold text-sm truncate">مساعد بورسعيد</p><p class="text-[11px] text-white/80">بيجاوبك على طول، من غير انتظار</p></div></div>
+    <button id="bot-close" type="button" aria-label="إغلاق" class="w-8 h-8 shrink-0 rounded-xl bg-white/15 grid place-items-center hover:bg-white/25 transition"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div id="bot-body" class="chat-body"></div>
+  <button id="bot-quick-toggle" type="button" class="chat-quick-toggle"><i class="fa-solid fa-chevron-up"></i><span>أسئلة جاهزة</span></button>
+  <div id="bot-quick" class="chat-quick-row"></div>
+  <div class="flex items-center gap-2 p-3 border-t border-sand-200">
+    <input id="bot-in" type="text" placeholder="اكتب سؤالك هنا..." class="flex-1 min-w-0 rounded-full border border-sand-200 bg-sand-50 px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-teal2-500">
+    <button id="bot-send" type="button" aria-label="إرسال" class="w-9 h-9 shrink-0 rounded-full bg-teal2-600 text-white grid place-items-center hover:bg-teal2-500 transition"><i class="fa-solid fa-paper-plane text-sm"></i></button>
+  </div>
+</div>
+<div id="qr-modal" class="hidden fixed inset-0 z-40 items-center justify-center bg-black/60 p-5">
+  <div class="w-full max-w-sm bg-sand-50 rounded-2xl shadow-2xl p-6 text-center pop-in">
+    <p id="qr-disc" class="text-3xl font-extrabold text-coral-500"></p><p id="qr-place" class="text-xl font-extrabold"></p>
+    <p class="text-sm text-ocean-700/80 mb-4">قدّم الكود للمحل عشان يمسحه. صالح لمرة واحدة.</p>
+    <div class="bg-white rounded-2xl p-3 inline-block max-w-full"><img id="qr-img" alt="QR" class="w-56 max-w-full h-auto aspect-square" style="image-rendering:pixelated;background:#fff"></div>
+    <p class="mt-4 font-bold">ينتهي بعد: <span id="qr-left" dir="ltr"></span></p>
+    <button id="qr-close" type="button" class="mt-4 w-full rounded-2xl bg-teal2-600 text-white font-extrabold py-3 hover:bg-teal2-500 transition">تمام</button>
+  </div>
+</div>
+
+<!-- QR: هيتفعّل لاحقًا (الـ modal موجود لكن مفيش زر بيفتحه دلوقتي) -->
+<!-- ========== FOOTER ========== -->
+<footer class="border-t border-sand-200 py-10">
+  <div class="max-w-5xl mx-auto px-5 flex flex-col sm:flex-row items-center justify-between gap-6 text-ocean-700 text-center sm:text-right">
+    <div class="flex flex-col items-center sm:items-start gap-2">
+      <p class="font-semibold">إعداد وتطوير: فريق Alpha Team © 2026</p>
+      <nav aria-label="روابط قانونية" class="flex flex-wrap justify-center sm:justify-start gap-x-4 gap-y-1 text-sm">
+        <a href="legal.html#privacy" target="_blank" rel="noopener" class="underline hover:text-teal2-600">سياسة الخصوصية</a>
+        <a href="legal.html#terms" target="_blank" rel="noopener" class="underline hover:text-teal2-600">شروط الاستخدام</a>
+        <a href="legal.html#disclaimer" target="_blank" rel="noopener" class="underline hover:text-teal2-600">إخلاء المسؤولية</a>
+        <a href="legal.html#points" target="_blank" rel="noopener" class="underline hover:text-teal2-600">سياسة النقاط والخصومات</a>
+        <a href="legal.html#contact" target="_blank" rel="noopener" class="underline hover:text-teal2-600">تواصل معنا</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="https://www.facebook.com/share/1dFYiUcCpv/" target="_blank" rel="noopener noreferrer" aria-label="فيسبوك" class="w-11 h-11 rounded-2xl bg-white shadow-md grid place-items-center hover:bg-ocean-700 hover:text-white hover:-translate-y-1 transition"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/portsaid.hub/" target="_blank" rel="noopener noreferrer" aria-label="إنستجرام" class="w-11 h-11 rounded-2xl bg-white shadow-md grid place-items-center hover:bg-ocean-700 hover:text-white hover:-translate-y-1 transition"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@portsaid.hub" target="_blank" rel="noopener noreferrer" aria-label="تيك توك" class="w-11 h-11 rounded-2xl bg-white shadow-md grid place-items-center hover:bg-ocean-700 hover:text-white hover:-translate-y-1 transition"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  /* ---------- طبقة الاتصال بالـAPI (نفس الدومين، كوكي جلسة HttpOnly + CSRF) ---------- */
+  var csrf = null;
+  function readJson(r) {
+    return r.text().then(function (t) {
+      try { return JSON.parse(t); }
+      catch (e) {
+        if (/document\.cookie|__test|slowAES/i.test(t)) { return { ok: false, error: { code: 'host_check', message: 'الاستضافة بتعمل فحص أمني. حدّث الصفحة (F5) وحاول تاني.' } }; }
+        return { ok: false, error: { code: 'bad_response', message: 'السيرفر رد بشكل غير متوقع (HTTP ' + r.status + '). افتح /api/health.php لتشخيص المشكلة.' } };
+      }
+    });
+  }
+  function call(method, route, body, qs) {
+    var o = { method: method, credentials: 'same-origin', headers: { Accept: 'application/json' } };
+    function go() {
+      if (method !== 'GET') { o.headers['Content-Type'] = 'application/json'; o.headers['X-CSRF-Token'] = csrf; o.body = JSON.stringify(body || {}); }
+      return fetch('api/index.php?r=' + route + (qs || ''), o).then(readJson);
+    }
+    function withToken() {
+      return fetch('api/index.php?r=csrf', { credentials: 'same-origin' }).then(readJson).then(function (j) {
+        if (!j.ok || !j.data) { return j; }
+        csrf = j.data.token; return go();
+      });
+    }
+    var first = (method !== 'GET' && !csrf) ? withToken() : go();
+    return first.then(function (j) { if (!j.ok && j.error && j.error.code === 'csrf' && method !== 'GET') { csrf = null; return withToken(); } return j; });
+  }
+  window.psApi = {
+    get: function (r, qs) { return call('GET', r, null, qs); },
+    post: function (r, b) { return call('POST', r, b).then(function (j) { if (r === 'auth/logout') csrf = null; return j; }); }
+  };
+
+  var CATS = {
+    explore: { t: 'استكشف بورسعيد', i: 'fa-compass', c: 'bg-sand-200 text-ocean-900' },
+    fun:  { t: 'معالم وترفيه', i: 'fa-star', c: 'bg-sand-400 text-ocean-900' },
+    food: { t: 'مطاعم', i: 'fa-utensils', c: 'bg-teal2-600 text-white' },
+    cafe: { t: 'كافيهات', i: 'fa-mug-hot', c: 'bg-ocean-900 text-white' },
+    sweets: { t: 'حلويات', i: 'fa-ice-cream', c: 'bg-coral-500 text-white' },
+    shop: { t: 'تسوق', i: 'fa-bag-shopping', c: 'bg-ocean-500 text-white' },
+    sport: { t: 'رياضة', i: 'fa-dumbbell', c: 'bg-teal2-500 text-white' },
+    housing: { t: 'سكن (شقق)', i: 'fa-bed', c: 'bg-coral-500 text-white' },
+    hotels: { t: 'الأوتيلات والفنادق', i: 'fa-hotel', c: 'bg-coral-500 text-white' },
+    bus:  { t: 'مواصلات', i: 'fa-bus', c: 'bg-ocean-700 text-white' }
+  };
+  var AREAS = ['حي الشرق', 'حي العرب', 'حي الضواحي', 'حي المناخ', 'حي الزهور', 'حي الجنوب', 'حي غرب', 'بورفؤاد'];
+  var PLACES = [], LINES = [], EXPLORE = [], COMM = [], MINE = [], ME = null, V = { v: 'home', a: null }, tick = null;
+  function P(id) { return PLACES.filter(function (p) { return p.id === id; })[0]; }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  var AR_D = '٠١٢٣٤٥٦٧٨٩';
+  function digits(s) { return String(s == null ? '' : s).replace(/[٠-٩]/g, function (d) { return AR_D.indexOf(d); }); }
+  function toast(m) { var t = $('toast'); t.textContent = m; t.classList.remove('hidden'); clearTimeout(toast.t); toast.t = setTimeout(function () { t.classList.add('hidden'); }, 3200); }
+  function back(to) { return '<button data-go="' + to + '" class="mb-5 inline-flex items-center gap-2 font-bold text-ocean-700 hover:text-teal2-600 transition"><i class="fa-solid fa-arrow-right"></i> رجوع</button>'; }
+  function setPts(n) { ME.points = n; $('pts').textContent = n; }
+
+  var IC = {
+    explore: '<circle cx="12" cy="12" r="10"/><path d="m16.2 7.8-1.8 5.4a2 2 0 0 1-1.3 1.3L7.8 16.2l1.8-5.4a2 2 0 0 1 1.3-1.3z"/>',
+    fun: '<path d="M3 22h18M6 18v-7M10 18v-7M14 18v-7M18 18v-7M12 2 3 7h18z"/>',
+    food: '<path d="M3 2v7a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V2M7 2v20M21 15V2a5 5 0 0 0-5 5v6a2 2 0 0 0 2 2h3zm0 0v7"/>',
+    cafe: '<path d="M10 2v2M14 2v2M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1zM17 12h1a3 3 0 0 1 0 6h-1"/>',
+    sweets: '<path d="m7 11 4.1 10.3a1 1 0 0 0 1.8 0L17 11M17 7A5 5 0 0 0 7 7"/><path d="M17 7a2 2 0 0 1 0 4H7a2 2 0 0 1 0-4"/>',
+    shop: '<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0"/>',
+    sport: '<path d="M6 7v10M18 7v10M3 10v4M21 10v4M6 12h12"/>',
+    hotels: '<path d="M10 22v-6.57M12 11h.01M12 7h.01M14 15.43V22M15 16a5 5 0 0 0-6 0M16 11h.01M16 7h.01M8 11h.01M8 7h.01"/><rect x="4" y="2" width="16" height="20" rx="2"/>',
+    housing: '<path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/>',
+    bus: '<path d="M8 6v6M16 6v6M2 12h19.6M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2s-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3M9 18h5"/><circle cx="7" cy="18" r="2"/><circle cx="16" cy="18" r="2"/>'
+  };
+  var TINT = { explore: '#0f6fb8', fun: '#c77d00', food: '#c9391f', cafe: '#7a5230', sweets: '#c93d78', shop: '#13809c', sport: '#2b8a57', housing: '#6f55c4', hotels: '#b0489a', bus: '#1559b7' };
+  function ico(k, sz) { return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="' + (sz || 28) + '" height="' + (sz || 28) + '" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + IC[k] + '</svg>'; }
+  /* لمحة من بورسعيد: فنار + سفينة قناة + موج */
+  var SKY = '<svg viewBox="0 0 400 90" preserveAspectRatio="xMidYMax slice" class="absolute inset-x-0 bottom-0 w-full h-12 sm:h-16 text-white" aria-hidden="true"><path d="M0 70c40-10 60 10 100 0s60-10 100 0 60 10 100 0 70-10 100 0v20H0z" fill="currentColor" opacity=".12"/><path d="M0 80c50-8 70 8 120 0s70-8 120 0 70 8 160 0v10H0z" fill="currentColor" opacity=".18"/><g fill="currentColor" opacity=".35"><path d="M330 20h10l3 40h-16z"/><path d="M328 16h14l-7-9z"/><rect x="326" y="58" width="18" height="6"/><path d="M200 52h70l-8 12h-56zM222 40h22v12h-22zM230 32h6v8h-6z"/></g></svg>';
+  function home() {
+    var btns = Object.keys(CATS).map(function (k, i, arr) {
+      var c = CATS[k], wide = (k === 'bus') ? ' col-span-3' : '', t = TINT[k];
+      return '<button data-go="' + ((k === 'bus' || k === 'housing' || k === 'explore') ? k : 'list:' + k) + '" class="group bg-white' + wide + ' rounded-2xl p-2.5 sm:p-4 text-center min-h-[5.5rem] sm:min-h-[7rem] flex flex-col items-center justify-center gap-2 shadow-md shadow-ocean-700/10 border-b-4 hover:-translate-y-1 hover:shadow-xl transition" style="border-color:' + t + '"><span class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl grid place-items-center" style="background:' + t + '1a;color:' + t + '">' + ico(k, 24) + '</span><span class="text-sm sm:text-base font-extrabold leading-tight text-ocean-900">' + c.t + '</span></button>';
+    }).join('');
+    return '<div class="relative overflow-hidden rounded-2xl hero-bg text-white p-4 sm:p-6 pb-14 sm:pb-16 mb-4 shadow-xl"><div id="hero-slides" class="absolute inset-0" aria-hidden="true"></div><div class="absolute inset-0 bg-gradient-to-t from-ocean-900/70 to-ocean-900/20"></div><h2 class="relative z-10 text-2xl sm:text-3xl font-extrabold">أهلًا يا <span id="hi-name"></span></h2><p class="relative z-10 mt-1 text-lg text-white/90">عايز تروح فين النهاردة؟</p>' + SKY + '</div><div class="grid grid-cols-3 gap-2.5 sm:gap-4">' + btns + '</div>' + memCard() + shareCard() + '<section id="gal" class="mt-5"></section>' + '<div class="mt-4"><button data-go="feedback" class="bg-white rounded-2xl p-3 sm:p-4 shadow-md shadow-ocean-700/10 border-b-4 border-teal2-500 hover:-translate-y-1 hover:shadow-xl transition flex items-center justify-center gap-3 font-extrabold text-ocean-900"><i class="fa-solid fa-comment-dots text-teal2-600 text-xl"></i><span>شكاوى واقتراحات</span></button></div>';
+  }
+  function memCard() {
+    if (!ME || ME.role === 'merchant') return '';
+    return '<button type="button" data-go="memories" class="mt-4 w-full rounded-2xl p-4 text-right text-white flex items-center gap-4 shadow-lg hover:-translate-y-1 transition" style="background:linear-gradient(120deg,#6f55c4,#c9391f)"><span class="w-12 h-12 shrink-0 rounded-2xl bg-white/20 grid place-items-center text-2xl"><i class="fa-solid fa-camera-retro"></i></span><span class="min-w-0"><b class="block text-lg font-extrabold">ذكرياتك في بورسعيد 📸</b><span class="text-sm text-white/90">ارفع الصور اللي صورتها في بورسعيد وشارك لحظاتك.</span></span></button>';
+  }
+  var MEM_ST = { pending: ['قيد المراجعة', 'bg-sand-200 text-ocean-900'], approved: ['اتنشرت', 'bg-teal2-100 text-teal2-600'], rejected: ['مرفوضة', 'bg-red-50 text-red-600'] };
+  function memFile(f) { return 'api/index.php?r=explore/img&f=' + encodeURIComponent(f); }
+  function memories() {
+    var mine = MINE.map(function (x) {
+      var st = MEM_ST[x.s] || MEM_ST.pending;
+      return '<div class="bg-white rounded-2xl shadow-md shadow-ocean-700/5 overflow-hidden"><button type="button" data-lbsrc="' + esc(memFile(x.f)) + '" data-lbcap="' + esc(x.t || '') + '" class="block w-full"><img src="' + esc(x.th || memFile(x.f)) + '" alt="" loading="lazy" class="w-full aspect-[4/3] object-cover"></button><div class="p-3 flex items-center justify-between gap-2"><span class="rounded-full px-3 py-1 text-xs font-bold ' + st[1] + '">' + st[0] + '</span><button type="button" data-act="memdel" data-id="' + esc(x.id) + '" class="text-sm text-red-600 font-bold"><i class="fa-solid fa-trash ml-1"></i>حذف</button></div>' + (x.t ? '<p class="px-3 pb-3 text-sm whitespace-pre-line">' + esc(x.t) + '</p>' : '') + '</div>';
+    }).join('');
+    var wall = COMM.map(function (x) {
+      return '<button type="button" data-lbsrc="' + esc(memFile(x.f)) + '" data-lbcap="' + esc(x.t || 'ذكرى من زائر') + '" class="group relative block overflow-hidden rounded-2xl shadow-md shadow-ocean-700/5 bg-white"><img src="' + esc(x.th || memFile(x.f)) + '" alt="" loading="lazy" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition duration-500">' + (x.t ? '<span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-sm font-bold p-2 text-right">' + esc(x.t) + '</span>' : '') + '</button>';
+    }).join('');
+    return back('home') + '<h2 class="text-2xl sm:text-3xl font-extrabold"><i class="fa-solid fa-camera-retro text-coral-500 ml-2"></i>ذكرياتك</h2><p class="mt-1 text-lg text-ocean-700/80">ارفع صورك من بورسعيد. بتتراجع من الإدارة الأول وبعدين بتظهر للناس.</p>' +
+      '<div class="mt-4 rounded-2xl bg-white p-4 sm:p-5 shadow-md shadow-ocean-700/5 max-w-2xl grid gap-3">' +
+      '<div><label for="mem-file" class="block font-semibold mb-1.5">الصورة</label><input id="mem-file" type="file" accept="image/*" class="w-full rounded-2xl border border-sand-200 bg-white px-4 py-3"><img id="mem-prev" alt="" class="hidden mt-2 w-full max-h-64 object-cover rounded-2xl"></div>' +
+      '<div><label for="mem-cap" class="block font-semibold mb-1.5">تعليق (اختياري)</label><input id="mem-cap" type="text" maxlength="100" placeholder="مثال: غروب على كورنيش بورسعيد" class="w-full rounded-2xl border border-sand-200 bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal2-500"></div>' +
+      '<p id="mem-m" role="status" class="text-sm font-bold text-red-600 min-h-[1.25rem]"></p>' +
+      '<button type="button" data-act="memup" class="w-full bg-coral-500 hover:opacity-90 text-white font-extrabold py-3 rounded-2xl shadow-lg transition"><i class="fa-solid fa-cloud-arrow-up ml-2"></i>ارفع الصورة</button></div>' +
+      (mine ? '<h3 class="mt-8 mb-3 text-xl font-extrabold">صوري</h3><div class="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">' + mine + '</div>' : '') +
+      (wall ? '<h3 class="mt-8 mb-3 text-xl font-extrabold">ذكريات الزوار</h3><div class="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">' + wall + '</div>' : (mine ? '' : '<p class="mt-8 text-ocean-700/80">كن أول واحد يشارك ذكرى من بورسعيد.</p>'));
+  }
+  function memUpload(btn) {
+    var f = $('mem-file').files && $('mem-file').files[0], m = $('mem-m');
+    if (!f) { m.textContent = 'اختار صورة الأول.'; return; }
+    m.textContent = ''; btn.disabled = true;
+    pic(f, function (err, b64) {
+      if (err) { btn.disabled = false; m.textContent = err; return; }
+      window.psApi.post('explore/upload', { image: b64, caption: $('mem-cap').value.trim() }).then(function (r) {
+        btn.disabled = false;
+        if (!r.ok) { m.textContent = r.error.message; return; }
+        toast('الصورة اتبعتت للمراجعة 📸'); loadExplore().then(function () { if (V.v === 'memories') render(); });
+      }).catch(function () { btn.disabled = false; m.textContent = 'مشكلة في الاتصال بالسيرفر.'; });
+    }, 1280);
+  }
+  document.addEventListener('change', function (e) {
+    if (e.target.id !== 'mem-file') return;
+    var pv = $('mem-prev'), f = e.target.files && e.target.files[0];
+    if (!f) { pv.classList.add('hidden'); return; }
+    pv.src = URL.createObjectURL(f); pv.classList.remove('hidden');
+  });
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('[data-lbsrc]'); if (!b) return;
+    lbOne(b.dataset.lbsrc, b.dataset.lbcap || '', '');
+  });
+  function shareCard() {
+    if (!ME || ME.role === 'merchant' || ME.share_claimed || !(ME.share_points > 0)) return '';
+    return '<button type="button" data-act="share" class="mt-4 w-full rounded-2xl p-4 text-right text-white flex items-center gap-4 shadow-lg hover:-translate-y-1 transition" style="background:linear-gradient(120deg,#128c7e,#25d366)"><span class="w-12 h-12 shrink-0 rounded-2xl bg-white/20 grid place-items-center text-2xl"><i class="fa-brands fa-whatsapp"></i></span><span class="min-w-0"><b class="block text-lg font-extrabold">شير واكسب +' + ME.share_points + ' نقطة</b><span class="text-sm text-white/90">شارك الموقع مع صحابك على واتساب وخد نقاطك فورًا (مرة واحدة بس).</span></span></button>';
+  }
+  function doShare() {
+    var url = location.origin + location.pathname.replace(/index\.html$/, '');
+    var txt = 'اكتشف بورسعيد مع Port Said Hub 🌊 أماكن وخصومات ومواصلات ونقاط على كل زيارة: ' + url;
+    window.open('https://wa.me/?text=' + encodeURIComponent(txt), '_blank', 'noopener');
+    window.psApi.post('share/claim', {}).then(function (r) {
+      if (r.ok) { setPts(r.data.balance); ME.share_claimed = true; saveMe(); toast('+' + r.data.points_awarded + ' نقطة 🎉 شكرًا على المشاركة'); }
+      else if (r.error && r.error.code === 'already_shared') { ME.share_claimed = true; saveMe(); }
+      else { toast(r.error.message); return; }
+      if (V.v === 'home') render();
+    }).catch(function () { toast('مشكلة في الاتصال بالسيرفر.'); });
+  }
+  function feedbackView() {
+    return back('home') + '<h2 class="text-2xl sm:text-3xl font-extrabold">شكاوى واقتراحات</h2>' +
+      '<p class="mt-1 text-ocean-700/80">رأيك بيطوّر Port Said Hub. قولنا إيه اللي مضايقك أو إيه اللي نضيفه، وإحنا بنقرا كل رسالة.</p>' +
+      '<div class="mt-5 rounded-2xl bg-white p-4 sm:p-5 shadow-md shadow-ocean-700/5">' +
+      '<div class="grid grid-cols-2 gap-2 p-1 rounded-2xl bg-sand-200" id="fb-kind">' +
+      '<button type="button" data-k="suggestion" class="py-2.5 rounded-xl font-bold transition bg-white shadow text-ocean-700"><i class="fa-solid fa-lightbulb ml-1"></i>اقتراح</button>' +
+      '<button type="button" data-k="complaint" class="py-2.5 rounded-xl font-bold transition text-ocean-700/70"><i class="fa-solid fa-triangle-exclamation ml-1"></i>شكوى</button></div>' +
+      '<label for="fb-msg" class="block font-semibold mt-4 mb-1.5">رسالتك</label>' +
+      '<textarea id="fb-msg" rows="5" maxlength="1000" placeholder="اكتب هنا بالتفصيل..." class="w-full rounded-2xl border border-sand-200 bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal2-500"></textarea>' +
+      '<div class="flex items-center justify-between text-sm text-ocean-700/70 mt-1"><span id="fb-cnt">0 / 1000</span><span>الحد الأدنى 5 حروف</span></div>' +
+      '<p id="fb-m" role="status" class="text-sm font-bold text-red-600 min-h-[1.25rem] mt-2"></p>' +
+      '<button id="fb-go" type="button" class="w-full bg-teal2-600 hover:bg-teal2-500 text-white font-extrabold py-3.5 rounded-2xl shadow-lg transition"><i class="fa-solid fa-paper-plane ml-2"></i>إرسال</button></div>';
+  }
+  function bindFeedback() {
+    var kind = 'suggestion', box = $('fb-kind'), msg = $('fb-msg'), m = $('fb-m');
+    box.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-k]'); if (!b) return; kind = b.dataset.k;
+      box.querySelectorAll('[data-k]').forEach(function (x) { var on = x === b; x.className = 'py-2.5 rounded-xl font-bold transition ' + (on ? 'bg-white shadow text-ocean-700' : 'text-ocean-700/70'); });
+    });
+    msg.addEventListener('input', function () { $('fb-cnt').textContent = msg.value.length + ' / 1000'; });
+    $('fb-go').addEventListener('click', function () {
+      var t = msg.value.trim();
+      if (t.length < 5) { m.textContent = 'اكتب رسالة من 5 حروف على الأقل.'; return; }
+      m.textContent = ''; $('fb-go').disabled = true;
+      window.psApi.post('feedback', { kind: kind, message: t }).then(function (x) {
+        $('fb-go').disabled = false;
+        if (!x.ok) { m.textContent = x.error.message; return; }
+        msg.value = ''; $('fb-cnt').textContent = '0 / 1000';
+        toast(kind === 'complaint' ? 'وصلتنا شكوتك، هنراجعها بأسرع وقت 🙏' : 'شكرًا على اقتراحك 💡 وصلنا وهنفكر فيه');
+      }).catch(function () { $('fb-go').disabled = false; m.textContent = 'مشكلة في الاتصال بالسيرفر، حاول تاني.'; });
+    });
+  }
+  var BIZ_CATS = ['fun', 'food', 'cafe', 'sweets', 'shop', 'sport'];
+  function fld2(id, label, type, ph) {
+    return '<div><label for="' + id + '" class="block font-semibold mb-1.5">' + label + '</label><input id="' + id + '" type="' + (type || 'text') + '"' + (ph ? ' placeholder="' + esc(ph) + '"' : '') + ' class="w-full rounded-2xl border border-sand-200 bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal2-500"></div>';
+  }
+  function partnerView() {
+    if (ME && ME.role === 'merchant') return partnerDashView();
+    var catOpts = BIZ_CATS.map(function (k) { return '<option value="' + k + '">' + CATS[k].t + '</option>'; }).join('') + '<option value="other">أخرى</option>';
+    var areaOpts = AREAS.map(function (a) { return '<option value="' + esc(a) + '">' + esc(a) + '</option>'; }).join('');
+    return back('home') + '<h2 class="text-2xl sm:text-3xl font-extrabold">سجل متجرك</h2>' +
+      '<p class="mt-1 text-ocean-700/80">هيتعمل لمتجرك حساب خاص بيبان للإدارة كـ"حساب تاجر"، وتقدر تتابع منه حالة طلبك وتعدّل عرضك في أي وقت.</p>' +
+      '<div class="mt-5 rounded-2xl bg-white p-4 sm:p-5 shadow-md shadow-ocean-700/5 grid gap-4">' +
+      fld2('pt-biz', 'اسم المتجر', 'text', 'مثال: مطعم سمك البحر') +
+      '<div><label for="pt-cat" class="block font-semibold mb-1.5">نوع النشاط</label><select id="pt-cat" class="w-full rounded-2xl border border-sand-200 bg-white px-4 py-3">' + catOpts + '</select></div>' +
+      '<div id="pt-cat-other-wrap" class="hidden">' + fld2('pt-cat-other', 'اكتب نوع نشاطك', 'text', 'مثال: محل تصوير فوتوغرافي') + '</div>' +
+      '<div><label for="pt-area" class="block font-semibold mb-1.5">المنطقة</label><select id="pt-area" class="w-full rounded-2xl border border-sand-200 bg-white px-4 py-3">' + areaOpts + '</select></div>' +
+      fld2('pt-phone', 'رقم هاتف المتجر', 'tel', '01xxxxxxxxx') +
+      fld2('pt-owner', 'اسمك (صاحب المتجر)', 'text') +
+      fld2('pt-email', 'بريد إلكتروني لتسجيل الدخول', 'email') +
+      fld2('pt-pass', 'كلمة مرور الحساب (8 أحرف على الأقل)', 'password') +
+      '<div class="grid grid-cols-2 gap-3">' + fld2('pt-disc', 'نسبة الخصم للعميل %', 'number') + fld2('pt-comm', 'عمولة فريق Alpha (ج/عميل)', 'number') + '</div>' +
+      fld2('pt-notes', 'أكواد خصم أو ملاحظات (اختياري)', 'text') +
+      fld2('pt-tax', 'الرقم الضريبي', 'text') +
+      '<div><label for="pt-registry" class="block font-semibold mb-1.5">صورة السجل التجاري</label><input id="pt-registry" type="file" accept="image/*" class="w-full rounded-2xl border border-sand-200 bg-white px-4 py-3"><p class="mt-1 text-xs text-ocean-700/60">عشان نتأكد إن المتجر حقيقي قبل ما نوافق على الطلب.</p></div>' +
+      '<p class="text-xs text-ocean-700/60"><i class="fa-solid fa-circle-info ml-1"></i>بالتسجيل، هيتسجّل خروجك من حسابك الحالي وهيتفتحلك حساب التاجر الجديد تلقائيًا.</p>' +
+      '<p id="pt-m" role="status" class="text-sm font-bold text-red-600 min-h-[1.25rem]"></p>' +
+      '<p class="text-xs text-ocean-700/70 text-center">بتسجيل متجرك أنت موافق على <a href="legal.html#terms" target="_blank" rel="noopener" class="underline">شروط الاستخدام</a> و<a href="legal.html#privacy" target="_blank" rel="noopener" class="underline">سياسة الخصوصية</a> وشروط الشركاء فيها.</p>' +
+      '<button id="pt-go" type="button" class="w-full bg-teal2-600 hover:bg-teal2-500 text-white font-extrabold py-3.5 rounded-2xl shadow-lg transition"><i class="fa-solid fa-store ml-2"></i>سجّل متجرك الآن</button></div>';
+  }
+  function mTile(go, ic, label, hint, tint) {
+    return '<button data-go="' + go + '" class="group bg-white rounded-2xl p-3 sm:p-4 text-center min-h-[7rem] flex flex-col items-center justify-center gap-1.5 shadow-md shadow-ocean-700/10 border-b-4 hover:-translate-y-1 hover:shadow-xl transition" style="border-color:' + tint + '"><span class="w-12 h-12 rounded-2xl grid place-items-center text-xl" style="background:' + tint + '1a;color:' + tint + '"><i class="fa-solid ' + ic + '"></i></span><span class="text-base font-extrabold text-ocean-900">' + label + '</span><span class="text-xs text-ocean-700/70 leading-snug">' + hint + '</span></button>';
+  }
+  function partnerDashView() {
+    var sub = V.a, card = ' class="rounded-2xl bg-white p-4 sm:p-5 shadow-md shadow-ocean-700/5"';
+    if (sub === 'offers') return back('partner') + '<h2 class="text-2xl sm:text-3xl font-extrabold mb-4"><i class="fa-solid fa-tags text-coral-500 ml-2"></i>عروضي</h2><div id="po-box"' + card + '></div>';
+    if (sub === 'menu') return back('partner') + '<h2 class="text-2xl sm:text-3xl font-extrabold mb-4"><i class="fa-solid fa-book-open text-teal2-600 ml-2"></i>المنيو</h2><div id="pm-box"' + card + '></div>';
+    if (sub === 'scan') return back('partner') + '<h2 class="text-2xl sm:text-3xl font-extrabold mb-4"><i class="fa-solid fa-qrcode text-coral-500 ml-2"></i>تسوية كوبون</h2><div id="sc-box"' + card + '></div>';
+    if (sub === 'info') return back('partner') + '<h2 class="text-2xl sm:text-3xl font-extrabold mb-4"><i class="fa-solid fa-store text-teal2-600 ml-2"></i>بيانات المتجر</h2><div id="pd-box"' + card + '><p class="text-ocean-700/70">جارٍ التحميل...</p></div>';
+    return '<div class="relative overflow-hidden rounded-2xl text-white p-4 sm:p-6 pb-14 sm:pb-16 mb-4 shadow-xl" style="background:linear-gradient(120deg,#3a2a6d,#5b2a86 45%,#b4542b)">' +
+      '<span class="merch-badge relative z-10"><i class="fa-solid fa-briefcase"></i> حساب تاجر</span>' +
+      '<h2 class="relative z-10 mt-3 text-2xl sm:text-3xl font-extrabold">أهلًا يا <span id="pd-name">صاحب المتجر</span></h2>' +
+      '<p class="relative z-10 mt-1 text-lg text-white/90">إدارة متجرك وعروضك من مكان واحد.</p>' + SKY + '</div>' +
+      '<div id="pd-status" class="mb-4"></div>' +
+      '<div id="pd-stats" class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-4 mb-4"></div>' +
+      '<div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-4">' +
+      mTile('partner:scan', 'fa-qrcode', 'تسوية كوبون', 'صوّر QR العميل واعرف نسبة الخصم', '#e0762b') +
+      mTile('partner:offers', 'fa-tags', 'عروضي', 'انشر عروض بصور وابعتها لكل العملاء', '#c9391f') +
+      mTile('partner:menu', 'fa-book-open', 'المنيو', 'ارفع صفحات المنيو', '#13809c') +
+      mTile('partner:info', 'fa-store', 'بيانات المتجر', 'الخصم والعمولة والمنطقة', '#6f55c4') +
+      mTile('feedback', 'fa-comment-dots', 'شكاوى واقتراحات', 'كلّمنا في أي وقت', '#2b8a57') + '</div>';
+  }
+  var SCAN = { stream: null, t: 0, busy: false };
+  function stopScan() {
+    if (SCAN.t) clearTimeout(SCAN.t); SCAN.t = 0;
+    if (SCAN.stream) { SCAN.stream.getTracks().forEach(function (t) { t.stop(); }); SCAN.stream = null; }
+  }
+  function loadJsQR() {
+    if (window.jsQR || document.getElementById('jsqr-lib')) return;
+    var sc = document.createElement('script'); sc.id = 'jsqr-lib'; sc.src = 'https://cdnjs.cloudflare.com/ajax/libs/jsQR/1.4.0/jsQR.min.js'; document.head.appendChild(sc);
+  }
+  function scanHist() {
+    window.psApi.get('merchant/redemptions').then(function (r) {
+      var b = $('sc-hist'); if (!b || !r.ok) return;
+      b.innerHTML = r.data.items.length ? r.data.items.map(function (x) {
+        var t = ''; try { t = new Date(utc(x.redeemed_at)).toLocaleString('ar-EG', { timeZone: 'Africa/Cairo', day: 'numeric', month: 'numeric', hour: 'numeric', minute: '2-digit' }); } catch (e) {}
+        return '<div class="flex items-center justify-between gap-2 rounded-xl bg-sand-100 border border-sand-200 px-3 py-2 text-sm"><span class="font-extrabold text-coral-500">خصم ' + x.discount + '%</span><span>' + esc(x.customer) + '</span><span class="text-ocean-700/70">' + esc(t) + '</span></div>';
+      }).join('') : '<p class="text-sm text-ocean-700/70">لسه مفيش كوبونات اتسوّت.</p>';
+    });
+  }
+  function scanRedeem(code) {
+    stopScan(); SCAN.busy = true;
+    var v = $('sc-v'); if (v) v.classList.add('hidden');
+    window.psApi.post('coupons/redeem', { payload: code }).then(function (r) {
+      SCAN.busy = false; var res = $('sc-res'); if (!res) return;
+      if (r.ok) {
+        res.innerHTML = '<div class="rounded-2xl bg-teal2-100 text-teal2-600 p-5 text-center mb-3"><i class="fa-solid fa-circle-check text-4xl"></i><p class="mt-2 text-lg font-bold">اتسوّى الكوبون</p><p class="text-5xl font-extrabold text-ocean-900 my-2">خصم ' + r.data.discount + '%</p><p class="font-bold text-ocean-900">اديه للعميل (' + esc(r.data.customer) + ')</p><p class="text-sm">' + esc(r.data.place) + '</p></div>';
+        toast('اتسوّى الكوبون: خصم ' + r.data.discount + '%'); scanHist();
+      } else {
+        res.innerHTML = '<div class="rounded-2xl bg-red-50 text-red-600 p-4 text-center font-bold mb-3"><i class="fa-solid fa-circle-xmark ml-1"></i>' + esc(r.error.message) + '</div>';
+      }
+      var st = $('sc-start'); if (st) st.textContent = 'مسح كوبون تاني';
+    }).catch(function () { SCAN.busy = false; var res = $('sc-res'); if (res) res.innerHTML = '<p class="text-red-600 font-bold">مشكلة في الاتصال بالسيرفر.</p>'; });
+  }
+  function startScan() {
+    var res = $('sc-res'); res.innerHTML = ''; stopScan();
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) { res.innerHTML = '<p class="text-red-600 font-bold">المتصفح مش بيدعم الكاميرا. اكتب الكود يدويًا تحت.</p>'; return; }
+    navigator.mediaDevices.getUserMedia({ video: { facingMode: { ideal: 'environment' } }, audio: false }).then(function (st) {
+      var v = $('sc-v'); if (!v) { st.getTracks().forEach(function (t) { t.stop(); }); return; }
+      SCAN.stream = st; v.srcObject = st; v.classList.remove('hidden'); v.play().catch(function () {});
+      var det = ('BarcodeDetector' in window) ? new BarcodeDetector({ formats: ['qr_code'] }) : null;
+      if (!det) loadJsQR();
+      var cv = document.createElement('canvas'), cx = cv.getContext('2d', { willReadFrequently: true });
+      function found(txt) { if (SCAN.busy) return; if (/^PSC\./.test(txt)) scanRedeem(txt); }
+      function loop() {
+        if (!SCAN.stream) return;
+        if (v.readyState >= 2 && !SCAN.busy) {
+          if (det) { det.detect(v).then(function (a) { if (a && a[0]) found(a[0].rawValue); }).catch(function () {}); }
+          else if (window.jsQR && v.videoWidth) {
+            var k = Math.min(1, 480 / v.videoWidth); cv.width = Math.round(v.videoWidth * k); cv.height = Math.round(v.videoHeight * k);
+            cx.drawImage(v, 0, 0, cv.width, cv.height);
+            var d = cx.getImageData(0, 0, cv.width, cv.height), q = window.jsQR(d.data, d.width, d.height);
+            if (q && q.data) found(q.data);
+          }
+        }
+        SCAN.t = setTimeout(loop, 250);
+      }
+      loop();
+    }).catch(function () { res.innerHTML = '<p class="text-red-600 font-bold">مقدرتش أفتح الكاميرا. اسمح بالكاميرا للموقع من إعدادات المتصفح، أو اكتب الكود يدويًا تحت.</p>'; });
+  }
+  function loadScan() {
+    var box = $('sc-box'); if (!box) return;
+    box.innerHTML = '<p class="text-sm text-ocean-700/80">وجّه الكاميرا على كود الـQR اللي مع العميل. أول ما يتمسح هتشوف نسبة الخصم وتديها للعميل، والعملية بتتسجّل عند الإدارة.</p>' +
+      '<div id="sc-res" class="mt-3"></div>' +
+      '<video id="sc-v" playsinline muted class="hidden w-full max-w-sm mx-auto aspect-square object-cover rounded-2xl bg-black"></video>' +
+      '<button id="sc-start" type="button" class="mt-3 w-full bg-coral-500 hover:opacity-90 text-white font-extrabold py-3 rounded-2xl shadow-lg transition"><i class="fa-solid fa-camera ml-2"></i>افتح الكاميرا وامسح الكود</button>' +
+      '<div class="mt-4 grid gap-2"><label for="sc-code" class="font-semibold">أو اكتب/الصق كود الكوبون</label><input id="sc-code" type="text" dir="ltr" placeholder="PSC...." class="w-full rounded-2xl border border-sand-200 bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal2-500"><button id="sc-manual" type="button" class="rounded-2xl bg-teal2-600 text-white font-extrabold py-3">تسوية بالكود</button></div>' +
+      '<p class="mt-6 font-extrabold">آخر الكوبونات اللي اتسوّت</p><div id="sc-hist" class="mt-2 grid gap-2"></div>';
+    $('sc-start').addEventListener('click', startScan);
+    $('sc-manual').addEventListener('click', function () { var c = $('sc-code').value.trim(); if (!c) { $('sc-res').innerHTML = '<p class="text-red-600 font-bold">اكتب الكود الأول.</p>'; return; } scanRedeem(c); });
+    scanHist();
+  }
+  function loadMerchantHome() {
+    window.psApi.get('partners/me').then(function (r) {
+      if (!r.ok || V.v !== 'partner' || V.a || !$('pd-name')) return;
+      var a = r.data.application, m;
+      $('pd-name').textContent = a.business_name;
+      if (a.status === 'approved') m = a.place_linked ? ['bg-teal2-100 text-teal2-600', 'fa-circle-check', 'مكانك ظاهر دلوقتي للعملاء في الموقع، وعروضك بتوصلهم.'] : ['bg-sand-100 text-ocean-900', 'fa-hourglass-half', 'متوافَق على متجرك. الإدارة هتربطه بمكانه في الموقع قريب، وبعدها عروضك تظهر للعملاء.'];
+      else if (a.status === 'rejected') m = ['bg-red-50 text-red-600', 'fa-circle-exclamation', a.admin_note || 'طلبك مرفوض حاليًا. عدّل بيانات المتجر وابعته تاني.'];
+      else m = ['bg-sand-100 text-ocean-900', 'fa-hourglass-half', 'طلبك قيد المراجعة من الإدارة.'];
+      $('pd-status').innerHTML = '<div class="rounded-2xl ' + m[0] + ' px-4 py-3 font-bold flex items-center gap-3"><i class="fa-solid ' + m[1] + ' text-xl"></i><span>' + esc(m[2]) + '</span></div>';
+    });
+    window.psApi.get('merchant/stats').then(function (r) {
+      var box = $('pd-stats'); if (!r.ok || !box) return; var d = r.data;
+      function st(n, l, ic) { return '<div class="bg-white rounded-2xl p-3 sm:p-4 shadow-md shadow-ocean-700/5 text-center"><i class="fa-solid ' + ic + ' text-ocean-700/60"></i><p class="text-2xl font-extrabold mt-1">' + n + '</p><p class="text-xs sm:text-sm text-ocean-700/80">' + l + '</p></div>'; }
+      box.innerHTML = st(d.visits_7d, 'زيارات آخر 7 أيام', 'fa-shoe-prints') + st(d.visits_total, 'إجمالي الزيارات', 'fa-location-dot') + st(d.coupons_redeemed, 'كوبونات اتصرفت', 'fa-ticket') + st(d.offers, 'عروض شغالة', 'fa-tags');
+    });
+  }
+  var PSTAT_U = { pending: ['قيد المراجعة', 'bg-sand-100 text-ocean-900'], approved: ['متوافَق عليه ✓', 'bg-teal2-100 text-teal2-600'], rejected: ['مرفوض حاليًا', 'bg-red-50 text-red-600'] };
+  function bindPartner() {
+    if (ME && ME.role === 'merchant') { var sb = V.a; if (sb === 'offers') loadOffersAdmin(); else if (sb === 'menu') loadMenuAdmin(); else if (sb === 'scan') loadScan(); else if (sb === 'info') loadPartnerDash(); else loadMerchantHome(); return; }
+    var m = $('pt-m');
+    var ptCat = $('pt-cat'); if (ptCat) ptCat.addEventListener('change', function () { $('pt-cat-other-wrap').classList.toggle('hidden', this.value !== 'other'); });
+    $('pt-go').addEventListener('click', function () {
+      var disc = parseInt($('pt-disc').value, 10), comm = parseFloat($('pt-comm').value);
+      if (!$('pt-biz').value.trim() || $('pt-biz').value.trim().length < 2) { m.textContent = 'اكتب اسم المتجر.'; return; }
+      if ($('pt-cat').value === 'other' && !$('pt-cat-other').value.trim()) { m.textContent = 'اكتب نوع نشاطك.'; return; }
+      if (!$('pt-owner').value.trim()) { m.textContent = 'اكتب اسمك.'; return; }
+      if (!$('pt-email').value.trim()) { m.textContent = 'اكتب بريد إلكتروني لتسجيل الدخول.'; return; }
+      if (($('pt-pass').value || '').length < 8) { m.textContent = 'كلمة المرور لازم تكون 8 أحرف على الأقل.'; return; }
+      if (isNaN(disc) || disc < 0 || disc > 100) { m.textContent = 'نسبة الخصم لازم تكون رقم من 0 إلى 100.'; return; }
+      if (isNaN(comm) || comm < 0) { m.textContent = 'اكتب قيمة العمولة.'; return; }
+      if (!$('pt-tax').value.trim()) { m.textContent = 'اكتب الرقم الضريبي.'; return; }
+      if (!($('pt-registry').files && $('pt-registry').files[0])) { m.textContent = 'ارفع صورة السجل التجاري.'; return; }
+      m.textContent = ''; $('pt-go').disabled = true;
+      pic($('pt-registry').files[0], function (ferr, b64) {
+        if (ferr) { $('pt-go').disabled = false; m.textContent = ferr; return; }
+        window.psApi.post('partners/apply', {
+          name: $('pt-owner').value.trim(), email: $('pt-email').value.trim(), password: $('pt-pass').value, phone: digits($('pt-phone').value).trim(),
+          business_name: $('pt-biz').value.trim(), category: $('pt-cat').value, business_type_other: $('pt-cat').value === 'other' ? $('pt-cat-other').value.trim() : '',
+          area: $('pt-area').value, discount: disc, commission: comm, notes: $('pt-notes').value.trim(), tax_number: $('pt-tax').value.trim(), commercial_registry: b64
+        }).then(function (r) {
+          $('pt-go').disabled = false;
+          if (!r.ok) { m.textContent = r.error.message; return; }
+          ME = r.data.user; try { sessionStorage.setItem('ps_user', JSON.stringify(ME)); } catch (e) {}
+          $('pts').textContent = ME.points; window.psPaint(ME);
+          toast('تم إنشاء حساب متجرك 🎉 وصلنا طلبك وهنراجعه قريب');
+          go('partner');
+        }).catch(function () { $('pt-go').disabled = false; m.textContent = 'مشكلة في الاتصال بالسيرفر، حاول تاني.'; });
+      }, 1600);
+    });
+  }
+  function loadPartnerDash() {
+    window.psApi.get('partners/me').then(function (r) {
+      var box = $('pd-box'); if (!box) return;
+      if (!r.ok) { box.innerHTML = '<p class="text-red-600 font-bold">' + esc(r.error.message) + '</p>'; return; }
+      var a = r.data.application, st = PSTAT_U[a.status] || [a.status, ''];
+      box.innerHTML = '<div class="flex items-center justify-between gap-3 flex-wrap"><h3 class="text-xl font-extrabold">' + esc(a.business_name) + '</h3><span class="rounded-full px-3 py-1 text-sm font-bold ' + st[1] + '">' + st[0] + '</span></div>' +
+        (a.status === 'rejected' && a.admin_note ? '<p class="mt-2 text-sm text-red-600"><i class="fa-solid fa-circle-exclamation ml-1"></i>' + esc(a.admin_note) + '</p>' : '') +
+        (a.status === 'approved' ? '<p class="mt-2 text-sm text-teal2-600 font-bold">' + (a.place_linked ? '<i class="fa-solid fa-circle-check ml-1"></i>مكانك ظاهر دلوقتي في الموقع.' : '<i class="fa-solid fa-hourglass-half ml-1"></i>الإدارة هتربط مكانك في الموقع قريب.') + '</p>' : '') +
+        '<div class="mt-4 grid gap-4">' +
+        fld2('pd-biz', 'اسم المتجر', 'text') + fld2('pd-area', 'المنطقة', 'text') +
+        '<div class="grid grid-cols-2 gap-3">' + fld2('pd-disc', 'نسبة الخصم للعميل %', 'number') + fld2('pd-comm', 'عمولة فريق Alpha (ج/عميل)', 'number') + '</div>' +
+        fld2('pd-notes', 'أكواد خصم أو ملاحظات', 'text') +
+        '<div class="rounded-2xl border border-sand-200 bg-sand-50 p-3"><p class="font-bold text-sm">موقع المتجر على الخريطة</p><p id="pd-loc" class="text-xs text-ocean-700/70 my-1">' + (a.lat ? 'الموقع محفوظ ✓ (ممكن تحدّثه).' : 'لسه ما اتحددش. المكان هيظهر مؤقتًا في وسط بورسعيد.') + '</p><button id="pd-gps" type="button" class="rounded-xl bg-white border border-sand-200 font-bold text-sm px-3 py-2"><i class="fa-solid fa-location-crosshairs ml-1"></i>حدد موقع المتجر (اضغط وإنت في المحل)</button></div>' +
+        '<p class="text-xs text-ocean-700/60">أي تعديل هيرجّع الطلب للمراجعة من الإدارة تاني.</p>' +
+        '<p id="pd-m" role="status" class="text-sm font-bold text-red-600 min-h-[1.25rem]"></p>' +
+        '<button id="pd-go" type="button" class="w-full bg-teal2-600 hover:bg-teal2-500 text-white font-extrabold py-3 rounded-2xl shadow-lg transition">حفظ التعديلات</button></div>';
+      $('pd-biz').value = a.business_name; $('pd-area').value = a.area; $('pd-disc').value = a.discount; $('pd-comm').value = a.commission; $('pd-notes').value = a.notes || '';
+      var PDLOC = null;
+      $('pd-gps').addEventListener('click', function () {
+        if (!navigator.geolocation) { $('pd-loc').textContent = 'المتصفح مش بيدعم تحديد الموقع.'; return; }
+        $('pd-loc').textContent = 'بحدد موقعك...';
+        navigator.geolocation.getCurrentPosition(function (pos) { PDLOC = { lat: pos.coords.latitude, lon: pos.coords.longitude }; $('pd-loc').textContent = 'تم تحديد الموقع ✓ — اضغط "حفظ التعديلات" عشان يتسجّل.'; },
+          function () { $('pd-loc').textContent = 'مقدرتش أحدد موقعك. فعّل الموقع واسمح للمتصفح.'; }, { enableHighAccuracy: true, timeout: 15000 });
+      });
+      $('pd-go').addEventListener('click', function () {
+        var disc = parseInt($('pd-disc').value, 10), comm = parseFloat($('pd-comm').value), m = $('pd-m');
+        if (isNaN(disc) || disc < 0 || disc > 100) { m.textContent = 'نسبة الخصم لازم تكون رقم من 0 إلى 100.'; return; }
+        if (isNaN(comm) || comm < 0) { m.textContent = 'اكتب قيمة العمولة.'; return; }
+        m.textContent = ''; this.disabled = true;
+        var body = { business_name: $('pd-biz').value.trim(), area: $('pd-area').value.trim(), discount: disc, commission: comm, notes: $('pd-notes').value.trim() }; if (PDLOC) { body.lat = PDLOC.lat; body.lon = PDLOC.lon; }
+        window.psApi.post('partners/update', body).then(function (x) {
+          $('pd-go').disabled = false;
+          if (!x.ok) { m.textContent = x.error.message; return; }
+          toast('تم حفظ التعديلات'); loadPartnerDash();
+        });
+      });
+    });
+  }
+  function logoSrc(p) { return 'api/index.php?r=place/logo&id=' + encodeURIComponent(p.id) + '&v=' + p.lg; }
+  function list(k) {
+    var cards = PLACES.filter(function (p) { return p.cat === k; }).map(function (p) {
+      return '<button data-go="place:' + esc(p.id) + '" class="bg-white rounded-2xl p-3 sm:p-4 text-right shadow-md shadow-ocean-700/5 hover:shadow-xl hover:-translate-y-1 transition">' + (p.lg ? '<img src="' + logoSrc(p) + '" alt="" loading="lazy" class="w-12 h-12 rounded-xl object-cover bg-white border border-sand-200">' : '<span class="w-9 h-9 rounded-xl grid place-items-center" style="background:' + TINT[k] + '1a;color:' + TINT[k] + '">' + ico(k, 22) + '</span>') + '<p class="mt-2 text-base font-extrabold leading-snug">' + esc(p.n) + '</p><p class="text-sm text-ocean-700/80">' + esc(areaTxt(p.a)) + '</p></button>';
+    }).join('');
+    return back('home') + '<h2 class="text-2xl sm:text-3xl font-extrabold">' + CATS[k].t + '</h2>' + (k === 'hotels' ? '<p class="mt-1 text-ocean-700/80">للي جاي يقضي يوم أو أسبوع في بورسعيد.</p>' : '') + '<div class="mt-4 grid grid-cols-2 lg:grid-cols-3 gap-3">' + (cards || '<p class="text-ocean-700/80">مفيش أماكن لسه.</p>') + '</div>';
+  }
+  function areaTxt(a) { return String(a).replace(/^\s*حي\s+/, '').trim() === 'بورسعيد' ? 'بورسعيد' : 'بورسعيد · ' + a; }
+  function norm(s) { return String(s == null ? '' : s).replace(/^\s*حي\s+/, '').trim(); }
+  function housing() {
+    return back('home') + '<h2 class="text-2xl sm:text-3xl font-extrabold">سكن (شقق)</h2>' +
+      '<div class="mt-6 rounded-2xl bg-white shadow-md shadow-ocean-700/5 p-8 text-center max-w-xl"><span class="w-16 h-16 mx-auto rounded-2xl grid place-items-center bg-sand-100 text-ocean-700 text-3xl"><i class="fa-solid fa-hourglass-half"></i></span>' +
+      '<p class="mt-4 text-xl font-extrabold">المحتوى جاي قريب</p><p class="mt-2 text-ocean-700/80">لسه بنخطط للقسم ده، وهنضيف فيه شقق السكن قريب جدًا.</p>' +
+      '<button data-go="list:hotels" class="mt-5 inline-flex items-center gap-2 rounded-2xl bg-teal2-600 text-white font-extrabold px-5 py-3 hover:bg-teal2-500 transition"><i class="fa-solid fa-hotel"></i>شوف الأوتيلات والفنادق</button></div>';
+  }
+  function exploreSrc(f) { f = String(f); if (f.indexOf('users/') === 0) { return 'api/index.php?r=explore/img&f=' + encodeURIComponent(f.slice(6)); } return 'assets/explore/' + String(f).split('/').map(encodeURIComponent).join('/'); }
+  function exploreItemSrc(x) { return x.has_img ? 'api/index.php?r=explore/item-img&id=' + encodeURIComponent(x.id) + (x.iv ? '&v=' + x.iv : '') : exploreSrc(x.f); }
+  function setExplore(r) { if (r && r.ok) { EXPLORE = r.data.items || []; COMM = r.data.community || []; MINE = r.data.mine || []; } }
+  function loadExplore() { return window.psApi.get('explore').then(setExplore); }
+  /* كل صور "أهم اللقطات": اللي ضفتها أنت + صور الزوار المقبولة */
+  function allImgs() {
+    return EXPLORE.filter(function (x) { return x.kind === 'image'; });
+  }
+  function explore() {
+    var vids = EXPLORE.filter(function (x) { return x.kind === 'video'; }), imgs = allImgs();
+    var vh = vids.map(function (x) {
+      return '<div class="bg-white rounded-2xl shadow-md shadow-ocean-700/5 overflow-hidden"><video controls preload="metadata" playsinline class="w-full aspect-video bg-black" src="' + esc(exploreSrc(x.f)) + '"></video><div class="p-5"><p class="text-lg font-extrabold">' + esc(x.t) + '</p>' + (x.d ? '<p class="mt-1 text-sm text-ocean-700/80">' + esc(x.d) + '</p>' : '') + '</div></div>';
+    }).join('');
+    var ih = imgs.map(function (x, i) {
+      return '<button data-act="img" data-i="' + i + '" class="group relative block overflow-hidden rounded-2xl shadow-md shadow-ocean-700/5 bg-white text-right" aria-label="' + esc(x.t) + '"><img src="' + esc(x.th || exploreItemSrc(x)) + '" alt="' + esc(x.t) + '" loading="lazy" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition duration-500"><span class="absolute inset-x-0 bottom-0 p-3 pt-8 bg-gradient-to-t from-black/70 to-transparent text-white font-bold text-sm">' + esc(x.t) + '</span></button>';
+    }).join('');
+    return back('home') + '<h2 class="text-2xl sm:text-3xl font-extrabold">استكشف بورسعيد</h2><p class="mt-1 text-lg text-ocean-700/80">تعرّف على بورسعيد وشوف أهم اللقطات السياحية.</p>' +
+      (vids.length || imgs.length ? '' : '<p class="mt-8 text-ocean-700/80">المحتوى جاي قريب.</p>') +
+      (vh ? '<h3 class="mt-8 mb-4 text-xl font-extrabold"><i class="fa-solid fa-circle-play text-coral-500 ml-2"></i>تعريف بسيط ببورسعيد</h3><div class="grid md:grid-cols-2 gap-4">' + vh + '</div>' : '') +
+      (ih ? '<h3 class="mt-10 mb-4 text-xl font-extrabold"><i class="fa-solid fa-camera-retro text-teal2-600 ml-2"></i>أهم اللقطات</h3><div class="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">' + ih + '</div>' : '');
+  }
+  var LB = { i: 0 };
+  function lbDesc(d) { var e = $('lb-desc'); e.textContent = d || ''; e.scrollTop = 0; e.classList.toggle('hidden', !d); $('lb-img').style.maxHeight = d ? '48vh' : ''; }
+  function lbOne(src, cap, desc) {
+    LB.menu = false; $('lb-img').src = src; $('lb-img').alt = cap || ''; $('lb-cap').textContent = cap || ''; lbDesc(desc);
+    $('lb-prev').style.display = 'none'; $('lb-next').style.display = 'none';
+    $('lb').classList.remove('hidden'); $('lb').classList.add('flex');
+  }
+  function lbImgs() { return allImgs(); }
+  function lbShow(i) {
+    LB.menu = false; var l = lbImgs(); if (!l.length) return;
+    $('lb-prev').style.display = ''; $('lb-next').style.display = '';
+    LB.i = (i + l.length) % l.length;
+    var it = l[LB.i], k = LB.i; $('lb-img').src = it.th || exploreItemSrc(it); $('lb-img').alt = it.t;
+    if (it.id && String(it.f || '').indexOf('users/') === 0) { window.psApi.get('explore/photo', '&id=' + encodeURIComponent(it.id)).then(function (r) { if (r.ok && r.data && r.data.src && LB.i === k) { $('lb-img').src = r.data.src; } }).catch(function () {}); }
+    $('lb-cap').textContent = l[LB.i].t || ''; lbDesc(l[LB.i].d);
+    $('lb').classList.remove('hidden'); $('lb').classList.add('flex');
+  }
+  function lbClose() { LB.menu = false; lbDesc(''); $('lb').classList.add('hidden'); $('lb').classList.remove('flex'); $('lb-img').removeAttribute('src'); }
+  $('lb-close').addEventListener('click', lbClose);
+  $('lb-prev').addEventListener('click', function (e) { e.stopPropagation(); if (LB.menu) menuShow(MENU.i - 1); else lbShow(LB.i - 1); });
+  $('lb-next').addEventListener('click', function (e) { e.stopPropagation(); if (LB.menu) menuShow(MENU.i + 1); else lbShow(LB.i + 1); });
+  $('lb').addEventListener('click', function (e) { if (e.target === this) lbClose(); });
+  document.addEventListener('keydown', function (e) {
+    if ($('lb').classList.contains('hidden')) return;
+    if (e.key === 'Escape') lbClose(); else if (e.key === 'ArrowRight') { LB.menu ? menuShow(MENU.i - 1) : lbShow(LB.i - 1); } else if (e.key === 'ArrowLeft') { LB.menu ? menuShow(MENU.i + 1) : lbShow(LB.i + 1); }
+  });
+  /* خطوط المواصلات من تجارب الطلبة (غير رسمية). كل خط = المحطات اللي بيعدّي عليها */
+  var HOME_STOP = 'المعدية / السكن الجامعي';
+  var NET = {
+    'الأمين': ['المعدية / السكن الجامعي', 'قصر الثقافة', 'كلية التكنولوجيا والحقوق', 'بنك الإسكان', 'السلام', 'قسم الضواحي', 'الحريتين', 'شارع التلاتيني', 'المنشية'],
+    'الزهور': ['قصر الثقافة', 'كلية الطب والعلاج الطبيعي', 'كلية الصيدلة', 'شارع النصر', 'الزهور', 'عمر بن عبد العزيز'],
+    'الـ 5000': ['المعدية / السكن الجامعي', 'كلية التربية النوعية', 'حي العرب', 'حي المناخ', 'التعاونيات', 'منطقة الـ 5000'],
+    'التلاتيني': ['منطقة الـ 5000', 'شارع الجمهورية'],
+    'السلام': ['حي العرب', 'شارع أسوان', 'فاطمة الزهراء', 'نفيسة'],
+    'أسوان': ['كلية الطب والعلاج الطبيعي', 'قصر الثقافة', 'شارع أسوان']
+  };
+  var NOTE = { 'الزهور|كلية الطب والعلاج الطبيعي': 'انزل عند عجوة جنب الكلية على طول', 'الـ 5000|كلية التربية النوعية': 'انزل قدام الكلية بالظبط', 'الأمين|كلية التكنولوجيا والحقوق': 'انزل قدام الكلية (ولو رايح الصيدلة: انزل هنا وامشي لحد الكلية)' };
+  /* اتجاهات مش بتتركب (حسب كلام الطلبة): الرجوع من الطب بأسوان، والذهاب بالزهور */
+  var BAN = { 'الزهور|كلية الطب والعلاج الطبيعي>قصر الثقافة': 1, 'أسوان|قصر الثقافة>كلية الطب والعلاج الطبيعي': 1 };
+  var AREA_STOP = { 'العرب': 'حي العرب', 'المناخ': 'حي المناخ', 'الزهور': 'الزهور', 'الضواحي': 'قسم الضواحي' };
+  var STOPS = (function () { var o = [], seen = {}; Object.keys(NET).forEach(function (l) { NET[l].forEach(function (x) { if (!seen[x]) { seen[x] = 1; o.push(x); } }); }); return o; })();
+  function plan(a, b) {
+    if (a === b) return [];
+    var q = [{ s: a, path: [], used: {} }], seen = {}; seen[a] = 1;
+    while (q.length) {
+      var cur = q.shift();
+      for (var l in NET) {
+        if (cur.used[l] || NET[l].indexOf(cur.s) < 0) continue;
+        for (var i = 0; i < NET[l].length; i++) {
+          var t = NET[l][i]; if (t === cur.s || BAN[l + '|' + cur.s + '>' + t]) continue;
+          var np = cur.path.concat([{ l: l, f: cur.s, t: t }]);
+          if (t === b) return np;
+          if (!seen[t]) { seen[t] = 1; var u = {}; for (var k in cur.used) u[k] = 1; u[l] = 1; q.push({ s: t, path: np, used: u }); }
+        }
+      }
+    }
+    return null;
+  }
+  function planHtml(a, b) {
+    var r = plan(a, b);
+    if (a === b) return '<p class="text-ocean-700/80">انت أصلًا في نفس المكان.</p>';
+    if (!r) return '<p class="text-ocean-700/80">مفيش مسار متاح بين النقطتين دول لسه. اسأل السواق أو زمايلك.</p>';
+    var legs = r.map(function (x, i) {
+      var n = NOTE[x.l + '|' + x.t], nx = r[i + 1];
+      /* قصر الثقافة: السواق بيقف عنده بالظبط. لو الرحلة بتخلص هنا مفيش تغيير، ولو هتكمّل بخط تاني: انزل واركب الخط ده من برّه */
+      if (x.t === 'قصر الثقافة') n = (nx && nx.f === x.t) ? 'انزل واركب ' + nx.l + ' من برّه' : '';
+      return '<li class="relative pe-0 ps-0 flex gap-3"><span class="flex flex-col items-center"><span class="w-9 h-9 shrink-0 rounded-full bg-teal2-600 text-white grid place-items-center font-extrabold">' + (i + 1) + '</span>' + (i < r.length - 1 ? '<span class="flex-1 w-0.5 bg-sand-200 my-1"></span>' : '') + '</span><div class="pb-5 min-w-0"><p class="font-extrabold">اركب خط <span class="rounded-lg bg-ocean-900 text-white px-2 py-0.5 text-base">' + esc(x.l) + '</span></p><p class="text-ocean-700/80">من ' + esc(x.f) + '</p><p class="font-bold">وانزل عند ' + esc(x.t) + '</p>' + (n ? '<p class="mt-1 text-sm font-bold text-coral-500"><i class="fa-solid fa-circle-info ml-1"></i>' + esc(n) + '</p>' : '') + '</div></li>';
+    }).join('');
+    return '<p class="mb-4 inline-flex items-center gap-2 rounded-full bg-teal2-100 text-teal2-600 font-bold text-sm px-3 py-1">' + (r.length === 1 ? 'رحلة مباشرة' : 'تغيير ' + (r.length - 1) + ' مرة') + '</p><ol>' + legs + '</ol>';
+  }
+  function stopOpts(sel) { return STOPS.map(function (x) { return '<option' + (x === sel ? ' selected' : '') + '>' + esc(x) + '</option>'; }).join(''); }
+  var SEL = 'w-full rounded-2xl border border-sand-200 bg-white px-3 py-2.5 text-base font-bold focus:outline-none focus:ring-2 focus:ring-teal2-500';
+  function transport() {
+    var chips = ['كلية الطب والعلاج الطبيعي', 'كلية التكنولوجيا والحقوق', 'كلية التربية النوعية', 'كلية الصيدلة'].map(function (x) { return '<button type="button" data-chip="' + esc(x) + '" class="rounded-full bg-white border border-sand-200 text-ocean-700 font-bold text-sm px-4 py-2 hover:bg-teal2-100 transition">' + esc(x.replace('كلية ', '')) + '</button>'; }).join('');
+    return back('home') + '<h2 class="text-2xl sm:text-3xl font-extrabold">مواصلات</h2><p class="mt-1 text-ocean-700/80">اختار رايح منين ولفين، وهنقولك تركب إيه. المسارات من تجارب الطلبة.</p>' +
+      '<div class="mt-4 max-w-3xl rounded-2xl bg-white shadow-xl p-4 sm:p-5"><div class="grid min-[480px]:grid-cols-[1fr_auto_1fr] gap-2 items-end"><div><label class="block text-sm font-bold text-ocean-700 mb-1" for="tp-from">من</label><select id="tp-from" class="' + SEL + '">' + stopOpts(HOME_STOP) + '</select></div>' +
+      '<button id="tp-swap" type="button" aria-label="اعكس الاتجاه" class="mx-auto w-10 h-10 rounded-full bg-sand-100 text-ocean-700 grid place-items-center hover:bg-sand-200 transition"><i class="fa-solid fa-arrow-right-arrow-left min-[480px]:rotate-0 rotate-90"></i></button>' +
+      '<div><label class="block text-sm font-bold text-ocean-700 mb-1" for="tp-to">إلى</label><select id="tp-to" class="' + SEL + '">' + stopOpts('كلية الطب والعلاج الطبيعي') + '</select></div></div>' +
+      '<p class="mt-3 text-sm font-bold text-ocean-700">اختصارات من السكن الجامعي</p><div class="mt-2 flex flex-wrap gap-2">' + chips + '</div></div>' +
+      '<div id="tp-out" class="mt-3 max-w-3xl rounded-2xl bg-white shadow-md p-5 sm:p-6"></div>';
+  }
+  function bindTransport() {
+    var f = $('tp-from'), t = $('tp-to'), o = $('tp-out');
+    function run() { o.innerHTML = planHtml(f.value, t.value); }
+    f.addEventListener('change', run); t.addEventListener('change', run);
+    $('tp-swap').addEventListener('click', function () { var x = f.value; f.value = t.value; t.value = x; run(); });
+    document.querySelectorAll('[data-chip]').forEach(function (b) { b.addEventListener('click', function () { f.value = HOME_STOP; t.value = b.dataset.chip; run(); }); });
+    run();
+  }
+  function placeRoute(p) {
+    var st = AREA_STOP[String(p.a).replace(/^\s*حي\s+/, '').trim()], q = encodeURIComponent(p.n + ' بورسعيد');
+    var gm = '<a href="https://www.google.com/maps/dir/?api=1&destination=' + q + '&travelmode=transit" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 rounded-2xl bg-ocean-900 text-white font-bold px-4 py-2.5 hover:bg-ocean-700 transition"><i class="fa-solid fa-diamond-turn-right"></i>الاتجاهات من موقعك على خرائط جوجل</a>';
+    if (!st) return '<p class="text-ocean-700/80">افتح الاتجاهات على خرائط جوجل من مكانك الحالي، ولو محتاج خط معين شوف صفحة المواصلات.</p>' + gm + '<button data-go="bus" class="mt-3 block font-bold text-teal2-600 hover:underline"><i class="fa-solid fa-bus ml-1"></i>صفحة المواصلات</button>';
+    return '<label class="block text-sm font-bold text-ocean-700 mb-1" for="pr-from">هتطلع من</label><select id="pr-from" class="' + SEL + '">' + stopOpts(HOME_STOP) + '</select><div id="pr-out" class="mt-4"></div><p class="text-sm text-ocean-700/80">وبعد النزول عند «' + esc(st) + '» كمّل مشي أو تاكسي لحد المكان.</p>' + gm;
+  }
+  function bindPlace(p) {
+    var f = $('pr-from'); if (!f) return;
+    var st = AREA_STOP[String(p.a).replace(/^\s*حي\s+/, '').trim()];
+    function run() { $('pr-out').innerHTML = planHtml(f.value, st); }
+    f.addEventListener('change', run); run();
+  }
+  function place(id) {
+    var p = P(id);
+    return back('list:' + p.cat) + '<div class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 max-w-2xl"><span class="inline-block rounded-full bg-ocean-900 text-white text-sm font-bold px-4 py-1.5">' + CATS[p.cat].t + '</span>' + (p.lg ? '<img src="' + logoSrc(p) + '" alt="' + esc(p.n) + '" class="mt-4 w-24 h-24 rounded-2xl object-cover bg-white border border-sand-200 shadow-md">' : '') + '<h2 class="mt-4 text-2xl sm:text-3xl font-extrabold">' + esc(p.n) + '</h2><p class="text-ocean-700/80">' + esc(areaTxt(p.a)) + '</p>' + (p.ds ? '<p class="mt-3 whitespace-pre-line">' + esc(p.ds) + '</p>' : '') +
+      '<div class="mt-5 grid grid-cols-1 min-[420px]:grid-cols-2 gap-3"><a href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(p.n + ' بورسعيد') + '" target="_blank" rel="noopener noreferrer" class="rounded-2xl bg-sand-400 text-ocean-900 font-extrabold text-center py-3.5 hover:bg-sand-200 transition">اعرض على الخريطة</a><button data-act="route" class="btn-outline rounded-2xl font-extrabold py-3.5 transition">أروح إزاي؟</button></div>' +
+      (p.cat === 'food' || p.cat === 'cafe' || p.cat === 'sweets' ? '<a href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(p.n + ' بورسعيد') + '" target="_blank" rel="noopener noreferrer" class="mt-3 flex items-center justify-center gap-2 rounded-2xl bg-white border border-sand-200 text-ocean-900 font-bold py-3 hover:bg-sand-50 transition"><i class="fa-solid fa-images text-teal2-600"></i>صور وتقييمات المكان على جوجل ماب</a>' : '') +
+      '<div id="route" class="mt-4 rounded-2xl border border-sand-200 bg-sand-50 p-5"><p class="font-extrabold text-teal2-600 mb-3">أروح إزاي؟</p>' + placeRoute(p) + '</div>' +
+      (p.cat === 'fun' ? '<div class="mt-4 rounded-2xl border border-sand-200 bg-sand-50 p-5"><p class="font-extrabold">زيارة المكان</p><p class="text-sm text-ocean-700/80 mb-3">صوّر صورة من الموقع مباشرة، والنقاط (' + p.p + ' نقطة) بتتحسب بس لو إنت في المكان فعلًا أو جنبه جدًا، فلازم تفعّل الموقع.</p><button data-act="checkin" ' + (p.visited ? 'disabled' : '') + ' class="w-full rounded-2xl bg-sand-400 text-ocean-900 font-extrabold py-3 hover:bg-sand-200 transition disabled:opacity-60"><i class="fa-solid fa-camera ml-2"></i>' + (p.visited ? 'اتسجلت زيارتك النهاردة' : 'صوّر وسجّل زيارتك') + '</button></div>' : '') +
+      (['food', 'cafe', 'sweets', 'shop', 'sport'].indexOf(p.cat) > -1 ? '<div class="mt-4 rounded-2xl border border-sand-200 bg-sand-50 p-5"><p class="font-extrabold">زرت المكان ده؟</p><p class="text-sm text-ocean-700/80 mb-3">اضغط عشان نسجّل إنك زرت المكان. مفيش نقاط على ده، بس بيساعدنا نعرف المكان بيتزار قد إيه.</p><button data-act="vconfirm" ' + (p.visited ? 'disabled' : '') + ' class="w-full rounded-2xl bg-teal2-600 text-white font-extrabold py-3 hover:bg-teal2-500 transition disabled:opacity-60"><i class="fa-solid fa-circle-check ml-2"></i>' + (p.visited ? 'اتسجلت زيارتك النهاردة' : 'زرت المكان') + '</button></div>' : '') +
+      discountCard(p) +
+      '<div id="px"></div><div id="rv" class="mt-6 border-t border-sand-200 pt-5"></div></div>';
+  }
+  function discountCard(p) {
+    if (!(p.disc > 0) || p.cat === 'housing' || p.cat === 'hotels' || p.cat === 'bus') return '';
+    var cost = p.cost > 0 ? p.cost + ' نقطة من رصيدك' : 'مجانًا';
+    return '<div class="mt-4 rounded-2xl border-2 border-coral-500/50 bg-white p-5"><p class="font-extrabold text-lg"><i class="fa-solid fa-ticket text-coral-500 ml-2"></i>خصم ' + p.disc + '% في المكان ده</p>' +
+      '<p class="text-sm text-ocean-700/80 mt-1 mb-3">اضغط الزر وهيطلعلك كود QR بنسبة الخصم، والتاجر يمسحه من حسابه. ' + (p.coupon ? 'عندك كود شغال دلوقتي.' : 'هيتخصم ' + cost + '.') + '</p>' +
+      '<button data-act="qr" class="w-full rounded-2xl bg-coral-500 text-white font-extrabold py-3 hover:opacity-90 transition"><i class="fa-solid fa-qrcode ml-2"></i>' + (p.coupon ? 'اعرض كود الخصم' : 'احصل على خصم ' + p.disc + '% (' + (p.cost > 0 ? p.cost + ' نقطة' : 'مجانًا') + ')') + '</button></div>';
+  }
+  /* الاسم في الترحيب: اسم واحد على الموبايل، اسمين على الشاشات الأوسع */
+  function shortName(full) {
+    var t = String(full || '').trim().split(/\s+/).filter(Boolean);
+    if (!t.length) return 'صديقي';
+    var glue = ['عبد', 'عبدال', 'ابو', 'أبو', 'ام', 'أم', 'ابن', 'بن'];
+    var names = [];
+    for (var i = 0; i < t.length; i++) {
+      var w = t[i];
+      while (glue.indexOf(w) > -1 && i + 1 < t.length) { w += ' ' + t[++i]; }
+      names.push(w);
+    }
+    var n = (window.innerWidth >= 768 && names.length > 1) ? 2 : 1;
+    return names.slice(0, n).join(' ');
+  }
+  function paintHi() { var n = $('hi-name'); if (n) { n.textContent = shortName($('u-name').textContent); } }
+  window.addEventListener('resize', function () { clearTimeout(paintHi.t); paintHi.t = setTimeout(paintHi, 150); });
+  /* ===== الصور والتوثيق ===== */
+  function meU() { var u = {}; try { u = JSON.parse(sessionStorage.getItem('ps_user') || '{}'); } catch (e) {} return u; }
+  function isVer() { var u = meU(); return !!(u.email_verified || (ME && ME.email_verified)); }
+  function vb(v) { return v ? ' <i class="fa-solid fa-circle-check text-sky-500" title="حساب موثّق" aria-label="حساب موثّق"></i>' : ''; }
+  function verifyNudge() {
+    var u = meU(); if (!u.email || isVer()) return '';
+    return '<button data-go="account" class="mt-4 w-full rounded-2xl bg-sky-50 border border-sky-200 text-ocean-900 px-4 py-3 text-right flex items-center gap-3 hover:bg-sky-100 transition"><i class="fa-solid fa-circle-check text-sky-500 text-2xl"></i><span class="text-sm"><b class="block text-base">وثّق بريدك واحصل على العلامة الزرقاء</b>بتظهر جنب اسمك في التقييمات وبتخلي حسابك موثوق.</span></button>';
+  }
+  var GAL = null, galP = null;
+  function ensureGal() {
+    if (GAL) return Promise.resolve(GAL);
+    if (!galP) galP = window.psApi.get('gallery', '').then(function (r) { GAL = { hero: (r.ok && r.data && r.data.hero) || [], gallery: (r.ok && r.data && r.data.gallery) || [] }; return GAL; }).catch(function () { GAL = { hero: [], gallery: [] }; return GAL; });
+    return galP;
+  }
+  function paintGallery() {
+    clearInterval(window._heroT);
+    ensureGal().then(function (g) {
+      var hs = $('hero-slides'); if (!hs || V.v !== 'home') return;
+      if (g.hero.length) {
+        hs.innerHTML = g.hero.map(function (h, i) { return '<img src="' + esc(h.src) + '" alt="" decoding="async"' + (i ? ' loading="lazy"' : '') + ' class="absolute inset-0 w-full h-full object-cover transition-opacity duration-[1800ms]" style="opacity:' + (i ? 0 : .6) + '">'; }).join('');
+        var k = 0, im = hs.children;
+        if (im.length > 1 && !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) {
+          window._heroT = setInterval(function () { if (document.hidden || V.v !== 'home') return; im[k].style.opacity = 0; k = (k + 1) % im.length; im[k].style.opacity = .6; }, 6500);
+        }
+      }
+      var gb = $('gal');
+      if (gb && g.gallery.length) {
+        gb.innerHTML = '<h3 class="mb-2 text-lg font-extrabold"><i class="fa-solid fa-image text-teal2-600 ml-2"></i>لمحات من بورسعيد</h3><div class="relative"><div id="gal-row" data-n="' + g.gallery.length + '" class="flex gap-2.5 overflow-x-auto pb-2 -mx-3 px-3" style="scrollbar-width:none">' + g.gallery.concat(g.gallery).map(function (x, k) { var i = k % g.gallery.length;
+          return '<button type="button" data-gal="' + i + '"' + (k >= g.gallery.length ? ' aria-hidden="true" tabindex="-1"' : '') + ' class="relative shrink-0 w-36 sm:w-48 aspect-[4/3] rounded-2xl overflow-hidden shadow-md"><img src="' + esc(x.src) + '" alt="' + esc(x.cap || 'بورسعيد') + '" loading="lazy" decoding="async" class="w-full h-full object-cover">' + (x.cap ? '<span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs font-bold p-2 text-right">' + esc(x.cap) + '</span>' : '') + '</button>';
+        }).join('') + '</div>' +
+          '<button type="button" data-galnav="1" aria-label="السابق" class="hidden sm:grid absolute right-1 top-[40%] -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 text-ocean-900 shadow-lg place-items-center hover:bg-white"><i class="fa-solid fa-chevron-right"></i></button>' +
+          '<button type="button" data-galnav="-1" aria-label="التالي" class="hidden sm:grid absolute left-1 top-[40%] -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 text-ocean-900 shadow-lg place-items-center hover:bg-white"><i class="fa-solid fa-chevron-left"></i></button></div>';
+      }
+    });
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('[data-gal]'); if (!b || !GAL) return;
+    var x = GAL.gallery[+b.dataset.gal]; if (!x) return;
+    lbOne(x.src, x.cap || '', '');
+  });
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('[data-oimg]'); if (!b) return;
+    lbOne(offerSrc(b.dataset.oimg), b.dataset.ot || '', b.dataset.ob || '');
+  });
+  /* حركة اللمحات: بتمشي باستمرار وبهدوء (حوالي 40px في الثانية) ومن غير ما تقطع، وبتقف لما العميل يلمسها أو يحوم عليها. */
+  var GALP = 0, GALH = false, GALS = { el: null, p: null, last: 0 };
+  (function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function inRow(e) { return e.target.closest && e.target.closest('#gal-row'); }
+    function pause(ms) { GALP = Date.now() + ms; }
+    ['pointerdown', 'touchstart', 'wheel'].forEach(function (ev) { document.addEventListener(ev, function (e) { if (inRow(e)) pause(3500); }, { passive: true, capture: true }); });
+    document.addEventListener('touchend', function (e) { if (inRow(e)) pause(2500); }, { passive: true, capture: true });
+    document.addEventListener('mouseover', function (e) { GALH = !!inRow(e); }, { passive: true });
+    document.addEventListener('mouseout', function (e) { if (inRow(e)) pause(800); }, { passive: true });
+    function frame(ts) {
+      requestAnimationFrame(frame);
+      var row = $('gal-row');
+      if (!row || reduce || document.hidden || V.v !== 'home') { GALS.last = 0; return; }
+      var dt = GALS.last ? Math.min(64, ts - GALS.last) : 0; GALS.last = ts;
+      var n = +row.dataset.n || 0;
+      if (n < 1 || row.children.length < 2 * n || row.scrollWidth <= row.clientWidth + 8) return;
+      if (GALH || Date.now() < GALP) { GALS.p = null; return; }
+      var rtl = getComputedStyle(row).direction === 'rtl';
+      if (GALS.el !== row || GALS.p == null) { GALS.el = row; GALS.p = Math.abs(row.scrollLeft); }
+      var period = Math.abs(row.children[n].offsetLeft - row.children[0].offsetLeft);
+      if (!(period > 0)) return;
+      GALS.p += dt * 0.04;
+      if (GALS.p >= period) GALS.p -= period;
+      row.scrollLeft = rtl ? -GALS.p : GALS.p;
+    }
+    requestAnimationFrame(frame);
+  })();
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('[data-galnav]'); if (!b) return;
+    GALP = Date.now() + 2500; var row = $('gal-row'); if (row) row.scrollBy({ left: (+b.dataset.galnav) * Math.max(160, row.clientWidth * 0.8), behavior: 'smooth' });
+  });
+  function stars(n) { var o = ''; for (var i = 1; i <= 5; i++) { o += '<i class="fa-solid fa-star ' + (i <= Math.round(n) ? 'text-sand-400' : 'text-sand-200') + '"></i>'; } return o; }
+  function loadReviews(p) {
+    if (!$('rv')) return;
+    window.psApi.get('reviews', '&place=' + encodeURIComponent(p.id)).then(function (r) {
+      var box = $('rv'); if (!box || !r.ok) return;
+      var d = r.data, my = d.mine || { r: 0, c: '' }, val = my.r;
+      var list = d.items.map(function (x) {
+        return '<div class="rounded-2xl bg-sand-50 border border-sand-200 p-3"><div class="flex items-center justify-between gap-2"><p class="font-bold">' + esc(x.n) + vb(x.v) + (x.mine ? ' <span class="text-xs rounded-full bg-teal2-100 text-teal2-600 px-2 py-0.5">تقييمك</span>' : '') + '</p><span class="text-xs shrink-0" dir="ltr">' + stars(x.r) + '</span></div>' + (x.c ? '<p class="mt-1 text-sm">' + esc(x.c) + '</p>' : '') + '<p class="mt-1 text-xs text-ocean-700/60">' + esc(x.d) + '</p></div>';
+      }).join('');
+      box.innerHTML = '<p class="font-extrabold text-lg"><i class="fa-solid fa-comments text-teal2-600 ml-2"></i>التقييمات</p>' +
+        (d.count ? '<p class="mt-1 mb-3 text-sm"><span dir="ltr">' + stars(d.avg) + '</span> <b>' + d.avg + '</b> من 5 · ' + d.count + ' تقييم</p>' : '<p class="mt-1 mb-3 text-sm text-ocean-700/80">لسه مفيش تقييمات، كن أول واحد يقيّم.</p>') +
+        '<div class="rounded-2xl border border-sand-200 p-3 mb-4"><p class="text-sm font-bold mb-1">' + (d.mine ? 'عدّل تقييمك' : 'قيّم المكان واكتب رأيك') + '</p><div id="rv-st" class="flex gap-1 text-2xl" dir="ltr"></div>' +
+        '<textarea id="rv-c" rows="2" maxlength="300" placeholder="اكتب تعليقك (اختياري)" class="mt-2 w-full rounded-2xl border border-sand-200 bg-white px-3 py-2 text-base focus:outline-none focus:ring-2 focus:ring-teal2-500">' + esc(my.c || '') + '</textarea>' +
+        '<p id="rv-m" role="status" class="text-sm font-bold text-red-600 min-h-[1.25rem]"></p><div class="flex gap-2"><button id="rv-go" type="button" class="flex-1 rounded-2xl bg-teal2-600 text-white font-extrabold py-2.5 hover:bg-teal2-500 transition">نشر</button>' + (d.mine ? '<button id="rv-del" type="button" class="rounded-2xl bg-sand-100 text-ocean-700 font-bold px-4 hover:bg-sand-200 transition">حذف</button>' : '') + '</div></div>' +
+        '<div class="grid gap-3">' + list + '</div>';
+      function paint() { $('rv-st').innerHTML = [1, 2, 3, 4, 5].map(function (i) { return '<button type="button" data-v="' + i + '" aria-label="' + i + ' نجوم" class="' + (i <= val ? 'text-sand-400' : 'text-sand-200') + '"><i class="fa-solid fa-star"></i></button>'; }).join(''); }
+      paint();
+      $('rv-st').addEventListener('click', function (e) { var b = e.target.closest('[data-v]'); if (b) { val = +b.dataset.v; paint(); } });
+      $('rv-go').addEventListener('click', function () {
+        var m = $('rv-m'); if (!val) { m.textContent = 'اختار عدد النجوم الأول.'; return; }
+        this.disabled = true;
+        window.psApi.post('reviews', { place_id: p.id, rating: val, comment: $('rv-c').value.trim() }).then(function (x) {
+          if (!x.ok) { m.textContent = x.error.message; $('rv-go').disabled = false; return; }
+          toast('تم نشر تقييمك'); loadReviews(p);
+        });
+      });
+      var dl = $('rv-del'); if (dl) dl.addEventListener('click', function () { if (!confirm('تحذف تقييمك؟')) return; window.psApi.post('reviews/delete', { place_id: p.id }).then(function () { loadReviews(p); }); });
+    });
+  }
+
+  /* ===== منيو المحل + العروض (صفحة المكان) ===== */
+  var MENU = { list: [], i: 0 };
+  function offerSrc(id) { return 'api/index.php?r=offer/img&id=' + encodeURIComponent(id); }
+  function menuSrc(id) { return 'api/index.php?r=menu/img&id=' + encodeURIComponent(id); }
+  function loadExtras(p) {
+    window.psApi.get('place/extras', '&place=' + encodeURIComponent(p.id)).then(function (r) {
+      var box = $('px'); if (!box || !r.ok || V.a !== p.id) return;
+      var d = r.data, h = '';
+      if (d.offers.length) {
+        h += '<div class="mt-5"><p class="font-extrabold text-lg"><i class="fa-solid fa-tags text-coral-500 ml-2"></i>العروض الحالية</p><div class="mt-2 grid gap-2">' + d.offers.map(function (o) {
+          return '<div class="rounded-2xl bg-sand-100 border border-sand-200 overflow-hidden">' + (o.img ? '<button type="button" data-oimg="' + esc(o.id) + '" data-ot="' + esc(o.t) + '" data-ob="' + esc(o.b) + '" class="block w-full" aria-label="كبّر صورة العرض"><img src="' + offerSrc(o.id) + '" alt="" loading="lazy" class="w-full max-h-64 object-cover"></button>' : '') + '<div class="p-3"><p class="font-extrabold">' + esc(o.t) + '</p><p class="text-sm mt-1 whitespace-pre-line">' + esc(o.b) + '</p></div></div>';
+        }).join('') + '</div></div>';
+      }
+      if (d.menu.length) {
+        MENU.list = d.menu;
+        h += '<div class="mt-5"><p class="font-extrabold text-lg"><i class="fa-solid fa-utensils text-teal2-600 ml-2"></i>المنيو</p><div class="mt-2 grid grid-cols-2 sm:grid-cols-3 gap-2">' + d.menu.map(function (m, i) {
+          return '<button type="button" data-menu="' + i + '" class="block overflow-hidden rounded-2xl bg-white border border-sand-200" aria-label="' + esc(m.c || 'صفحة منيو') + '"><img src="' + menuSrc(m.id) + '" alt="' + esc(m.c || 'منيو') + '" loading="lazy" class="w-full aspect-[3/4] object-cover"></button>';
+        }).join('') + '</div></div>';
+      }
+      box.innerHTML = h;
+    });
+  }
+  function menuShow(i) {
+    var l = MENU.list; if (!l.length) return;
+    MENU.i = (i + l.length) % l.length; LB.menu = true;
+    $('lb-prev').style.display = l.length > 1 ? '' : 'none'; $('lb-next').style.display = l.length > 1 ? '' : 'none';
+    $('lb-img').src = menuSrc(l[MENU.i].id); $('lb-img').alt = l[MENU.i].c || 'منيو'; $('lb-cap').textContent = l[MENU.i].c || ('صفحة ' + (MENU.i + 1) + ' من ' + l.length); lbDesc('');
+    $('lb').classList.remove('hidden'); $('lb').classList.add('flex');
+  }
+  document.addEventListener('click', function (e) { var b = e.target.closest && e.target.closest('[data-menu]'); if (b) menuShow(+b.dataset.menu); });
+  /* تأكيد زيارة محل/مطعم (من غير نقاط) */
+  function confirmVisit(p, btn) {
+    btn.disabled = true;
+    function send(pos) {
+      var body = { place_id: p.id };
+      if (pos) { body.lat = pos.coords.latitude; body.lon = pos.coords.longitude; body.acc = Math.round(pos.coords.accuracy || 0); }
+      window.psApi.post('visits/confirm', body).then(function (r) {
+        if (!r.ok) { toast(r.error.message); if (r.error.code === 'already_visited') { p.visited = true; render(); } else { btn.disabled = false; } return; }
+        p.visited = true; toast('تمام، سجّلنا زيارتك ✅'); render();
+      }).catch(function () { btn.disabled = false; toast('مشكلة في الاتصال بالسيرفر، حاول تاني.'); });
+    }
+    if (!navigator.geolocation) { send(null); return; }
+    navigator.geolocation.getCurrentPosition(send, function () { send(null); }, { enableHighAccuracy: true, timeout: 7000, maximumAge: 30000 });
+  }
+  /* ===== الإشعارات (الجرس) ===== */
+  var NT = { items: [], unread: 0, seen: 0 };
+  function paintBell() { var n = $('bell-n'); if (!n) return; n.textContent = NT.unread > 9 ? '9+' : String(NT.unread); n.classList.toggle('hidden', !NT.unread); }
+  function ago(ts) {
+    var m = Math.max(0, Math.floor((Date.now() - utc(ts)) / 60000));
+    return m < 1 ? 'دلوقتي' : m < 60 ? 'من ' + m + ' دقيقة' : m < 1440 ? 'من ' + Math.floor(m / 60) + ' ساعة' : 'من ' + Math.floor(m / 1440) + ' يوم';
+  }
+  function pollNotifs(quiet) {
+    return window.psApi.get('notifications').then(function (r) {
+      if (!r.ok) return;
+      if (!quiet && r.data.unread > NT.unread && NT.seen) { toast('وصلك إشعار جديد 🔔'); }
+      NT.items = r.data.items; NT.unread = r.data.unread; NT.seen = 1; paintBell();
+      if (!$('bell-panel').classList.contains('hidden')) renderBell();
+    }).catch(function () {});
+  }
+  function renderBell() {
+    var l = $('bell-list');
+    l.innerHTML = NT.items.length ? NT.items.map(function (n) {
+      var tag = n.kind === 'offer' ? '<span class="rounded-full bg-coral-500 text-white text-[10px] font-bold px-2 py-0.5 ml-1">عرض</span>' : '<span class="rounded-full bg-ocean-900 text-white text-[10px] font-bold px-2 py-0.5 ml-1">الإدارة</span>';
+      return '<button type="button" data-nid="' + esc(n.id) + '"' + (n.place_id ? ' data-place="' + esc(n.place_id) + '"' : '') + ' class="w-full text-right px-4 py-3 border-b border-sand-200 hover:bg-sand-100 transition ' + (n.read ? '' : 'bg-ocean-100') + '">' + tag + '<span class="font-extrabold text-sm">' + esc(n.t) + '</span><span class="block text-sm mt-1 whitespace-pre-line">' + esc(n.b) + '</span><span class="block text-xs text-ocean-700/60 mt-1">' + ago(n.ts) + '</span></button>';
+    }).join('') : '<p class="p-5 text-center text-ocean-700/80">مفيش إشعارات لسه.</p>';
+  }
+  function openBell() {
+    var pn = $('bell-panel'); renderBell(); pn.classList.remove('hidden', 'drop-in'); void pn.offsetWidth; pn.classList.add('drop-in'); $('bell-btn').setAttribute('aria-expanded', 'true');
+    if (NT.unread) { window.psApi.post('notifications/read', { all: true }).then(function () { NT.unread = 0; paintBell(); }); }
+  }
+  function closeBell() { $('bell-panel').classList.add('hidden'); $('bell-btn').setAttribute('aria-expanded', 'false'); }
+  $('bell-btn').addEventListener('click', function (e) { e.stopPropagation(); $('bell-panel').classList.contains('hidden') ? openBell() : closeBell(); });
+  $('bell-all').addEventListener('click', function () { window.psApi.post('notifications/read', { all: true }).then(function () { NT.unread = 0; NT.items.forEach(function (n) { n.read = true; }); paintBell(); renderBell(); }); });
+  $('bell-list').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-nid]'); if (!b) return;
+    var pid = b.dataset.place; closeBell();
+    if (pid && P(pid) && !(ME && ME.role === 'merchant')) go('place', pid);
+  });
+  document.addEventListener('click', function (e) { if (!$('bell-panel').contains(e.target) && e.target.closest && !e.target.closest('#bell-btn')) closeBell(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeBell(); });
+  setInterval(function () { if (!document.hidden && ME) pollNotifs(false); }, 60000);
+
+  /* ===== حساب التاجر: المنيو + العروض ===== */
+  function loadMenuAdmin() {
+    var box = $('pm-box'); if (!box) return;
+    window.psApi.get('merchant/menu').then(function (r) {
+      if (!r.ok) { box.innerHTML = '<p class="text-red-600 font-bold">' + esc(r.error.message) + '</p>'; return; }
+      var d = r.data;
+      box.innerHTML = '<h3 class="text-xl font-extrabold"><i class="fa-solid fa-book-open text-teal2-600 ml-2"></i>منيو المتجر</h3>' +
+        '<p class="mt-1 text-sm text-ocean-700/80">ارفع صور المنيو (حتى ' + d.max + ' صفحة) وهتظهر للعملاء في صفحة مكانك' + (d.live ? '.' : ' أول ما الإدارة توافق على متجرك وتربطه بمكانه.') + '</p>' +
+        '<div class="mt-3 grid grid-cols-2 sm:grid-cols-3 gap-2">' + d.items.map(function (m) {
+          return '<div class="relative rounded-2xl overflow-hidden bg-sand-100"><img src="' + menuSrc(m.id) + '" alt="" loading="lazy" class="w-full aspect-[3/4] object-cover"><button type="button" data-mdel="' + esc(m.id) + '" aria-label="حذف" class="absolute top-1.5 left-1.5 w-8 h-8 rounded-full bg-coral-500 text-white grid place-items-center shadow"><i class="fa-solid fa-trash text-xs"></i></button></div>';
+        }).join('') + '</div>' +
+        '<p id="pm-m" role="status" class="mt-2 text-sm font-bold text-red-600 min-h-[1.25rem]"></p>' +
+        '<button id="pm-add" type="button" ' + (d.items.length >= d.max ? 'disabled' : '') + ' class="w-full bg-teal2-600 hover:bg-teal2-500 text-white font-extrabold py-3 rounded-2xl shadow-lg transition disabled:opacity-60"><i class="fa-solid fa-image ml-2"></i>ارفع صور المنيو</button>';
+      $('pm-add').addEventListener('click', function () { $('menu-file').click(); });
+      box.querySelectorAll('[data-mdel]').forEach(function (b) { b.addEventListener('click', function () {
+        if (!confirm('تحذف الصفحة دي من المنيو؟')) return;
+        window.psApi.post('merchant/menu/delete', { id: b.dataset.mdel }).then(function (x) { if (!x.ok) toast(x.error.message); loadMenuAdmin(); });
+      }); });
+    });
+  }
+  $('menu-file').addEventListener('change', function () {
+    var files = Array.prototype.slice.call(this.files || []); this.value = '';
+    var m = $('pm-m'); if (!files.length || !m) return;
+    var i = 0;
+    function next() {
+      if (i >= files.length) { loadMenuAdmin(); return; }
+      m.className = 'mt-2 text-sm font-bold text-ocean-700 min-h-[1.25rem]'; m.textContent = 'جارٍ رفع الصورة ' + (i + 1) + ' من ' + files.length + '...';
+      pic(files[i], function (err, b64) {
+        if (err) { m.className = 'mt-2 text-sm font-bold text-red-600'; m.textContent = err; return; }
+        window.psApi.post('merchant/menu/add', { image: b64 }).then(function (x) {
+          if (!x.ok) { toast(x.error.message); loadMenuAdmin(); return; }
+          i++; next();
+        }).catch(function () { m.className = 'mt-2 text-sm font-bold text-red-600'; m.textContent = 'مشكلة في الاتصال بالسيرفر، حاول تاني.'; });
+      }, 1600);
+    }
+    next();
+  });
+  function loadOffersAdmin() {
+    var box = $('po-box'); if (!box) return;
+    window.psApi.get('merchant/offers').then(function (r) {
+      if (!r.ok) { box.innerHTML = '<p class="text-red-600 font-bold">' + esc(r.error.message) + '</p>'; return; }
+      var d = r.data, inpCls = 'w-full rounded-2xl border border-sand-200 bg-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal2-500';
+      box.innerHTML = '<p class="text-sm text-ocean-700/80">أي عرض تنزّله بيوصل كإشعار لكل العملاء وبيظهر في صفحة مكانك، وتقدر تضيف له صورة.' + (d.live ? '' : ' (بيتفعّل بعد موافقة الإدارة وربط متجرك بمكانه.)') + '</p>' +
+        (d.live ? '<div class="mt-3 grid gap-3 rounded-2xl border border-sand-200 bg-sand-50 p-3 sm:p-4"><p class="font-extrabold">عرض جديد</p>' + fld2('of-t', 'عنوان العرض', 'text', 'مثال: خصم 20% على الوجبات العائلية') +
+          '<div><label for="of-b" class="block font-semibold mb-1.5">تفاصيل العرض</label><textarea id="of-b" rows="3" maxlength="500" class="' + inpCls + '"></textarea></div>' +
+          '<div><label for="of-img" class="block font-semibold mb-1.5">صورة العرض (اختياري)</label><input id="of-img" type="file" accept="image/*" class="' + inpCls + '"><img id="of-prev" alt="" class="hidden mt-2 w-full max-h-56 object-cover rounded-2xl"></div>' +
+          '<div><label for="of-d" class="block font-semibold mb-1.5">مدة العرض</label><select id="of-d" class="' + inpCls + '"><option value="1">يوم</option><option value="3">3 أيام</option><option value="7" selected>أسبوع</option><option value="14">أسبوعين</option><option value="30">شهر</option></select></div>' +
+          '<p id="of-m" role="status" class="text-sm font-bold text-red-600 min-h-[1.25rem]"></p><button id="of-go" type="button" class="w-full bg-coral-500 hover:opacity-90 text-white font-extrabold py-3 rounded-2xl shadow-lg transition"><i class="fa-solid fa-bell ml-2"></i>انشر العرض وابعته للعملاء</button></div>' : '') +
+        '<p class="mt-5 font-extrabold">عروضك الحالية</p><div class="mt-2 grid gap-3 sm:grid-cols-2">' + (d.items.length ? d.items.map(function (o) {
+          return '<div class="rounded-2xl bg-sand-100 border border-sand-200 overflow-hidden flex flex-col">' + (o.has_img ? '<img src="' + offerSrc(o.id) + '" alt="" loading="lazy" class="w-full h-40 object-cover">' : '') +
+            '<div class="p-3 flex-1"><p class="font-extrabold">' + esc(o.title) + (o.expired ? ' <span class="text-xs font-bold text-red-600">(انتهى)</span>' : '') + '</p><p class="text-sm whitespace-pre-line">' + esc(o.body) + '</p></div>' +
+            '<div class="px-3 pb-3"><button type="button" data-orm="' + esc(o.id) + '" class="rounded-xl bg-white text-red-600 font-bold text-sm px-3 py-1.5 border border-sand-200">إنهاء العرض</button></div></div>';
+        }).join('') : '<p class="text-ocean-700/70 text-sm">مفيش عروض لسه.</p>') + '</div>';
+      var fi = $('of-img');
+      if (fi) fi.addEventListener('change', function () {
+        var pv = $('of-prev'), f = fi.files && fi.files[0];
+        if (!f) { pv.classList.add('hidden'); return; }
+        pv.src = URL.createObjectURL(f); pv.classList.remove('hidden');
+      });
+      var go = $('of-go');
+      if (go) go.addEventListener('click', function () {
+        var m = $('of-m'), t = $('of-t').value.trim(), b = $('of-b').value.trim(), f = fi.files && fi.files[0];
+        if (t.length < 3) { m.textContent = 'اكتب عنوان العرض.'; return; }
+        if (b.length < 5) { m.textContent = 'اكتب تفاصيل العرض.'; return; }
+        m.textContent = ''; go.disabled = true;
+        function send(img) {
+          var body = { title: t, body: b, days: parseInt($('of-d').value, 10) }; if (img) body.image = img;
+          window.psApi.post('merchant/offers/add', body).then(function (x) {
+            go.disabled = false;
+            if (!x.ok) { m.textContent = x.error.message; return; }
+            toast('العرض اتنشر ووصل للعملاء 🎉'); loadOffersAdmin();
+          }).catch(function () { go.disabled = false; m.textContent = 'مشكلة في الاتصال بالسيرفر، حاول تاني.'; });
+        }
+        if (f) pic(f, function (err, b64) { if (err) { go.disabled = false; m.textContent = err; return; } send(b64); }, 1400); else send(null);
+      });
+      box.querySelectorAll('[data-orm]').forEach(function (b) { b.addEventListener('click', function () {
+        if (!confirm('تنهي العرض ده؟')) return;
+        window.psApi.post('merchant/offers/remove', { id: b.dataset.orm }).then(function (x) { if (!x.ok) toast(x.error.message); loadOffersAdmin(); });
+      }); });
+    });
+  }
+  function render() {
+    stopScan();
+    var h = V.v === 'home' ? home() : V.v === 'list' ? list(V.a) : V.v === 'place' ? place(V.a) : V.v === 'explore' ? explore() : V.v === 'memories' ? memories() : V.v === 'housing' ? housing() : V.v === 'account' ? account() : V.v === 'feedback' ? feedbackView() : V.v === 'partner' ? partnerView() : transport();
+    var m = $('view'); m.innerHTML = h;
+    paintHi();
+    m.classList.remove('pop-in'); void m.offsetWidth; m.classList.add('pop-in');
+    if (V.v === 'account') bindAccount();
+    if (V.v === 'feedback') bindFeedback();
+    if (V.v === 'partner') bindPartner();
+    if (V.v === 'bus') bindTransport();
+    if (V.v === 'home') paintGallery();
+    if (V.v === 'place') { bindPlace(P(V.a)); loadReviews(P(V.a)); loadExtras(P(V.a)); }
+  }
+  function track(kind, ref) { try { window.psApi.post('track', { kind: kind, ref: ref }).catch(function () {}); } catch (e) {} }
+  var MERCHANT_ONLY_VIEWS = ['account', 'partner', 'feedback'];
+  function go(v, a) {
+    if (ME && ME.role === 'merchant' && MERCHANT_ONLY_VIEWS.indexOf(v) === -1) v = 'partner';
+    V = { v: v, a: a || null }; render(); window.scrollTo(0, 0);
+    var pb = $('partner'); if (pb) pb.classList.toggle('hidden', !(v === 'home' && !(ME && ME.role === 'merchant')));
+    if (v === 'explore' || v === 'housing' || v === 'bus') track('section', v);
+    else if (v === 'list' && a) track('section', a);
+    else if (v === 'place' && a) track('place', a);
+    if (v === 'explore') loadExplore().then(function () { if (V.v === 'explore') render(); });
+    if (v === 'memories') loadExplore().then(function () { if (V.v === 'memories') render(); });
+  }
+  function refresh() { return window.psApi.get('places').then(function (r) { if (r.ok) PLACES = r.data.places; }); }
+
+  function utc(s) { return new Date(String(s).replace(' ', 'T') + 'Z').getTime(); }
+  function showQR(cp, name) {
+    var q = qrcode(0, 'M'); q.addData(cp.payload); q.make();
+    $('qr-img').src = q.createDataURL(6, 2); $('qr-place').textContent = name; $('qr-disc').textContent = cp.discount ? 'خصم ' + cp.discount + '%' : '';
+    $('qr-modal').classList.remove('hidden'); $('qr-modal').classList.add('flex');
+    clearInterval(tick); var end = utc(cp.expires_at);
+    function left() { var s = Math.max(0, Math.floor((end - Date.now()) / 1000)), d = function (x) { return (x < 10 ? '0' : '') + x; }; $('qr-left').textContent = s ? d(Math.floor(s / 3600)) + ':' + d(Math.floor(s % 3600 / 60)) + ':' + d(s % 60) : 'انتهى'; }
+    left(); tick = setInterval(left, 1000);
+  }
+  function closeQR() { clearInterval(tick); $('qr-modal').classList.add('hidden'); $('qr-modal').classList.remove('flex'); }
+  $('qr-close').addEventListener('click', closeQR);
+  $('qr-modal').addEventListener('click', function (e) { if (e.target === this) closeQR(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeQR(); });
+
+  $('hdr-fb').addEventListener('click', function () { go('feedback'); });
+  var pg = $('partner-go'); if (pg) pg.addEventListener('click', function () { go('partner'); });
+  $('view').addEventListener('click', function (e) {
+    var el = e.target.closest('[data-go],[data-act]'); if (!el) return;
+    if (el.dataset.go) { var d = el.dataset.go, ix = d.indexOf(':'); go(ix < 0 ? d : d.slice(0, ix), ix < 0 ? null : d.slice(ix + 1)); return; }
+    var a = el.dataset.act, p = V.v === 'place' ? P(V.a) : null;
+    if (a === 'share') { doShare(); return; }
+    if (a === 'memup') { memUpload(el); return; }
+    if (a === 'memdel') {
+      if (!confirm('تحذف الصورة دي؟')) return;
+      window.psApi.post('explore/my-delete', { id: el.dataset.id }).then(function (r) { if (!r.ok) toast(r.error.message); loadExplore().then(function () { if (V.v === 'memories') render(); }); });
+      return;
+    }
+    if (a === 'img') { lbShow(parseInt(el.dataset.i, 10) || 0); return; }
+    if (a === 'udel') {
+      if (!confirm('تحذف الصورة دي؟')) return;
+      window.psApi.post('explore/my-delete', { id: el.dataset.id }).then(function (r) { if (!r.ok) { toast(r.error.message); return; } loadExplore().then(function () { if (V.v === 'explore') render(); }); });
+      return;
+    }
+    if (a === 'route') { $('route').scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+    if (a === 'checkin') { $('cam').click(); }
+    if (a === 'vconfirm' && p) { confirmVisit(p, el); return; }
+    if (a === 'qr' && p) {
+      if (p.coupon) { showQR(p.coupon, p.n); return; }
+      window.psApi.post('coupons/request', { place_id: p.id }).then(function (r) {
+        if (!r.ok) { toast(r.error.message); return; }
+        setPts(r.data.balance); var fresh = !p.coupon; p.coupon = r.data.coupon; render(); showQR(r.data.coupon, p.n); if (fresh && r.data.coupon.cost) toast('اتخصم ' + r.data.coupon.cost + ' نقطة من رصيدك');
+      });
+    }
+  });
+  $('cam').addEventListener('change', function () {
+    var has = this.files && this.files.length; this.value = '';
+    if (!has || V.v !== 'place') return;
+    var p = P(V.a);
+    function send(pos) {
+      window.psApi.post('visits', { place_id: p.id, lat: pos.coords.latitude, lon: pos.coords.longitude, acc: Math.round(pos.coords.accuracy || 0) }).then(function (r) {
+        if (!r.ok) { toast(r.error.message); return; }
+        setPts(r.data.balance); p.visited = true;
+        toast('+' + r.data.points_awarded + ' نقطة 🎉 اتأكدنا إنك في المكان'); render();
+      });
+    }
+    if (!navigator.geolocation) { toast('جهازك مش بيدعم تحديد الموقع، فمقدرناش نتأكد إنك في المكان.'); return; }
+    toast('بنتأكد إنك في المكان...');
+    navigator.geolocation.getCurrentPosition(send, function (e) {
+      toast(e && e.code === 1 ? 'لازم تفعّل الموقع (Location) للمتصفح عشان نتأكد إنك في المكان وتاخد النقاط.' : 'مقدرناش نحدد موقعك. جرّب في مكان مفتوح وحاول تاني.');
+    }, { enableHighAccuracy: true, timeout: 12000, maximumAge: 0 });
+  });
+
+  function goHome() { go('home'); }
+  $('home-link').addEventListener('click', goHome);
+  $('home-link').addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); goHome(); } });
+
+  /* ---------- صفحة معلومات الحساب + تغيير كلمة المرور (بتتحفظ في القاعدة عبر auth/change-password) ---------- */
+  function account() {
+    var u = ME || {}, T = { student: 'طالب', visitor: 'سائح أو مغترب', local: 'من بورسعيد' }, G = { male: 'ذكر', female: 'أنثى' };
+    var ini = esc(String(u.name || 'م').trim().charAt(0) || 'م');
+    function info(ic, k, v, ltr) {
+      return v ? '<div class="flex items-center gap-4 py-3.5 border-b border-sand-200 last:border-0"><span class="w-11 h-11 shrink-0 rounded-2xl bg-ocean-100 text-ocean-700 grid place-items-center"><i class="fa-solid ' + ic + '"></i></span><div class="min-w-0"><p class="text-sm text-ocean-700/80">' + k + '</p><p class="font-bold truncate"' + (ltr ? ' dir="ltr" style="text-align:right"' : '') + '>' + esc(v) + '</p></div></div>' : '';
+    }
+    function pw(id, label, ac) {
+      return '<div><label for="' + id + '" class="block font-semibold mb-1.5 text-base">' + label + '</label><div class="relative"><input id="' + id + '" type="password" autocomplete="' + ac + '" dir="ltr" class="w-full rounded-2xl border border-sand-200 bg-white pl-4 pr-12 py-3 focus:outline-none focus:ring-2 focus:ring-teal2-500"><button type="button" data-eye="' + id + '" aria-label="إظهار أو إخفاء كلمة المرور" class="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-xl text-ocean-700/70 hover:text-teal2-600 grid place-items-center transition"><i class="fa-solid fa-eye"></i></button></div></div>';
+    }
+    var emailRow = (u.email && !u.email_verified) ? '<div class="mt-3 rounded-2xl bg-sand-100 p-4"><p class="font-bold text-sm mb-2"><i class="fa-solid fa-triangle-exclamation text-sand-400 ml-2"></i>بريدك الإلكتروني لسه غير موثّق.</p><button id="resend-ver" type="button" class="rounded-2xl bg-teal2-600 hover:bg-teal2-500 text-white font-bold px-4 py-2 text-sm">إرسال رابط التوثيق</button><p id="ver-msg" class="mt-2 text-sm" role="status"></p></div>' : (u.email ? '<p class="mt-3 text-sm font-bold text-teal2-600"><i class="fa-solid fa-circle-check ml-1"></i>بريدك الإلكتروني موثّق</p>' : '');
+    var badges = (T[u.type] ? '<span class="inline-block rounded-full bg-white/20 border border-white/30 text-xs font-bold px-2.5 py-0.5">' + T[u.type] + '</span>' : '') + (u.gov ? '<span class="inline-block rounded-full bg-white/20 border border-white/30 text-xs font-bold px-2.5 py-0.5">' + esc(u.gov) + '</span>' : '');
+    return back('home') +
+      '<section class="hero-bg waves-pattern text-white rounded-2xl shadow-lg p-4 sm:p-5 flex items-center gap-3 sm:gap-4">' +
+        '<span class="shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-sand-400 text-ocean-900 text-2xl font-black grid place-items-center ring-2 ring-white/40">' + ini + '</span>' +
+        '<div class="flex-1 min-w-0"><h2 class="text-lg sm:text-2xl font-black truncate">' + esc(u.name || '') + vb(u.email_verified) + '</h2><div class="mt-1.5 flex flex-wrap gap-1.5">' + badges + '</div></div>' +
+        '<div class="shrink-0 rounded-xl bg-white/15 border border-white/30 px-3 py-1.5 text-center leading-tight"><p class="text-xl sm:text-2xl font-black"><i class="fa-solid fa-star text-sand-400 text-base ml-1"></i>' + esc(u.points == null ? 0 : u.points) + '</p><p class="text-xs text-white/80 font-semibold">نقطة</p></div>' +
+      '</section>' +
+      '<div class="mt-6 grid lg:grid-cols-2 gap-6 items-start">' +
+        '<section class="bg-white rounded-3xl shadow-xl shadow-ocean-700/5 p-6 sm:p-7"><h3 class="text-xl font-extrabold mb-2"><i class="fa-solid fa-id-card text-teal2-600 ml-2"></i>البيانات الشخصية</h3>' +
+          info('fa-user', 'الاسم', u.name) + info('fa-phone', 'رقم الهاتف', u.phone, true) + info('fa-envelope', 'البريد الإلكتروني', u.email, true) + info('fa-venus-mars', 'الجنس', G[u.gender]) + info('fa-user-tag', 'نوع الحساب', T[u.type]) + info('fa-graduation-cap', 'الكلية / المدرسة', u.institution) + info('fa-location-dot', 'المحافظة', u.gov) + emailRow +
+        '</section>' +
+        '<section class="bg-white rounded-3xl shadow-xl shadow-ocean-700/5 p-6 sm:p-7"><h3 class="text-xl font-extrabold mb-1"><i class="fa-solid fa-shield-halved text-teal2-600 ml-2"></i>الأمان وكلمة المرور</h3>' +
+          '<p class="text-sm text-ocean-700/80 mb-5">لما تغيّر كلمة المرور بتتحفظ مشفّرة في قاعدة البيانات، ومحدش يقدر يشوفها.</p>' +
+          '<form id="f-chpw" class="space-y-4" novalidate>' + pw('cp-cur', 'كلمة المرور الحالية', 'current-password') + pw('cp-new', 'كلمة المرور الجديدة', 'new-password') +
+            '<div aria-live="polite"><div class="h-2 rounded-full bg-sand-200 overflow-hidden"><div id="cp-bar" class="h-full w-0 rounded-full transition-all duration-300"></div></div><p id="cp-hint" class="mt-1.5 text-sm text-ocean-700/80">8 أحرف على الأقل، والأفضل تخلط حروف وأرقام ورموز.</p></div>' +
+            pw('cp-new2', 'تأكيد كلمة المرور الجديدة', 'new-password') +
+            '<p id="acct-err" class="text-sm text-red-600 min-h-[1.25rem]" role="alert"></p><p id="acct-ok" class="text-sm text-teal2-600 font-bold" role="status"></p>' +
+            '<button type="submit" class="w-full bg-teal2-600 hover:bg-teal2-500 text-white font-extrabold py-3.5 rounded-2xl shadow-lg transition"><i class="fa-solid fa-lock ml-2"></i>حفظ كلمة المرور</button>' +
+          '</form></section>' +
+      '</div>';
+  }
+  function bindAccount() {
+    var rv = $('resend-ver');
+    if (rv) rv.addEventListener('click', function () {
+      rv.disabled = true;
+      window.psApi.post('auth/resend-verification', {}).then(function (r) { $('ver-msg').textContent = r.ok ? 'تم الإرسال، راجع بريدك (وصندوق الرسائل غير المرغوبة).' : r.error.message; rv.disabled = false; }).catch(function () { rv.disabled = false; });
+    });
+    var f = $('f-chpw'); if (!f) return;
+    Array.prototype.forEach.call(f.querySelectorAll('[data-eye]'), function (b) {
+      b.addEventListener('click', function () { var i = $(b.dataset.eye), show = i.type === 'password'; i.type = show ? 'text' : 'password'; b.firstChild.className = 'fa-solid ' + (show ? 'fa-eye-slash' : 'fa-eye'); });
+    });
+    $('cp-new').addEventListener('input', function () {
+      var p = this.value, s = 0;
+      if (p.length >= 8) s++; if (p.length >= 12) s++; if (/[a-z]/.test(p) && /[A-Z]/.test(p)) s++; if (/\d/.test(p)) s++; if (/[^A-Za-z0-9]/.test(p)) s++;
+      var bar = $('cp-bar'), hint = $('cp-hint');
+      if (!p) { bar.style.width = '0'; hint.textContent = '8 أحرف على الأقل، والأفضل تخلط حروف وأرقام ورموز.'; return; }
+      bar.style.width = (s * 20) + '%';
+      bar.style.background = s <= 1 ? '#ef4444' : s <= 3 ? '#f59e0b' : '#0fb8ad';
+      hint.textContent = s <= 1 ? 'كلمة المرور ضعيفة' : s <= 3 ? 'كلمة المرور متوسطة' : 'كلمة المرور قوية';
+    });
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var cur = $('cp-cur').value, n1 = $('cp-new').value, n2 = $('cp-new2').value, err = $('acct-err'), ok = $('acct-ok');
+      err.textContent = ''; ok.textContent = '';
+      if (!cur) { err.textContent = 'اكتب كلمة المرور الحالية.'; return; }
+      if (n1.length < 8) { err.textContent = 'كلمة المرور الجديدة لازم تكون 8 أحرف على الأقل.'; return; }
+      if (n1 !== n2) { err.textContent = 'كلمتا المرور الجديدتان غير متطابقتين.'; return; }
+      if (n1 === cur) { err.textContent = 'اختار كلمة مرور مختلفة عن الحالية.'; return; }
+      var b = f.querySelector('button[type=submit]'), label = b.innerHTML;
+      b.disabled = true; b.innerHTML = '<i class="fa-solid fa-spinner fa-spin ml-2"></i>جارٍ الحفظ...';
+      function done() { b.disabled = false; b.innerHTML = label; }
+      window.psApi.post('auth/change-password', { current_password: cur, new_password: n1 }).then(function (r) {
+        done();
+        if (!r.ok) { err.textContent = r.error.message; return; }
+        f.reset(); $('cp-bar').style.width = '0'; $('cp-hint').textContent = '8 أحرف على الأقل، والأفضل تخلط حروف وأرقام ورموز.';
+        ok.textContent = 'تم تغيير كلمة المرور وحفظها.'; toast('تم تغيير كلمة المرور');
+      }).catch(function () { done(); err.textContent = 'مشكلة في الاتصال بالسيرفر، حاول تاني.'; });
+    });
+  }
+  $('acct-btn').addEventListener('click', function () {
+    $('user-menu').classList.add('hidden'); $('user-btn').setAttribute('aria-expanded', 'false');
+    go('account');
+  });
+  $('merchant-link').addEventListener('click', function () {
+    $('user-menu').classList.add('hidden'); $('user-btn').setAttribute('aria-expanded', 'false');
+    go('partner');
+  });
+
+  window.psPaint = function (u) {
+    u = u || {};
+    function fill(el) { if (!el) return; var i = document.createElement('i'); i.className = 'fa-solid fa-user'; el.replaceChildren(i); }
+    fill($('user-btn')); fill($('u-av'));
+    var a = $('admin-link'); if (a) { a.classList.toggle('hidden', !u.staff); a.classList.toggle('flex', !!u.staff); }
+    var mb = $('merchant-link'); if (mb) { mb.classList.toggle('hidden', u.role !== 'merchant'); mb.classList.toggle('flex', u.role === 'merchant'); }
+    document.body.classList.toggle('merchant-mode', u.role === 'merchant');
+  };
+  function saveMe() { try { sessionStorage.setItem('ps_user', JSON.stringify(ME)); } catch (e) {} }
+  function pic(file, cb, max) {
+    var fr = new FileReader();
+    fr.onload = function () {
+      var im = new Image();
+      im.onload = function () {
+        var k = Math.min(1, (max || 800) / Math.max(im.width, im.height)), c = document.createElement('canvas');
+        c.width = Math.max(1, Math.round(im.width * k)); c.height = Math.max(1, Math.round(im.height * k));
+        c.getContext('2d').drawImage(im, 0, 0, c.width, c.height);
+        cb(null, c.toDataURL('image/jpeg', max ? 0.85 : 0.88).split(',')[1]);
+      };
+      im.onerror = function () { cb('الملف مش صورة صالحة.'); };
+      im.src = fr.result;
+    };
+    fr.onerror = function () { cb('تعذّرت قراءة الملف.'); };
+    fr.readAsDataURL(file);
+  }
+
+  /* ---------- مساعد بورسعيد: شات بوت بسيط بالأسئلة الشائعة (من غير أي سيرفر) ---------- */
+  var BOT_FAQ = [
+    { q: 'إزاي أكسب نقاط؟', kw: ['نقط', 'نقطة', 'اكسب', 'بوينت'], a: 'بتكسب نقط لما تسجّل زيارتك لمعلم سياحي أو مكان ترفيه من صفحته (لازم تفعّل الموقع عشان نتأكد إنك في المكان)، وكمان زر "شير واكسب" في الصفحة الرئيسية بيدّيك نقاط مرة واحدة لما تشارك الموقع على واتساب.' },
+    { q: 'إزاي أستخدم كوبون الخصم؟', kw: ['كوبون', 'خصم', 'كود الخصم'], a: 'من صفحة المكان دوس "اطلب كوبون"، هيطلعلك كود QR، وريه للمحل وقت الدفع عشان ياخد خصمه على طول.' },
+    { q: 'عندي محل وعاوز أنضم كتاجر', kw: ['متجر', 'محل', 'تاجر', 'شريك', 'انضم'], a: 'تمام! دوس على زر "سجل متجرك" تحت الصفحة الرئيسية، هيتعمل لمتجرك حساب خاص بيك تقدر منه تحدد نسبة الخصم والعمولة، وفريقنا هيراجع طلبك ويرد عليك.' },
+    { q: 'عندي شكوى أو اقتراح', kw: ['شكوى', 'مشكلة', 'اقتراح', 'عطل'], a: 'استخدم زر "شكاوى واقتراحات" فوق الصفحة، اكتب رسالتك وإحنا بنقرا كل رسالة وبنرد بأسرع وقت 🙏' },
+    { q: 'إزاي أروح أماكن تانية (مواصلات)؟', kw: ['مواصلات', 'مينى', 'ميكروباص', 'باص', 'تاكسي', 'فيري', 'اروح ازاي'], a: 'من قسم "مواصلات" في الصفحة الرئيسية هتلاقي خطوط المينى باص والفيري بين أحياء بورسعيد المختلفة.' },
+    { q: 'نسيت كلمة المرور أو عاوز أعدّل بياناتي', kw: ['كلمة المرور', 'الباسورد', 'بياناتي', 'حسابي'], a: 'من أيقونة المستخدم فوق اختار "معلومات الحساب"، من هناك تقدر تغيّر كلمة مرورك وتتابع بياناتك وصورتك الشخصية.' },
+    { q: 'مين فريق Alpha؟', kw: ['فريق', 'مين عملكم', 'الفا', 'ألفا'], a: 'إحنا فريق Alpha Team، بنحب بورسعيد وعايزين كل واحد يحس إنه في بيته فيها 💙' }
+  ];
+  function botAnswer(text) {
+    var t = String(text || '').trim();
+    for (var i = 0; i < BOT_FAQ.length; i++) { for (var k = 0; k < BOT_FAQ[i].kw.length; k++) { if (t.indexOf(BOT_FAQ[i].kw[k]) !== -1) return BOT_FAQ[i].a; } }
+    return 'مش متأكد إني فاهم سؤالك بالظبط 🙏 جرب تختار من الأسئلة تحت، أو لو محتاج رد من فريقنا استخدم زر "شكاوى واقتراحات" فوق الصفحة.';
+  }
+  function botAdd(who, text, id) { var box = $('bot-body'); if (!box) return null; var d = document.createElement('div'); d.className = 'chat-msg ' + who; if (id) d.id = id; d.textContent = text; box.appendChild(d); box.scrollTop = box.scrollHeight; return d; }
+  function botQuickChips() {
+    var box = $('bot-quick'); if (!box) return;
+    box.innerHTML = '';
+    BOT_FAQ.forEach(function (f) {
+      var b = document.createElement('button'); b.type = 'button'; b.className = 'chat-q'; b.textContent = f.q;
+      b.addEventListener('click', function () { botAsk(f.q, f.a); });
+      box.appendChild(b);
+    });
+  }
+  var botOpened = false, BOT_HISTORY = [];
+  /** الأسئلة الجاهزة بتفضل موجودة طول الوقت (مش بتتشال)، بس بتتقفل لوحدها أول ما المستخدم يكتب عشان تسيب مكان للمحادثة. تقدر ترجّعها بزرار "أسئلة جاهزة". */
+  function botQuickSet(show) {
+    var row = $('bot-quick'), t = $('bot-quick-toggle'); if (!row || !t) return;
+    row.classList.toggle('hidden', !show);
+    t.classList.toggle('closed', !show);
+    t.querySelector('span').textContent = show ? 'إخفاء الأسئلة الجاهزة' : 'أسئلة جاهزة';
+  }
+  function botOpen() {
+    $('bot-panel').classList.remove('hidden'); $('bot-fab').setAttribute('aria-expanded', 'true');
+    var d = $('bot-dot'); if (d) d.style.display = 'none';
+    if (!botOpened) { botOpened = true; botAdd('bot', 'أهلًا بيك في Port Said Hub 👋 اسألني أي سؤال، أو اختار من الأسئلة الجاهزة تحت.'); botQuickChips(); botQuickSet(true); }
+  }
+  function botClose() { $('bot-panel').classList.add('hidden'); $('bot-fab').setAttribute('aria-expanded', 'false'); }
+  /** بيبعت سؤال لمساعد الذكاء الاصطناعي؛ fallbackAns لو الذكاء الاصطناعي مش متاح دلوقتي بيتحط جاهز بدل ما نستنى. */
+  function botAsk(text, fallbackAns) {
+    botAdd('me', text); BOT_HISTORY.push({ role: 'user', text: text });
+    var typing = botAdd('bot', '...', 'bot-typing-msg');
+    window.psApi.post('assistant/ask', { message: text, history: BOT_HISTORY.slice(0, -1) }).then(function (r) {
+      if (typing) typing.remove();
+      var reply = (r.ok && r.data.ai_enabled && r.data.reply) ? r.data.reply : (fallbackAns || botAnswer(text));
+      botAdd('bot', reply); BOT_HISTORY.push({ role: 'assistant', text: reply }); BOT_HISTORY = BOT_HISTORY.slice(-16);
+    }).catch(function () {
+      if (typing) typing.remove();
+      var reply = fallbackAns || botAnswer(text);
+      botAdd('bot', reply); BOT_HISTORY.push({ role: 'assistant', text: reply });
+    });
+  }
+  function botSend() {
+    var inEl = $('bot-in'), v = inEl.value.trim(); if (!v) return;
+    inEl.value = ''; botQuickSet(false); botAsk(v);
+  }
+  var botFab = $('bot-fab'), botQT = $('bot-quick-toggle');
+  if (botFab) {
+    botFab.addEventListener('click', function () { $('bot-panel').classList.contains('hidden') ? botOpen() : botClose(); });
+    $('bot-close').addEventListener('click', botClose);
+    $('bot-send').addEventListener('click', botSend);
+    $('bot-in').addEventListener('keydown', function (e) { if (e.key === 'Enter') botSend(); });
+    if (botQT) botQT.addEventListener('click', function () { botQuickSet($('bot-quick').classList.contains('hidden')); });
+  }
+
+  window.psInit = function () {
+    Promise.all([window.psApi.get('me'), window.psApi.get('places'), window.psApi.get('transport'), window.psApi.get('explore')]).then(function (rs) {
+      if (!rs[0].ok) return;
+      ME = rs[0].data.user; PLACES = rs[1].ok ? rs[1].data.places : []; LINES = rs[2].ok ? rs[2].data.lines : []; setExplore(rs[3]);
+      $('pts').textContent = ME.points; window.psPaint(ME); pollNotifs(true); go('home'); if (ME.must_change_password) { go('account'); toast('غيّر كلمة المرور المؤقتة الأول'); }
+    });
+  };
+})();
+</script>
+
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  var AR = '٠١٢٣٤٥٦٧٨٩';
+  function digits(s) { return String(s).replace(/[٠-٩]/g, function (d) { return AR.indexOf(d); }); }
+  function phoneErr(v) {
+    if (!v) return 'اكتب رقم الهاتف.';
+    if (/\D/.test(v)) return 'رقم الهاتف لازم يكون أرقام بس.';
+    if (v.length < 11) return 'رقم الهاتف ناقص: لازم 11 رقم وإنت كتبت ' + v.length + '.';
+    if (v.length > 11 || v.slice(0, 2) !== '01') return 'رقم الهاتف لازم يكون 11 رقم ويبدأ بـ 01.';
+    return '';
+  }
+  function emailErr(v) { return emailRe.test(v) ? '' : 'البريد الإلكتروني ناقص أو غير صحيح (مثال: name@example.com).'; }
+  function liveHint(id, fn, isPhone) {
+    var el = $(id), p = document.createElement('p');
+    p.className = 'mt-1 text-sm min-h-[1.25rem]'; p.setAttribute('aria-live', 'polite'); el.insertAdjacentElement('afterend', p);
+    function show() {
+      if (isPhone) { var f = digits(el.value).replace(/\s/g, ''); if (f !== el.value) el.value = f; }
+      var v = el.value.trim(), m = v ? fn(v) : '';
+      p.textContent = m || (v ? '✓' : '');
+      p.className = 'mt-1 text-sm min-h-[1.25rem] ' + (m ? 'text-red-600' : 'text-teal2-600');
+    }
+    el.addEventListener(isPhone ? 'input' : 'blur', show);
+  }
+  function isPhoneLike(v) { return /^[0-9٠-٩]/.test(v); }
+  function idVal() { var v = $('l-id').value.trim(); return isPhoneLike(v) ? digits(v).replace(/\s/g, '') : v; }
+  function idErr(v) { if (!v) return 'اكتب رقم الهاتف أو البريد الإلكتروني.'; return isPhoneLike(v) ? phoneErr(digits(v).replace(/\s/g, '')) : emailErr(v); }
+  function liveIdHint() {
+    var el = $('l-id'), p = document.createElement('p');
+    p.className = 'mt-1 text-sm min-h-[1.25rem]'; p.setAttribute('aria-live', 'polite'); el.insertAdjacentElement('afterend', p);
+    function show(force) {
+      var v = el.value.trim(), phone = isPhoneLike(v);
+      if (phone) { var f = digits(el.value).replace(/\s/g, ''); if (f !== el.value) el.value = f; v = f; }
+      var m = v && (phone || force) ? idErr(v) : '';
+      p.textContent = m || (v && (phone || force) ? '✓' : '');
+      p.className = 'mt-1 text-sm min-h-[1.25rem] ' + (m ? 'text-red-600' : 'text-teal2-600');
+    }
+    el.addEventListener('input', function () { show(false); });
+    el.addEventListener('blur', function () { show(true); });
+  }
+  liveHint('s-phone', phoneErr, true);
+  liveHint('s-email', emailErr, false);
+  liveIdHint();
+  function readFileB64(file, cb) {
+    var fr = new FileReader();
+    fr.onload = function () { cb(null, String(fr.result).split(',')[1] || ''); };
+    fr.onerror = function () { cb('تعذّرت قراءة الملف.'); };
+    fr.readAsDataURL(file);
+  }
+  function syncInst() {
+    var t = document.querySelector('input[name=s-type]:checked'), loc = !!(t && t.value === 'local'), stu = !!(t && t.value === 'student'), g = $('s-gov');
+    $('s-inst-wrap').classList.toggle('hidden', !stu);
+    $('s-idcard-wrap').classList.toggle('hidden', !stu || isMerchantSignup());
+    $('s-gov-wrap').classList.toggle('hidden', loc);   // من بورسعيد: المحافظة معروفة فنخفيها
+    if (loc) { g.value = 'بورسعيد'; g.dataset.auto = '1'; } else if (g.dataset.auto) { g.value = ''; delete g.dataset.auto; }
+  }
+  function isMerchantSignup() { var a = document.querySelector('input[name=s-acct]:checked'); return !!(a && a.value === 'merchant'); }
+  function syncAcct() {
+    var m = isMerchantSignup();
+    $('s-biz-wrap1').classList.toggle('hidden', !m); $('s-biz-wrap2').classList.toggle('hidden', !m);
+    $('s-gender-wrap').classList.toggle('hidden', m); $('s-type-wrap').classList.toggle('hidden', m);
+    $('s-inst-wrap').classList.toggle('hidden', m || !document.querySelector('input[name=s-type]:checked[value=student]'));
+    $('s-idcard-wrap').classList.toggle('hidden', m || !document.querySelector('input[name=s-type]:checked[value=student]'));
+    $('s-gov-wrap').classList.toggle('hidden', m || !!document.querySelector('input[name=s-type]:checked[value=local]'));
+    $('s-name-lbl').textContent = m ? 'اسمك (صاحب المتجر)' : 'الاسم';
+    wzShow(1);
+  }
+  $('m-cat').addEventListener('change', function () { $('m-cat-other-wrap').classList.toggle('hidden', this.value !== 'other'); });
+  Array.prototype.forEach.call(document.querySelectorAll('input[name=s-type]'), function (r) { r.addEventListener('change', syncInst); });
+  Array.prototype.forEach.call(document.querySelectorAll('input[name=s-acct]'), function (r) { r.addEventListener('change', syncAcct); });
+  $('f-signup').addEventListener('reset', function () { setTimeout(function () { syncInst(); syncAcct(); wzShow(1); }, 0); });
+  var on = 'py-2.5 rounded-xl font-bold transition bg-white shadow text-ocean-700';
+  var off = 'py-2.5 rounded-xl font-bold transition text-ocean-700/70';
+
+  function enter() {
+    try { sessionStorage.setItem('ps_in', '1'); } catch (e) {}
+    fillUser();
+    hideLayer($('auth'));
+    $('welcome').classList.add('hidden');
+    document.body.style.overflow = '';
+    document.body.classList.add('entered');
+    window.scrollTo(0, 0);
+    try { if (!sessionStorage.getItem('ps_pwa_n')) { sessionStorage.setItem('ps_pwa_n', '1'); setTimeout(function () { if (window.psPwa) window.psPwa.show(true); }, 1500); } } catch (e) {}
+  }
+  function tab(which) {
+    var login = which === 'login';
+    $('f-login').classList.toggle('hidden', !login);
+    $('f-signup').classList.toggle('hidden', login);
+    $('tab-login').className = login ? on : off;
+    $('tab-signup').className = login ? off : on;
+    var f = login ? $('f-login') : $('f-signup');
+    f.classList.remove('swap-in'); void f.offsetWidth; f.classList.add('swap-in');
+  }
+
+  $('tab-login').addEventListener('click', function () { tab('login'); });
+  $('tab-signup').addEventListener('click', function () { tab('signup'); });
+
+
+  $('f-login').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var err = $('err-login');
+    var ie = idErr(idVal()); if (ie) { err.textContent = ie; return; }
+    if (!$('l-pass').value) { err.textContent = 'اكتب كلمة المرور.'; return; }
+    err.textContent = '';
+    submitting(e.target);
+  });
+
+  var WZ = 1;
+  function wzShow(n) {
+    WZ = n;
+    Array.prototype.forEach.call(document.querySelectorAll('[data-wz]'), function (d) { d.classList.toggle('hidden', +d.dataset.wz !== n); });
+    $('wz-t').textContent = 'الخطوة ' + n + ' من 3';
+    $('wz-dots').innerHTML = [1, 2, 3].map(function (i) { return '<span class="w-6 h-1.5 rounded-full ' + (i <= n ? 'bg-teal2-600' : 'bg-sand-200') + '"></span>'; }).join('');
+    $('wz-back').classList.toggle('hidden', n === 1);
+    $('f-signup').querySelector('button[type=submit]').textContent = n === 3 ? (isMerchantSignup() ? 'تسجيل حساب التاجر' : 'إنشاء الحساب') : 'التالي';
+    $('err-signup').textContent = '';
+  }
+  function wzErr(n) {
+    var tp = document.querySelector('input[name=s-type]:checked'), merch = isMerchantSignup();
+    if (n === 1) {
+      if (!$('s-name').value.trim()) return 'اكتب اسمك.';
+      if (merch) {
+        if (!$('m-biz').value.trim()) return 'اكتب اسم المتجر.';
+        if ($('m-cat').value === 'other' && !$('m-cat-other').value.trim()) return 'اكتب نوع نشاطك.';
+        return '';
+      }
+      if (!document.querySelector('input[name=s-gender]:checked')) return 'اختر ذكر أم أنثى.';
+      if (!tp) return 'اختر نوعك: طالب أم سائح أو مغترب أم من بورسعيد.';
+      if (tp.value === 'student' && !($('s-id-card').files && $('s-id-card').files[0])) return 'ارفع صورة الكارنيه عشان نفعّل خصومات الطلبة بعد المراجعة.';
+    }
+    if (n === 2) {
+      if (merch) {
+        if (!$('m-area').value.trim()) return 'اكتب المنطقة.';
+        var d = parseInt($('m-disc').value, 10); if (isNaN(d) || d < 0 || d > 100) return 'نسبة الخصم لازم تكون رقم من 0 إلى 100.';
+        var c = parseFloat($('m-comm').value); if (isNaN(c) || c < 0) return 'اكتب قيمة عمولة صحيحة.';
+        if (!$('m-tax').value.trim()) return 'اكتب الرقم الضريبي.';
+        if (!($('m-registry').files && $('m-registry').files[0])) return 'ارفع صورة السجل التجاري عشان نتأكد إن المتجر حقيقي.';
+        return phoneErr(digits($('s-phone').value).trim());
+      }
+      if (tp && tp.value === 'student' && !$('s-inst').value) return 'اختر الكلية أو المدرسة.';
+      return phoneErr(digits($('s-phone').value).trim());
+    }
+    return '';
+  }
+  $('wz-back').addEventListener('click', function () { wzShow(Math.max(1, WZ - 1)); });
+  wzShow(1);
+  $('f-signup').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var err = $('err-signup');
+    if (WZ < 3) { var m = wzErr(WZ); if (m) { err.textContent = m; } else { wzShow(WZ + 1); } return; }
+    var e1 = wzErr(1); if (e1) { err.textContent = e1; wzShow(1); return; }
+    var e2 = wzErr(2); if (e2) { err.textContent = e2; wzShow(2); return; }
+    var ev = $('s-email').value.trim(); if (!ev) { err.textContent = 'البريد الإلكتروني إجباري عشان توصلك رسائل الموقع.'; return; } var em = emailErr(ev); if (em) { err.textContent = em; return; }
+    if ($('s-pass').value.length < 8) { err.textContent = 'كلمة المرور لازم تكون 8 أحرف على الأقل.'; return; }
+    if ($('s-pass').value !== $('s-pass2').value) { err.textContent = 'كلمتا المرور غير متطابقتين.'; return; }
+    err.textContent = '';
+    submitting(e.target);
+  });
+
+  function hideLayer(el) {
+    el.classList.add('fade-out');
+    setTimeout(function () { el.classList.add('hidden'); }, 600);
+  }
+  function submitting(form) {
+    var sg = form.id === 'f-signup', merch = sg && isMerchantSignup(), b = form.querySelector('button[type=submit]'), err = $(sg ? 'err-signup' : 'err-login'), label = b.textContent;
+    var chk = function (n) { var x = document.querySelector('input[name=' + n + ']:checked'); return x ? x.value : null; };
+    var isStudent = sg && !merch && chk('s-type') === 'student';
+    b.disabled = true; b.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> جارٍ التحميل...';
+    function fail(m) { err.textContent = m; b.disabled = false; b.textContent = label; var c = $('auth-card'); c.classList.remove('shake'); void c.offsetWidth; c.classList.add('shake'); }
+    function proceed(body) {
+      window.psApi.post(sg ? (merch ? 'partners/apply' : 'auth/register') : 'auth/login', body).then(function (r) {
+        if (!r.ok) { fail(r.error.message); return; }
+        if (r.data && r.data.verify) { fail(r.data.message); return; }
+        try { sessionStorage.setItem('ps_user', JSON.stringify(r.data.user)); } catch (e) {}
+        if (sg && !merch) { var it = $('intro'); it.classList.remove('hidden'); it.classList.add('flex'); } else { enter(); }
+      }).catch(function () { fail('مشكلة في الاتصال بالسيرفر، حاول تاني.'); });
+    }
+    if (merch) {
+      var body = { name: $('s-name').value.trim(), email: $('s-email').value.trim(), password: $('s-pass').value, phone: digits($('s-phone').value).trim(), business_name: $('m-biz').value.trim(), category: $('m-cat').value, business_type_other: $('m-cat').value === 'other' ? $('m-cat-other').value.trim() : '', area: $('m-area').value.trim(), discount: parseInt($('m-disc').value, 10), commission: parseFloat($('m-comm').value), notes: $('m-notes').value.trim(), tax_number: $('m-tax').value.trim() };
+      readFileB64($('m-registry').files[0], function (ferr, b64) {
+        if (ferr) { fail(ferr); return; }
+        body.commercial_registry = b64; proceed(body);
+      });
+    } else if (sg) {
+      var ubody = { name: $('s-name').value.trim(), email: $('s-email').value.trim(), password: $('s-pass').value, gender: chk('s-gender'), user_type: chk('s-type'), institution: chk('s-type') === 'student' ? $('s-inst').value : null, governorate: $('s-gov').value || null, phone: digits($('s-phone').value).trim() };
+      if (isStudent) {
+        readFileB64($('s-id-card').files[0], function (ferr, b64) {
+          if (ferr) { fail(ferr); return; }
+          ubody.id_card = b64; proceed(ubody);
+        });
+      } else { proceed(ubody); }
+    } else {
+      proceed({ identifier: idVal(), password: $('l-pass').value });
+    }
+  }
+  ['f-login', 'f-signup'].forEach(function (id) {
+    $(id).addEventListener('submit', function () {
+      var msg = $(id === 'f-login' ? 'err-login' : 'err-signup');
+      if (!msg.textContent) return;
+      var c = $('auth-card');
+      c.classList.remove('shake'); void c.offsetWidth; c.classList.add('shake');
+    });
+  });
+  $('intro-go').addEventListener('click', function () { var it = $('intro'); it.classList.add('hidden'); it.classList.remove('flex'); enter(); });
+  function closeWelcome() {
+    var w = $('welcome');
+    if (w.classList.contains('fade-out') || w.classList.contains('hidden')) return;
+    hideLayer(w);
+    var c = $('auth-card');
+    c.classList.add('pop-in');
+    c.addEventListener('animationend', function () { c.classList.remove('pop-in'); }, { once: true });
+  }
+  $('welcome-btn').addEventListener('click', closeWelcome);
+
+  function fillUser() {
+    var u = {};
+    try { u = JSON.parse(sessionStorage.getItem('ps_user') || '{}'); } catch (e) {}
+    $('u-name').textContent = u.name || 'صديقي';
+    $('u-email').textContent = u.email || '';
+    var labels = { student: 'طالب', visitor: 'سائح أو مغترب', local: 'من بورسعيد' };
+    $('u-type').textContent = labels[u.type] || '';
+    $('u-type').classList.toggle('hidden', !labels[u.type]);
+    $('u-gov').textContent = u.gov || '';
+    $('u-gov').classList.toggle('hidden', !u.gov);
+    if (window.psPaint) window.psPaint(u);
+    if (window.psInit) window.psInit();
+  }
+
+  var root = document.documentElement;
+  try { if (localStorage.getItem('ps_theme') === 'dark') root.classList.add('dark'); } catch (e) {}
+  $('theme-btn').addEventListener('click', function () {
+    root.classList.add('theme-anim');
+    var dark = root.classList.toggle('dark');
+    try { localStorage.setItem('ps_theme', dark ? 'dark' : 'light'); } catch (e) {}
+    setTimeout(function () { root.classList.remove('theme-anim'); }, 600);
+  });
+
+  document.querySelectorAll('.theme-fab').forEach(function (b) { b.addEventListener('click', function () { $('theme-btn').click(); }); });
+
+  $('auth-back').addEventListener('click', function () {
+    var w = $('welcome');
+    w.classList.remove('hidden', 'fade-out');
+    var inner = w.firstElementChild;
+    inner.classList.remove('pop-in'); void inner.offsetWidth; inner.classList.add('pop-in');
+  });
+
+  var menu = $('user-menu');
+  function closeMenu() { menu.classList.add('hidden'); $('user-btn').setAttribute('aria-expanded', 'false'); }
+  $('user-btn').addEventListener('click', function (e) {
+    e.stopPropagation();
+    if (!menu.classList.contains('hidden')) { closeMenu(); return; }
+    menu.classList.remove('hidden', 'drop-in'); void menu.offsetWidth; menu.classList.add('drop-in');
+    $('user-btn').setAttribute('aria-expanded', 'true');
+  });
+  document.addEventListener('click', function (e) { if (!menu.contains(e.target)) closeMenu(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeMenu(); });
+
+  $('logout-btn').addEventListener('click', function () {
+    closeMenu();
+    window.psApi.post('auth/logout', {});
+    try { sessionStorage.removeItem('ps_in'); sessionStorage.removeItem('ps_user'); } catch (e) {}
+    ['f-login', 'f-signup'].forEach(function (id) {
+      var f = $(id); f.reset();
+      var b = f.querySelector('button[type=submit]');
+      b.disabled = false;
+      b.textContent = id === 'f-login' ? 'دخول' : 'إنشاء الحساب';
+    });
+    $('err-login').textContent = ''; $('err-signup').textContent = '';
+    $('auth-card').classList.remove('shake', 'pop-in');
+    tab('login');
+    ['welcome', 'auth'].forEach(function (id) { $(id).classList.remove('hidden', 'fade-out'); });
+    var inner = $('welcome').firstElementChild;
+    inner.classList.remove('pop-in'); void inner.offsetWidth; inner.classList.add('pop-in');
+    document.body.classList.remove('entered');
+    document.body.style.overflow = 'hidden';
+    window.scrollTo(0, 0);
+  });
+
+  document.body.style.overflow = 'hidden';
+  window.psApi.get('me').then(function (r) {
+    if (!r.ok) return;
+    try { sessionStorage.setItem('ps_user', JSON.stringify(r.data.user)); } catch (e) {}
+    $('auth').classList.add('hidden'); $('welcome').classList.add('hidden'); enter();
+  }).catch(function () {});
+})();
+</script>
+<script>
+(function () {
+  /* تحديث الموقع تلقائيًا: لما ننشر نسخة جديدة، أي تاب مفتوح عند الزوار بيكتشفها ويعمل لنفسه ريفريش من غير ما حد يتدخل. */
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').then(function (reg) {
+        var reloading = false;
+        function activateNew(worker) {
+          if (!worker) return;
+          worker.postMessage('skipWaiting');
+        }
+        navigator.serviceWorker.addEventListener('controllerchange', function () {
+          if (reloading) return; reloading = true;
+          window.location.reload();
+        });
+        if (reg.waiting) { activateNew(reg.waiting); }
+        reg.addEventListener('updatefound', function () {
+          var nw = reg.installing;
+          if (!nw) return;
+          nw.addEventListener('statechange', function () {
+            if (nw.state === 'installed' && navigator.serviceWorker.controller) { activateNew(nw); }
+          });
+        });
+        // يتأكد من وجود تحديث كل دقيقة لما التاب يكون مفتوح، وكل مرة يرجع المستخدم للتاب
+        setInterval(function () { reg.update().catch(function () {}); }, 60000);
+        document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'visible') { reg.update().catch(function () {}); } });
+      }).catch(function () {});
+    });
+  }
+  var dp = null, el = document.getElementById('pwa'), t = document.getElementById('pwa-t'), go = document.getElementById('pwa-go');
+  var ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
+  function standalone() { return (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone; }
+  function dismissed() { try { return Date.now() - (+localStorage.getItem('ps_pwa_x') || 0) < 3 * 864e5; } catch (e) { return false; } }
+  function hide() { el.classList.add('hidden'); }
+  function paint() {
+    if (dp) { t.textContent = 'ثبّته وهيفتح زي التطبيق من الشاشة الرئيسية.'; go.classList.remove('hidden'); }
+    else if (ios) { t.textContent = 'اضغط زر المشاركة في Safari ثم «إضافة إلى الشاشة الرئيسية».'; go.classList.add('hidden'); }
+    else { t.textContent = 'من قائمة المتصفح (⋮) اختار «تثبيت التطبيق» أو «إضافة إلى الشاشة الرئيسية».'; go.classList.add('hidden'); }
+  }
+  window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); dp = e; if (!el.classList.contains('hidden')) paint(); });
+  window.addEventListener('appinstalled', hide);
+  document.getElementById('pwa-x').addEventListener('click', function () { try { localStorage.setItem('ps_pwa_x', String(Date.now())); } catch (e) {} hide(); });
+  go.addEventListener('click', function () { if (!dp) return; dp.prompt(); dp.userChoice.then(function () { dp = null; hide(); }); });
+  function show(force) { if (standalone() || (!force && dismissed())) return; paint(); el.classList.remove('hidden'); }
+  var mi = document.getElementById('m-install'); if (mi) { if (standalone()) { mi.classList.add('hidden'); } mi.addEventListener('click', function () { show(true); }); }
+  window.psPwa = { show: show, standalone: standalone };
+  setTimeout(function () { show(false); }, 700);
+})();
+</script>
+</body>
+</html>

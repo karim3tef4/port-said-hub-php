@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>توثيق البريد | Port Said Hub</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  :root{--bg:#fffaf0;--card:#fff;--ink:#0b2a5b;--mut:rgba(21,89,183,.8);--teal:#0a9a92;--bad:#f0452a;--line:#ffe3a8}
+  @media (prefers-color-scheme:dark){:root{--bg:#0b0f14;--card:#1a242d;--ink:#eaf1f6;--mut:rgba(143,192,224,.85);--teal:#22d3c5;--bad:#ff7a59;--line:#2b3945}}
+  body{margin:0;min-height:100vh;display:grid;place-items:center;padding:16px;font:18px/1.8 'Cairo',Tahoma,sans-serif;background:var(--bg);color:var(--ink)}
+  .box{width:100%;max-width:460px;background:var(--card);border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 24px 50px -20px rgba(21,89,183,.35);text-align:center}
+  .hd{padding:26px;color:#fff;background:linear-gradient(135deg,#082a6e 0%,#0f4fb8 58%,#0a6f8a 115%)}
+  .logo{width:72px;height:72px;margin:0 auto 8px;border-radius:50%;background:#f8f4ea url(assets/logo/icon-192.png) center/84% no-repeat;border:3px solid rgba(255,255,255,.7)}
+  .bd{padding:26px}.ic{font-size:54px;margin-bottom:6px}.ok{color:var(--teal)}.no{color:var(--bad)}
+  a.btn{display:inline-block;margin-top:14px;background:var(--teal);color:#fff;text-decoration:none;font-weight:800;padding:12px 28px;border-radius:16px}
+</style>
+</head>
+<body>
+<div class="box">
+  <div class="hd"><div class="logo" role="img" aria-label="Port Said Hub"></div><b dir="ltr">Port Said Hub</b></div>
+  <div class="bd" id="out" aria-live="polite"><div class="ic ok"><i class="fa-solid fa-spinner fa-spin"></i></div><p>جارٍ توثيق بريدك...</p></div>
+</div>
+<script>
+(function () {
+  var out = document.getElementById('out'), t = new URLSearchParams(location.search).get('t') || '';
+  function show(ok, text) {
+    out.replaceChildren();
+    var i = document.createElement('div'); i.className = 'ic ' + (ok ? 'ok' : 'no'); i.innerHTML = '<i class="fa-solid ' + (ok ? 'fa-circle-check' : 'fa-circle-xmark') + '"></i>';
+    var p = document.createElement('p'); p.textContent = text;
+    var a = document.createElement('a'); a.className = 'btn'; a.href = './'; a.textContent = 'الذهاب للموقع';
+    out.append(i, p, a);
+  }
+  function j(r) { return r.json(); }
+  if (!/^[a-f0-9]{64}$/.test(t)) { show(false, 'الرابط غير صحيح.'); return; }
+  fetch('api/index.php?r=csrf', { credentials: 'same-origin' }).then(j).then(function (c) {
+    if (!c.ok) throw 0;
+    return fetch('api/index.php?r=auth/verify-email', { method: 'POST', credentials: 'same-origin', headers: { 'Content-Type': 'application/json', 'X-CSRF-Token': c.data.token }, body: JSON.stringify({ token: t }) }).then(j);
+  }).then(function (r) { show(r.ok, r.ok ? 'تم توثيق بريدك الإلكتروني بنجاح.' : r.error.message); }).catch(function () { show(false, 'مشكلة في الاتصال بالسيرفر، حاول تاني.'); });
+})();
+</script>
+</body>
+</html>

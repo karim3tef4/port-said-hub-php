@@ -1,0 +1,7 @@
+# السماح بـ index.php فقط داخل api/
+<FilesMatch "\.(php)$">
+  <IfModule mod_authz_core.c>
+    Require all granted
+  </IfModule>
+</FilesMatch>
+Options -Indexes

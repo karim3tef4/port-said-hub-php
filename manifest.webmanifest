@@ -1,0 +1,32 @@
+{
+ "name": "Port Said Hub | دليلك في بورسعيد",
+ "short_name": "Port Said Hub",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "dir": "rtl",
+ "lang": "ar",
+ "background_color": "#0b2a5b",
+ "theme_color": "#0b2a5b",
+ "icons": [
+  {
+   "src": "assets/logo/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "assets/logo/icon.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "assets/logo/icon-maskable.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "id": "./"
+}

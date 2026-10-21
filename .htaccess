@@ -1,0 +1,54 @@
+Options -Indexes -MultiViews
+AddType application/manifest+json .webmanifest
+ServerSignature Off
+DirectoryIndex index.html
+
+# فعّل التحويل لـ HTTPS بعد تشغيل شهادة SSL المجانية من لوحة InfinityFree (شيل # من 4 أسطر)
+#<IfModule mod_rewrite.c>
+#  RewriteEngine On
+#  RewriteCond %{HTTPS} !=on
+#  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(self), camera=(self), microphone=(), payment=()"
+  # فعّل HSTS بعد التأكد أن HTTPS شغال:
+  #Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  # الواجهة تستخدم Tailwind CDN فتحتاج unsafe-inline/unsafe-eval. للإنتاج الأشد أمانًا: ابنِ Tailwind محليًا واحذفهم.
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob:; media-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'"
+</IfModule>
+
+# حجب الملفات الحساسة
+<FilesMatch "(^\.|\.(sql|md|log|lock|bak|ini|sample\.php)$)">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+</FilesMatch>
+
+# تحديثات الموقع تظهر فورًا من غير ما تحتاج ريفريش قوي (Ctrl+F5):
+# صفحات/سكريبتات/أنماط الموقع تتفحص مع السيرفر في كل مرة بدل ما تتخزن في المتصفح،
+# والصور والخطوط (التي نادرًا ما تتغير) تفضل متخزنة فترة أطول لسرعة التحميل.
+<IfModule mod_headers.c>
+  Header always set Cache-Control "no-cache, must-revalidate"
+</IfModule>
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/javascript "access plus 0 seconds"
+  ExpiresByType text/javascript "access plus 0 seconds"
+  ExpiresByType text/css "access plus 0 seconds"
+  ExpiresByType application/manifest+json "access plus 0 seconds"
+  ExpiresByType image/png "access plus 7 days"
+  ExpiresByType image/jpeg "access plus 7 days"
+  ExpiresByType image/webp "access plus 7 days"
+  ExpiresByType image/svg+xml "access plus 7 days"
+  ExpiresByType font/woff2 "access plus 30 days"
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(png|jpe?g|webp|svg|woff2?)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+</IfModule>
